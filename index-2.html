@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="ru" data-lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tarraco Guide — Tarragona / Таррагона</title>
+<meta name="description" content="A bilingual travel guide to Tarragona — history, beaches, food and hidden corners. / Двуязычный гид по Таррагоне.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#141d24;
+  --stone:#efe8d8;
+  --stone-dim:#e2d8c2;
+  --terracotta:#b5563c;
+  --sea:#2f6e68;
+  --gold:#c0973a;
+  --paper:#faf7f0;
+  --line: rgba(20,29,36,0.14);
+  --maxw: 720px;
+}
+*{box-sizing:border-box;}
+html,body{margin:0;padding:0;}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:'Inter',system-ui,sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+[lang="ru"]{ display:none; }
+[lang="en"]{ display:none; }
+html[data-lang="ru"] [lang="ru"]{ display:initial; }
+html[data-lang="en"] [lang="en"]{ display:initial; }
+html[data-lang="ru"] li[lang="ru"], html[data-lang="en"] li[lang="en"]{ display:list-item; }
+html[data-lang="ru"] div[lang="ru"], html[data-lang="en"] div[lang="en"]{ display:block; }
+
+a{ color:var(--sea); text-decoration-thickness:1px; text-underline-offset:2px; }
+a:hover{ color:var(--terracotta); }
+
+.skyline{
+  height:5px;
+  width:100%;
+  background: repeating-linear-gradient(90deg, var(--terracotta) 0 18px, var(--gold) 18px 22px, var(--sea) 22px 40px);
+  opacity:.9;
+}
+
+header.top{
+  position:sticky; top:0; z-index:50;
+  background:rgba(250,247,240,0.92);
+  backdrop-filter: blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.topbar{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:14px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+.brand{
+  font-family:'Newsreader', serif;
+  font-weight:600;
+  font-size:1.25rem;
+  letter-spacing:.01em;
+  color:var(--ink);
+  display:flex; align-items:baseline; gap:8px;
+}
+.brand .mark{
+  font-size:.62rem;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  color:var(--terracotta);
+  font-family:'Inter',sans-serif;
+  font-weight:700;
+  border:1px solid var(--terracotta);
+  border-radius:20px;
+  padding:3px 8px;
+}
+.langswitch{
+  display:flex;
+  border:1px solid var(--ink);
+  border-radius:20px;
+  overflow:hidden;
+  flex-shrink:0;
+}
+.langswitch button{
+  border:none;
+  background:transparent;
+  padding:7px 14px;
+  font-family:'Inter',sans-serif;
+  font-weight:600;
+  font-size:.8rem;
+  letter-spacing:.03em;
+  cursor:pointer;
+  color:var(--ink);
+}
+.langswitch button.active{
+  background:var(--ink);
+  color:var(--paper);
+}
+
+main{ max-width:var(--maxw); margin:0 auto; padding:0 20px 80px; }
+
+.hero{ padding:38px 0 18px; border-bottom:1px solid var(--line); margin-bottom:8px;}
+.hero .eyebrow{
+  font-family:'Inter',sans-serif;
+  font-weight:700;
+  font-size:.72rem;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--sea);
+  margin-bottom:10px;
+}
+.hero h1{
+  font-family:'Newsreader', serif;
+  font-weight:600;
+  font-size:2.6rem;
+  line-height:1.05;
+  margin:0 0 14px;
+  color:var(--ink);
+}
+.hero p.lede{
+  font-size:1.05rem;
+  color:#3b4750;
+  max-width:60ch;
+}
+
+nav.toc{
+  margin:22px 0 34px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:var(--stone);
+}
+nav.toc summary{
+  cursor:pointer;
+  list-style:none;
+  padding:14px 18px;
+  font-family:'Inter',sans-serif;
+  font-weight:700;
+  font-size:.82rem;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  color:var(--ink);
+}
+nav.toc summary::-webkit-details-marker{display:none;}
+nav.toc summary::after{
+  content:"+";
+  font-size:1.1rem;
+  font-weight:400;
+  transition:transform .2s ease;
+}
+nav.toc[open] summary::after{ content:"–"; }
+nav.toc .toc-body{ padding:0 18px 16px; }
+nav.toc ol{ margin:0; padding-left:1.2em; }
+nav.toc li{ margin:6px 0; font-size:.94rem; }
+nav.toc a{ color:var(--ink); font-weight:500; }
+nav.toc a:hover{ color:var(--terracotta); }
+nav.toc ol ol{ margin-top:4px; padding-left:1.1em; font-size:.92em; }
+
+section.chapter{ margin:56px 0; scroll-margin-top:76px; }
+.chapter-head{ display:flex; align-items:flex-start; gap:14px; margin-bottom:18px; }
+.milestone{
+  flex-shrink:0;
+  width:46px; height:46px;
+  border-radius:50%;
+  border:2px solid var(--terracotta);
+  display:flex; align-items:center; justify-content:center;
+  font-family:'Newsreader',serif;
+  font-weight:600;
+  font-size:1.2rem;
+  color:var(--terracotta);
+  background:var(--paper);
+  position:relative;
+}
+.milestone::before{
+  content:"";
+  position:absolute; inset:-6px;
+  border-radius:50%;
+  border:1px solid var(--line);
+}
+.chapter-head h2{
+  font-family:'Newsreader',serif;
+  font-weight:600;
+  font-size:1.55rem;
+  margin:6px 0 0;
+  color:var(--ink);
+}
+h3{
+  font-family:'Newsreader',serif;
+  font-weight:600;
+  font-size:1.2rem;
+  margin:30px 0 8px;
+  color:var(--ink);
+  scroll-margin-top:76px;
+}
+h4{
+  font-family:'Inter',sans-serif;
+  font-weight:700;
+  font-size:1rem;
+  margin:22px 0 6px;
+  color:var(--ink);
+}
+h5{
+  font-family:'Inter',sans-serif;
+  font-weight:700;
+  font-size:.92rem;
+  margin:16px 0 4px;
+  color:#3b4750;
+}
+p{ margin:0 0 14px; }
+ul,ol{ padding-left:1.3em; margin:0 0 14px; }
+li{ margin:4px 0; }
+
+.place{
+  font-size:.86rem;
+  margin:-6px 0 10px;
+}
+.place a{ font-weight:600; }
+
+.tip{
+  background:var(--stone);
+  border-left:3px solid var(--gold);
+  border-radius:0 10px 10px 0;
+  padding:12px 16px;
+  margin:16px 0;
+  font-size:.95rem;
+}
+.tip strong{ color:var(--terracotta); }
+
+footer{
+  border-top:1px solid var(--line);
+  padding:30px 20px 60px;
+  max-width:var(--maxw);
+  margin:0 auto;
+  font-size:.85rem;
+  color:#5a6570;
+}
+footer a{ color:#5a6570; }
+
+.backtotop{
+  position:fixed;
+  right:16px; bottom:16px;
+  width:42px; height:42px;
+  border-radius:50%;
+  background:var(--ink);
+  color:var(--paper);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  font-size:1.1rem;
+  box-shadow:0 4px 14px rgba(20,29,36,.25);
+  opacity:0;
+  pointer-events:none;
+  transition:opacity .2s ease;
+}
+.backtotop.show{ opacity:1; pointer-events:auto; }
+
+@media (max-width:480px){
+  .hero h1{ font-size:2.1rem; }
+  .topbar{ padding:12px 16px; }
+  main{ padding:0 16px 70px; }
+}
+</style>
+</head>
+<body>
+
+<div class="skyline"></div>
+
+<header class="top">
+  <div class="topbar">
+    <div class="brand"><span lang="ru">Таррагона</span><span lang="en">Tarragona</span><span class="mark">guide</span></div>
+    <div class="langswitch" role="group" aria-label="Language">
+      <button type="button" data-setlang="ru" class="active">RU</button>
+      <button type="button" data-setlang="en">EN</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="eyebrow" lang="ru">Каталония · Коста-Дорада</div>
+  <div class="eyebrow" lang="en">Catalonia · Costa Daurada</div>
+  <h1 lang="ru">Таррагона</h1>
+  <h1 lang="en">Tarragona</h1>
+  <p class="lede" lang="ru"><strong>Таррагона</strong> — один из самых древних городов Испании и бывшая столица римской провинции Hispania Citerior. Более 2 000 лет назад город, тогда называвшийся <em>Tarraco</em>, был одним из важнейших центров Римской империи на Пиренейском полуострове. Сегодня исторический центр и основные римские памятники включены в список Всемирного наследия ЮНЕСКО.</p>
+  <p class="lede" lang="en"><strong>Tarragona</strong> is one of the oldest cities in Spain and the former capital of the Roman province of Hispania Citerior. More than 2,000 years ago, the city — then called <em>Tarraco</em> — was one of the most important centers of the Roman Empire on the Iberian Peninsula. Today the historic center and the main Roman monuments are included in the UNESCO World Heritage list.</p>
+  <p class="lede" lang="ru">В отличие от шумных курортов Салоу и Ла-Пинеды, Таррагона — спокойный город, где можно совместить отдых у моря с прогулками по старинным улочкам, посещением античных памятников, уютными ресторанами и красивыми смотровыми площадками.</p>
+  <p class="lede" lang="en">Unlike the busy resorts of Salou and La Pineda, Tarragona is a calm city where you can combine time by the sea with strolls through old streets, visits to ancient monuments, cozy restaurants, and beautiful viewpoints.</p>
+</section>
+
+<details class="toc" id="toc" open>
+  <summary><span lang="ru">Содержание</span><span lang="en">Contents</span></summary>
+  <div class="toc-body">
+    <ol>
+      <li><a href="#sec-hotels"><span lang="ru">Отели Таррагоны</span><span lang="en">Hotels in Tarragona</span></a></li>
+      <li><a href="#sec-sights"><span lang="ru">Главные достопримечательности</span><span lang="en">Main sights</span></a></li>
+      <li><a href="#sec-route"><span lang="ru">Маршрут по Таррагоне</span><span lang="en">A walking route</span></a></li>
+      <li><a href="#sec-beaches"><span lang="ru">Пляжи Таррагоны</span><span lang="en">Beaches of Tarragona</span></a></li>
+      <li><a href="#sec-todo"><span lang="ru">Чем заняться</span><span lang="en">Things to do</span></a></li>
+      <li><a href="#sec-nearby"><span lang="ru">Рядом с Таррагоной</span><span lang="en">Near Tarragona</span></a></li>
+      <li><a href="#sec-food"><span lang="ru">Гастрономия</span><span lang="en">Food</span></a></li>
+      <li><a href="#sec-coffee"><span lang="ru">Кофе, мороженое, выпечка</span><span lang="en">Coffee, ice cream, pastries</span></a></li>
+      <li><a href="#sec-shopping"><span lang="ru">Шопинг и сувениры</span><span lang="en">Shopping and souvenirs</span></a></li>
+    </ol>
+  </div>
+</details>
+
+<section class="chapter" id="sec-hotels">
+  <div class="chapter-head">
+    <div class="milestone">I</div>
+    <h2><span lang="ru">Отели Таррагоны</span><span lang="en">Hotels in Tarragona</span></h2>
+  </div>
+
+  <p lang="ru">В самой Таррагоне гостиниц не очень много, так как город не является классическим пляжным курортом. Многие туристы, приезжающие отдыхать на море, выбирают соседние города — Салоу и Ла-Пинеду. В Таррагону же чаще приезжают ради истории, прогулок по старому городу или на круизных лайнерах.</p>
+  <p lang="en">There aren't very many hotels in Tarragona itself, since the city isn't a classic beach resort. Many tourists coming for a seaside holiday choose the neighboring towns of Salou and La Pineda instead. Tarragona tends to attract visitors who come for the history, for walks through the old town, or on cruise ships.</p>
+
+  <h4><span lang="ru">Рекомендуемые отели</span><span lang="en">Recommended hotels</span></h4>
+  <ul>
+    <li lang="ru"><strong>H10 Imperial Tarraco</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJWbnnx0b9oxIR9DVVlk8OgMA" target="_blank" rel="noopener">Google Карты</a>) — пожалуй, лучший отель города. Находится прямо напротив римского амфитеатра, с потрясающими видами одновременно на Средиземное море и амфитеатр. На крыше есть терраса с бассейном и панорамным видом на исторический центр.</li>
+    <li lang="en"><strong>H10 Imperial Tarraco</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJWbnnx0b9oxIR9DVVlk8OgMA" target="_blank" rel="noopener">Google Maps</a>) — arguably the best hotel in the city. Located right across from the Roman amphitheatre, with stunning views of both the Mediterranean Sea and the amphitheatre. There's a rooftop terrace with a pool and a panoramic view of the historic center.</li>
+
+    <li lang="ru"><strong>SB Ciutat de Tarragona</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJy066pS79oxIR7gDz23Ubq_I" target="_blank" rel="noopener">Google Карты</a>) — хороший городской отель в современном центре Таррагоны. Удобен для прогулок по городу, рядом вокзал, автовокзал и торговые улицы.</li>
+    <li lang="en"><strong>SB Ciutat de Tarragona</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJy066pS79oxIR7gDz23Ubq_I" target="_blank" rel="noopener">Google Maps</a>) — a good city hotel in the modern center of Tarragona. Convenient for walking around the city, close to the train station, bus station, and shopping streets.</li>
+
+    <li lang="ru"><strong>Hotel Astari</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJMYP5CMz8oxIRg940NNUL_6k" target="_blank" rel="noopener">Google Карты</a>) — расположен в спокойном районе, примерно в 10–15 минутах пешком от пляжа Аррабассада и исторического центра. Хороший вариант для тех, кто хочет совместить пляжный отдых и прогулки по старому городу.</li>
+    <li lang="en"><strong>Hotel Astari</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJMYP5CMz8oxIRg940NNUL_6k" target="_blank" rel="noopener">Google Maps</a>) — located in a quiet area, about a 10–15 minute walk from Arrabassada beach and the historic center. A good option for those who want to combine beach time with walks around the old town.</li>
+  </ul>
+</section>
+
+<section class="chapter" id="sec-sights">
+  <div class="chapter-head">
+    <div class="milestone">II</div>
+    <h2><span lang="ru">Главные достопримечательности</span><span lang="en">Main sights</span></h2>
+  </div>
+
+  <h3><span lang="ru">Римский амфитеатр</span><span lang="en">Roman Amphitheatre</span></h3>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJe8Q26tL8oxIRsDftZxemzgA" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Самый узнаваемый символ Таррагоны. Амфитеатр был построен во II веке прямо у моря и вмещал около 15 000 зрителей. Здесь проходили гладиаторские бои и публичные представления. Сегодня это одна из самых красивых археологических площадок Испании благодаря сочетанию древних руин и вида на Средиземное море.</p>
+  <p lang="en">The most recognizable symbol of Tarragona. The amphitheatre was built in the 2nd century right by the sea and held around 15,000 spectators. Gladiator fights and public spectacles took place here. Today it's one of the most beautiful archaeological sites in Spain thanks to the combination of ancient ruins and a view of the Mediterranean.</p>
+
+  <h3><span lang="ru">Римский цирк</span><span lang="en">Roman Circus</span></h3>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJvaNcpNP8oxIRAQxSDMun2rw" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Один из наиболее хорошо сохранившихся римских цирков в мире. Именно здесь проводились гонки на колесницах. Часть сооружения скрыта под современным городом, а посетители могут пройти по древним подземным галереям.</p>
+  <p lang="en">One of the best-preserved Roman circuses in the world. Chariot races were held here. Part of the structure is hidden beneath the modern city, and visitors can walk through the ancient underground galleries.</p>
+
+  <h3><span lang="ru">Старый город (Part Alta)</span><span lang="en">Old Town (Part Alta)</span></h3>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJC_uBBtT8oxIR4aCPjMzOOnY" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Исторический центр Таррагоны с узкими мощёными улочками, небольшими площадями, кафе и старинными домами. Именно здесь лучше всего почувствовать атмосферу древнего города и неспешно погулять несколько часов.</p>
+  <p lang="en">The historic center of Tarragona, with narrow cobbled streets, small squares, cafés, and old houses. This is the best place to feel the atmosphere of the ancient city and to wander slowly for a few hours.</p>
+
+  <h3><span lang="ru">Кафедральный собор</span><span lang="en">Cathedral</span></h3>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJp1-Julr9oxIRDCFN9_vDw-A" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Главный собор города, строительство которого продолжалось почти двести лет. Он сочетает романский и готический стили, а внутри находится красивый внутренний двор и музей.</p>
+  <p lang="en">The city's main cathedral, whose construction lasted almost two hundred years. It combines Romanesque and Gothic styles, and inside there's a beautiful courtyard and a museum.</p>
+
+  <h3><span lang="ru">Римские стены (Passeig Arqueològic)</span><span lang="en">Roman Walls (Passeig Arqueològic)</span></h3>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJM0ewqNb8oxIR9V1bKRG0d9g" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Самые древние сохранившиеся римские стены за пределами Италии. Некоторые их участки были построены более 2200 лет назад и позволяют представить, как выглядел древний город Таррако.</p>
+  <p lang="en">The oldest surviving Roman walls outside of Italy. Some sections were built more than 2,200 years ago and let you imagine what the ancient city of Tarraco once looked like.</p>
+
+  <h3><span lang="ru">Балкон Средиземноморья (Balcó del Mediterrani)</span><span lang="en">Balcony of the Mediterranean (Balcó del Mediterrani)</span></h3>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJFSNmSNP8oxIRQbxevE88M1s" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Знаменитая смотровая площадка на высоте около 40 метров над морем. Отсюда открывается лучший панорамный вид на побережье, порт и пляжи Таррагоны. По местной традиции стоит дотронуться до металлического ограждения — считается, что это приносит удачу.</p>
+  <p lang="en">A famous viewpoint about 40 meters above the sea. From here you get the best panoramic view of the coastline, the port, and the beaches of Tarragona. Local tradition says you should touch the metal railing — it's believed to bring good luck.</p>
+
+  <h3><span lang="ru">Район Эль-Серральо</span><span lang="en">El Serrallo district</span></h3>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJJ3Uvis3ioxIRo0iqPST_-Jc" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Старинный рыбацкий квартал рядом с портом. Здесь находится большинство лучших рыбных ресторанов города, а вечером приятно прогуляться вдоль яхт и набережной.</p>
+  <p lang="en">An old fishing quarter near the port. Most of the city's best seafood restaurants are here, and in the evening it's pleasant to stroll along the yachts and the waterfront.</p>
+
+  <h3><span lang="ru">Пляжи</span><span lang="en">Beaches</span></h3>
+  <p lang="ru">Несмотря на богатую историю, в Таррагоне есть отличные песчаные пляжи. Самые популярные — <strong>Playa del Miracle</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJ5dOOgyzjoxIRI5OoqAgLEcE" target="_blank" rel="noopener">Google Карты</a>), расположенный рядом с центром, и <strong>Playa de l'Arrabassada</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJ63kC97P8oxIREL7-qdY76uE" target="_blank" rel="noopener">Google Карты</a>), более просторный и спокойный, с чистой водой и развитой инфраструктурой.</p>
+  <p lang="en">Despite its rich history, Tarragona has excellent sandy beaches. The most popular are <strong>Playa del Miracle</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJ5dOOgyzjoxIRI5OoqAgLEcE" target="_blank" rel="noopener">Google Maps</a>), close to the center, and <strong>Playa de l'Arrabassada</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJ63kC97P8oxIREL7-qdY76uE" target="_blank" rel="noopener">Google Maps</a>), a more spacious and calm beach with clear water and well-developed facilities.</p>
+
+  <h3><span lang="ru">Центральный рынок</span><span lang="en">Central Market</span></h3>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJ_YvtiSr9oxIR0K-Rc5Md_K8" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Исторический крытый рынок, где можно купить свежие морепродукты, хамон, сыры, фрукты и другие местные продукты. Хорошее место, чтобы познакомиться с каталонской гастрономией и купить что-нибудь с собой.</p>
+  <p lang="en">A historic covered market where you can buy fresh seafood, jamón, cheeses, fruit, and other local products. A good place to get to know Catalan cuisine and pick something up to take with you.</p>
+</section>
+
+<section class="chapter" id="sec-route">
+  <div class="chapter-head">
+    <div class="milestone">III</div>
+    <h2><span lang="ru">Маршрут по Таррагоне</span><span lang="en">A walking route around Tarragona</span></h2>
+  </div>
+
+  <h4><span lang="ru">Начало: Центральный рынок (Mercat Central)</span><span lang="en">Start: Central Market (Mercat Central)</span></h4>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJ_YvtiSr9oxIR0K-Rc5Md_K8" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Начните прогулку с Центрального рынка — здесь можно выпить кофе, позавтракать или купить свежие фрукты и местные продукты.</p>
+  <p lang="en">Start your walk at the Central Market — here you can have a coffee, breakfast, or buy fresh fruit and local products.</p>
+
+  <h4>➡️ 1. <span lang="ru">Римский форум (Fòrum de la Colònia)</span><span lang="en">Roman Forum (Fòrum de la Colònia)</span></h4>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJJ_Bc5yr9oxIRAwBGA_dB41I" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">От рынка всего несколько минут пешком до руин римского форума. Именно здесь более двух тысяч лет назад находился административный и торговый центр древнего города Таррако.</p>
+  <p lang="en">Just a few minutes' walk from the market are the ruins of the Roman forum. More than two thousand years ago, this was the administrative and commercial center of the ancient city of Tarraco.</p>
+
+  <h4>➡️ 2. <span lang="ru">Балкон Средиземноморья</span><span lang="en">Balcony of the Mediterranean</span></h4>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJFSNmSNP8oxIRQbxevE88M1s" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Пройдите к самой известной смотровой площадке Таррагоны. Отсюда открывается панорамный вид на море, порт, пляжи и римский амфитеатр. По местной традиции стоит прикоснуться к металлическому ограждению — говорят, это приносит удачу.</p>
+  <p lang="en">Head to Tarragona's most famous viewpoint. From here you get a panoramic view of the sea, the port, the beaches, and the Roman amphitheatre. Local tradition says to touch the metal railing — it's said to bring good luck.</p>
+
+  <h4>➡️ 3. <span lang="ru">Римский цирк</span><span lang="en">Roman Circus</span></h4>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJvaNcpNP8oxIRAQxSDMun2rw" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Далее отправляйтесь к римскому цирку — одному из лучших сохранившихся в мире. При желании можно зайти внутрь и пройти по древним подземным галереям.</p>
+  <p lang="en">Next, head to the Roman circus — one of the best-preserved in the world. If you like, you can go inside and walk through the ancient underground galleries.</p>
+
+  <div class="tip" lang="ru">💡 Старый город (Part Alta) лучше оставить на отдельную прогулку. Здесь хочется не спешить: гулять по узким улочкам, заходить в небольшие магазины и кафе, осматривать собор и уютные площади.</div>
+  <div class="tip" lang="en">💡 It's better to save the Old Town (Part Alta) for a separate walk. This is a place to take your time: wander the narrow streets, pop into small shops and cafés, and visit the cathedral and its cozy squares.</div>
+
+  <h4>➡️ 4. <span lang="ru">Римский амфитеатр</span><span lang="en">Roman Amphitheatre</span></h4>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJe8Q26tL8oxIRsDftZxemzgA" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">От цирка по лестницам можно спуститься к главному символу Таррагоны — римскому амфитеатру, расположенному прямо у моря. Это одно из самых красивых мест города.</p>
+  <p lang="en">From the circus you can walk down the stairs to Tarragona's main symbol — the Roman amphitheatre, right by the sea. It's one of the most beautiful spots in the city.</p>
+
+  <h4>➡️ 5. <span lang="ru">Пляж El Miracle</span><span lang="en">El Miracle Beach</span></h4>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJ5dOOgyzjoxIRI5OoqAgLEcE" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">После осмотра амфитеатра спуститесь к пляжу El Miracle. Можно искупаться, если позволяет погода, или просто прогуляться вдоль моря.</p>
+  <p lang="en">After visiting the amphitheatre, head down to El Miracle beach. You can go for a swim if the weather allows, or simply walk along the sea.</p>
+
+  <h4>➡️ 6. <span lang="ru">Марина Таррагоны</span><span lang="en">Tarragona Marina</span></h4>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJy5XWwNbioxIRReN-PDkChnc" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Продолжайте прогулку по набережной до городской марины. Здесь часто можно увидеть впечатляющие яхты. Летом их бывает особенно много. Иногда заходят яхты, принадлежащие известным предпринимателям и представителям ближневосточных королевских семей. В последние годы внимание также привлекает конфискованная яхта российского олигарха, находящаяся в порту.</p>
+  <p lang="en">Continue your walk along the promenade to the city marina. You'll often see impressive yachts here, especially in summer. Sometimes yachts belonging to well-known entrepreneurs and members of Middle Eastern royal families dock here. In recent years, attention has also been drawn to a confiscated yacht belonging to a Russian oligarch that has been kept in the port.</p>
+  <p lang="ru">Марина Таррагоны — одна из самых известных стоянок суперъяхт в западном Средиземноморье. Здесь регулярно зимуют или проходят техническое обслуживание яхты, принадлежащие одним из самых богатых людей мира. Среди них — яхты эмира Катара и бывшего эмира Катара, правителя Бахрейна, основателя Dyson Джеймса Дайсона, главы группы LVMH Бернара Арно, режиссёра Стивена Спилберга, а также индийского миллиардера Лакшми Миттала. Иногда здесь можно увидеть и другие мегаяхты, принадлежащие мировым миллиардерам и членам королевских семей Ближнего Востока.</p>
+  <p lang="en">Tarragona's marina is one of the best-known superyacht berths in the western Mediterranean. Yachts belonging to some of the wealthiest people in the world regularly winter here or undergo maintenance. Among them are yachts belonging to the Emir of Qatar and the former Emir of Qatar, the ruler of Bahrain, Dyson founder James Dyson, LVMH chairman Bernard Arnault, director Steven Spielberg, and Indian billionaire Lakshmi Mittal. Other megayachts belonging to global billionaires and members of Middle Eastern royal families can sometimes be spotted here as well.</p>
+
+  <h4>➡️ 7. <span lang="ru">Рыбацкий квартал El Serrallo</span><span lang="en">El Serrallo fishing quarter</span></h4>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJJ3Uvis3ioxIRo0iqPST_-Jc" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Завершите прогулку в старом рыбацком районе Эль-Серральо. Здесь сохранилась атмосфера старого портового квартала с разноцветными домами и уютной набережной.</p>
+  <p lang="en">End your walk in the old fishing district of El Serrallo. It has retained the atmosphere of an old port quarter, with colorful houses and a cozy waterfront.</p>
+  <p lang="ru">Это лучшее место в городе для ужина из свежих морепродуктов. Даже если не планируете полноценный ужин, приятно остановиться здесь на бокал вина или коктейль, наблюдая за жизнью порта.</p>
+  <p lang="en">This is the best place in the city for a fresh seafood dinner. Even if you're not planning a full dinner, it's nice to stop here for a glass of wine or a cocktail while watching port life go by.</p>
+</section>
+
+<section class="chapter" id="sec-beaches">
+  <div class="chapter-head">
+    <div class="milestone">IV</div>
+    <h2><span lang="ru">Пляжи Таррагоны</span><span lang="en">Beaches of Tarragona</span></h2>
+  </div>
+
+  <p lang="ru">Побережье Таррагоны считается одним из лучших на Коста-Дораде. Практически все пляжи — песчаные, с пологим входом в море и чистой водой. До многих из них можно добраться пешком из центра города.</p>
+  <p lang="en">The Tarragona coastline is considered one of the best on the Costa Daurada. Almost all the beaches are sandy, with a gentle slope into the sea and clean water. Many of them can be reached on foot from the city center.</p>
+
+  <h3>🏖️ El Miracle</h3>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJ5dOOgyzjoxIRI5OoqAgLEcE" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Самый городской пляж Таррагоны. Находится прямо у центра, рядом с римским амфитеатром. До него легко дойти пешком за 10–15 минут от Балкона Средиземноморья.</p>
+  <p lang="en">The most urban beach in Tarragona. Located right by the center, next to the Roman amphitheatre. It's an easy 10–15 minute walk from the Balcony of the Mediterranean.</p>
+
+  <h3>🏖️ L'Arrabassada</h3>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJ63kC97P8oxIREL7-qdY76uE" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Один из лучших городских пляжей. Здесь более чистая вода, широкий песчаный берег и развитая инфраструктура. Пляж регулярно получает Голубой флаг за чистоту воды, безопасность и качество сервиса.</p>
+  <p lang="en">One of the best city beaches. It has cleaner water, a wide sandy shore, and well-developed facilities. The beach regularly receives a Blue Flag for water cleanliness, safety, and quality of service.</p>
+
+  <h3>🏖️ Platja Llarga</h3>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJKVlVXVn7oxIRlSNmBynRlc4" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Самый длинный пляж Таррагоны — около 3 км. Здесь меньше людей, много сосен вдоль берега и очень спокойная атмосфера. Отлично подходит для длительных прогулок и отдыха с детьми.</p>
+  <p lang="en">The longest beach in Tarragona — about 3 km. There are fewer people here, plenty of pine trees along the shore, and a very calm atmosphere. Great for long walks and for relaxing with children.</p>
+
+  <h3>🏖️ Cala Fonda (Waikiki)</h3>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJIaeM5Lz6oxIRMd9TIHQV56E" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Один из самых красивых диких пляжей побережья. Его часто называют просто пляжем Вайкики. До него нужно пройти около 15–20 минут по сосновому лесу, зато здесь нет городской застройки и сохранилась практически нетронутая природа. На части пляжа традиционно отдыхают нудисты, хотя многие приезжают сюда просто ради красивой бухты.</p>
+  <p lang="en">One of the most beautiful wild beaches on the coast, often simply called Waikiki beach. You need to walk about 15–20 minutes through a pine forest to reach it, but in return there's no urban development and the nature is largely untouched. Part of the beach is traditionally used by nudists, though many people come here simply for the beautiful cove.</p>
+
+  <h3>🏖️ Platja de la Mora</h3>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJgWsqRwD7oxIRneFbHKHmM9Q" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Красивый семейный пляж в районе Ла-Мора, примерно в 10–15 минутах езды от центра Таррагоны. Спокойное море, мелкий песок и уютная атмосфера делают его одним из любимых пляжей местных жителей.</p>
+  <p lang="en">A beautiful family beach in the La Mora area, about a 10–15 minute drive from central Tarragona. Calm sea, fine sand, and a cozy atmosphere make it one of the favorite beaches among locals.</p>
+
+  <h3>🏖️ Cala Jovera</h3>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJN2Jiv8D6oxIRnwDiKQNQg1s" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Небольшая живописная бухта у подножия замка Тамарит. Это, пожалуй, одно из самых красивых мест на всём побережье: золотистый песок, прозрачная вода и средневековый замок, возвышающийся прямо над морем.</p>
+  <p lang="en">A small, picturesque cove at the foot of Tamarit Castle. This is perhaps one of the most beautiful spots on the entire coast: golden sand, clear water, and a medieval castle rising right above the sea.</p>
+
+  <h3>🏖️ Cala Canyadell <span lang="ru">(Альтафулья / Торредембарра)</span><span lang="en">(Altafulla / Torredembarra)</span></h3>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJIVVdSxXwoxIRSODaNYL4pbs" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Небольшая живописная бухта между Альтафульей и Торредембаррой. Это один из самых уютных и красивых пляжей побережья: золотистый песок, прозрачная вода, сосны и скалы по бокам бухты. Благодаря небольшому размеру здесь обычно гораздо спокойнее, чем на крупных пляжах. Добраться можно пешком по прибрежной тропе из Альтафульи или Торредембарры.</p>
+  <p lang="en">A small, picturesque cove between Altafulla and Torredembarra. This is one of the coziest and most beautiful beaches on the coast: golden sand, clear water, pine trees, and rocks framing the cove. Because of its small size, it's usually much quieter here than on the larger beaches. It can be reached on foot along the coastal path from Altafulla or Torredembarra.</p>
+
+  <h3>🏖️ Platja Llarga <span lang="ru">(Салоу)</span><span lang="en">(Salou)</span></h3>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJwVBb3kVZoRIROixuOVZDpdQ" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Не путать с Platja Llarga в Таррагоне. Пляж Салоу расположен в районе Кап-Салоу и считается одним из самых красивых пляжей курорта. Он окружён сосновым лесом, находится в стороне от самых шумных туристических зон и обычно менее многолюден, чем центральные пляжи Салоу. Здесь спокойное море и очень приятная природная атмосфера.</p>
+  <p lang="en">Not to be confused with Platja Llarga in Tarragona. This Salou beach is located in the Cap Salou area and is considered one of the most beautiful beaches at the resort. It's surrounded by pine forest, away from the busiest tourist zones, and is usually less crowded than Salou's central beaches. It has calm sea and a very pleasant natural setting.</p>
+</section>
+
+<section class="chapter" id="sec-todo">
+  <div class="chapter-head">
+    <div class="milestone">V</div>
+    <h2><span lang="ru">Чем заняться в Таррагоне</span><span lang="en">Things to do in Tarragona</span></h2>
+  </div>
+
+  <p lang="ru">Таррагона — город, отлично подходящий для спокойного отдыха. Здесь приятно гулять по старому городу, любоваться римскими памятниками и видами на море, отдыхать на песчаных пляжах, пробовать средиземноморскую кухню в местных ресторанах и ходить по магазинам на центральных улицах и в торговых центрах.</p>
+  <p lang="en">Tarragona is a city perfectly suited to a relaxed getaway. It's a pleasure to walk around the old town, admire the Roman monuments and sea views, relax on the sandy beaches, try Mediterranean dishes at local restaurants, and go shopping on the central streets and in the shopping malls.</p>
+  <p lang="ru">Если повезёт попасть в город во время одного из фестивалей, впечатления будут ещё ярче. Перед поездкой стоит заглянуть в календарь городских событий — здесь в течение года проходит немало фестивалей и культурных мероприятий.</p>
+  <p lang="en">If you're lucky enough to visit during one of the city's festivals, the experience will be even richer. Before your trip, it's worth checking the city's events calendar — many festivals and cultural events take place here throughout the year.</p>
+
+  <h3><span lang="ru">Самые интересные фестивали</span><span lang="en">The most interesting festivals</span></h3>
+  <ul>
+    <li lang="ru"><strong>Santa Tecla</strong> (вторая половина сентября) — главный фестиваль Таррагоны, которому уже более 700 лет. На протяжении двух недель проходят шествия гигантов, выступления живых башен (кастельс), концерты, фейерверки и знаменитые огненные забеги correfoc. Это главное событие года в городе. (<a href="https://www.tarragona.cat/cultura/festes-i-cultura-popular/santa-tecla" target="_blank" rel="noopener">tarragona.cat</a>)</li>
+    <li lang="en"><strong>Santa Tecla</strong> (second half of September) — Tarragona's main festival, already more than 700 years old. Over two weeks there are processions of giants, performances of human towers (castells), concerts, fireworks, and the famous correfoc fire runs. This is the biggest event of the year in the city. (<a href="https://www.tarragona.cat/cultura/festes-i-cultura-popular/santa-tecla" target="_blank" rel="noopener">tarragona.cat</a>)</li>
+
+    <li lang="ru"><strong>Carnaval</strong> (февраль–март, даты зависят от Пасхи) — красочный карнавал с костюмированными шествиями, музыкой и праздничной атмосферой. Один из самых весёлых праздников Каталонии.</li>
+    <li lang="en"><strong>Carnaval</strong> (February–March, dates depend on Easter) — a colorful carnival with costumed parades, music, and a festive atmosphere. One of the most fun celebrations in Catalonia.</li>
+
+    <li lang="ru"><strong>Tarraco Viva</strong> (май) — уникальный международный фестиваль римской истории. В городе проходят реконструкции гладиаторских боёв и римских легионов, лекции, мастер-классы и театральные представления, которые ярко возрождают древний Таррако. (<a href="https://tarracoviva.com/es/" target="_blank" rel="noopener">tarracoviva.com</a>)</li>
+    <li lang="en"><strong>Tarraco Viva</strong> (May) — a unique international festival of Roman history. The city hosts reenactments of gladiator fights and Roman legions, lectures, workshops, and theatrical performances that bring ancient Tarraco vividly back to life. (<a href="https://tarracoviva.com/es/" target="_blank" rel="noopener">tarracoviva.com</a>)</li>
+  </ul>
+</section>
+
+<section class="chapter" id="sec-nearby">
+  <div class="chapter-head">
+    <div class="milestone">VI</div>
+    <h2><span lang="ru">Что посмотреть рядом с Таррагоной</span><span lang="en">What to see near Tarragona</span></h2>
+  </div>
+
+  <h3><span lang="ru">Реус (10–15 минут)</span><span lang="en">Reus (10–15 minutes)</span></h3>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJXZ5tuORQoRIR0s7eSdKQIS4" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Реус — родной город Антони Гауди, одного из самых известных архитекторов мира. Хотя сам Гауди почти ничего здесь не построил, город бережно хранит память о его жизни и творчестве.</p>
+  <p lang="en">Reus is the birthplace of Antoni Gaudí, one of the world's most famous architects. Although Gaudí himself built almost nothing here, the city is dedicated to his life and work.</p>
+  <h5><span lang="ru">Стоит увидеть</span><span lang="en">Worth seeing</span></h5>
+  <ul>
+    <li lang="ru"><strong>Gaudí Centre</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJDS7DfB1RoRIR-Jp13DiY_gA" target="_blank" rel="noopener">Google Карты</a>) — современный интерактивный музей, посвящённый жизни и архитектуре Гауди.</li>
+    <li lang="en"><strong>Gaudí Centre</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJDS7DfB1RoRIR-Jp13DiY_gA" target="_blank" rel="noopener">Google Maps</a>) — a modern interactive museum dedicated to Gaudí's life and architecture.</li>
+    <li lang="ru"><strong>Casa Navàs</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJiwgUhf1RoRIRyqQprLWSa6I" target="_blank" rel="noopener">Google Карты</a>) — один из наиболее хорошо сохранившихся домов в стиле модерн в Европе.</li>
+    <li lang="en"><strong>Casa Navàs</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJiwgUhf1RoRIRyqQprLWSa6I" target="_blank" rel="noopener">Google Maps</a>) — one of the best-preserved Art Nouveau houses in Europe.</li>
+    <li lang="ru">Исторический центр с красивыми площадями и множеством кафе.</li>
+    <li lang="en">The historic center, with beautiful squares and numerous cafés.</li>
+    <li lang="ru"><strong>Музей вермута (Museu del Vermut)</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJ2T0zUwBRoRIR-TgTfRupsrs" target="_blank" rel="noopener">Google Карты</a>) — необычный музей, где можно узнать историю знаменитого каталонского напитка и попробовать разные виды вермута.</li>
+    <li lang="en"><strong>Vermouth Museum (Museu del Vermut)</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJ2T0zUwBRoRIR-TgTfRupsrs" target="_blank" rel="noopener">Google Maps</a>) — an unusual museum where you can learn the history of the famous Catalan drink and try different types of vermouth.</li>
+    <li lang="ru"><strong>Церковь Prioral de Sant Pere</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJs8aTmwNRoRIRx583doFdp6Y" target="_blank" rel="noopener">Google Карты</a>), ставшая символом города.</li>
+    <li lang="en"><strong>Prioral de Sant Pere Church</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJs8aTmwNRoRIRx583doFdp6Y" target="_blank" rel="noopener">Google Maps</a>), which has become a symbol of the city.</li>
+  </ul>
+
+  <h3><span lang="ru">Салоу (15 минут)</span><span lang="en">Salou (15 minutes)</span></h3>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJ93ilr4JZoRIRUYXO4oP1Ftk" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Самый известный курорт Коста-Дорады с широкими песчаными пляжами, длинной пальмовой набережной и большим выбором отелей.</p>
+  <p lang="en">The best-known resort on the Costa Daurada, with wide sandy beaches, a long palm-lined promenade, and a wide choice of hotels.</p>
+  <p lang="ru">Главная причина приехать сюда — <strong>PortAventura World</strong>, один из крупнейших парков развлечений Европы. В комплекс входят:</p>
+  <p lang="en">The main reason to come here is <strong>PortAventura World</strong>, one of the largest amusement parks in Europe. The complex includes:</p>
+  <ul>
+    <li lang="ru"><strong>PortAventura Park</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJGUCil7tZoRIRJtbCrqsasJs" target="_blank" rel="noopener">Google Карты</a>) — тематический парк с аттракционами для всей семьи.</li>
+    <li lang="en"><strong>PortAventura Park</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJGUCil7tZoRIRJtbCrqsasJs" target="_blank" rel="noopener">Google Maps</a>) — a theme park with rides for the whole family.</li>
+    <li lang="ru"><strong>Ferrari Land</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJBw3vv5ZZoRIRLhyEYJknk00" target="_blank" rel="noopener">Google Карты</a>) — парк в стиле Ferrari с одной из самых высоких и быстрых американских горок в Европе.</li>
+    <li lang="en"><strong>Ferrari Land</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJBw3vv5ZZoRIRLhyEYJknk00" target="_blank" rel="noopener">Google Maps</a>) — a Ferrari-themed park with one of the tallest and fastest roller coasters in Europe.</li>
+    <li lang="ru"><strong>Caribe Aquatic Park</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJyw1EMpZZoRIRtiyv-J3ANlQ" target="_blank" rel="noopener">Google Карты</a>) — большой аквапарк с горками и бассейнами.</li>
+    <li lang="en"><strong>Caribe Aquatic Park</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJyw1EMpZZoRIRtiyv-J3ANlQ" target="_blank" rel="noopener">Google Maps</a>) — a large water park with slides and pools.</li>
+  </ul>
+
+  <h3><span lang="ru">Ла-Пинеда (10 минут)</span><span lang="en">La Pineda (10 minutes)</span></h3>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJu4Hd2FZYoRIRKK1tkDiawdQ" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Спокойный курорт с широким песчаным пляжем, отлично подходящий для семейного отдыха с детьми.</p>
+  <p lang="en">A quiet resort with a wide sandy beach, perfect for a family holiday with children.</p>
+  <h5><span lang="ru">Главные места</span><span lang="en">Main spots</span></h5>
+  <ul>
+    <li lang="ru"><strong>Aquopolis Costa Dorada</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJwT7Pk_hYoRIRoseIlrzHsQc" target="_blank" rel="noopener">Google Карты</a>) — один из крупнейших аквапарков региона.</li>
+    <li lang="en"><strong>Aquopolis Costa Dorada</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJwT7Pk_hYoRIRoseIlrzHsQc" target="_blank" rel="noopener">Google Maps</a>) — one of the largest water parks in the region.</li>
+    <li lang="ru"><strong>Aquum Spa & Wellness</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJvW_z0f5YoRIRRbAVase-97o" target="_blank" rel="noopener">Google Карты</a>) — большой современный спа-комплекс с саунами, банями, бассейнами и зонами отдыха.</li>
+    <li lang="en"><strong>Aquum Spa & Wellness</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJvW_z0f5YoRIRRbAVase-97o" target="_blank" rel="noopener">Google Maps</a>) — a large modern spa complex with saunas, steam baths, pools, and relaxation areas.</li>
+  </ul>
+
+  <h3><span lang="ru">Альтафулья (15–20 минут)</span><span lang="en">Altafulla (15–20 minutes)</span></h3>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJjd44-HrwoxIR_t3WIhA4-fw" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Один из самых уютных городков побережья. В отличие от оживлённых Салоу и Ла-Пинеды, здесь царит спокойная атмосфера: узкие улочки, белые дома, небольшие площади и рестораны с видом на море.</p>
+  <p lang="en">One of the coziest towns on the coast. Unlike the lively Salou and La Pineda, a calm atmosphere reigns here: narrow streets, white houses, small squares, and restaurants with sea views.</p>
+  <p lang="ru">Здесь приятно:</p>
+  <p lang="en">It's a nice place to:</p>
+  <ul>
+    <li lang="ru">погулять по историческому центру;</li><li lang="en">walk around the historic center;</li>
+    <li lang="ru">отдохнуть на спокойном песчаном пляже;</li><li lang="en">relax on a calm sandy beach;</li>
+    <li lang="ru">поужинать в одном из ресторанов у моря;</li><li lang="en">have dinner at one of the seaside restaurants;</li>
+    <li lang="ru">подняться к средневековому замку Castell d'Altafulla.</li><li lang="en">climb up to the medieval Castell d'Altafulla.</li>
+  </ul>
+  <p lang="ru">Неподалёку находится один из самых красивых замков побережья — <strong>замок Тамарит (Castell de Tamarit)</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJq6qqqpn6oxIRkeOcc1Sg4mM" target="_blank" rel="noopener">Google Карты</a>), стоящий прямо над морем. Это одно из самых фотографируемых мест на Коста-Дораде.</p>
+  <p lang="en">Nearby is one of the most beautiful castles on the coast — <strong>Tamarit Castle (Castell de Tamarit)</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJq6qqqpn6oxIRkeOcc1Sg4mM" target="_blank" rel="noopener">Google Maps</a>), standing right above the sea. It's one of the most photographed spots on the Costa Daurada.</p>
+
+  <h3>🌾 <span lang="ru">Дельта реки Эбро (Delta de l'Ebre)</span><span lang="en">Ebro River Delta (Delta de l'Ebre)</span></h3>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJOU-l_Ar-oBIRTE8yWLSCIAo" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Если есть свободный день, стоит отправиться к дельте реки Эбро — примерно час езды от Таррагоны. Эбро — самая длинная река Испании, а её дельта — один из крупнейших природных парков Каталонии. Здесь река впадает в Средиземное море, образуя огромные лагуны, рисовые поля и песчаные косы.</p>
+  <p lang="en">If you have a free day, it's worth heading to the Ebro river delta, about an hour's drive from Tarragona. The Ebro is Spain's longest river, and its delta is one of the largest nature parks in Catalonia. Here the river flows into the Mediterranean, forming huge lagoons, rice fields, and sandbars.</p>
+  <p lang="ru">Главное богатство дельты — природа и гастрономия. Здесь выращивают знаменитый рис Arroz del Delta del Ebre, разводят устриц и мидий, готовят блюда из местного угря. Обязательно стоит попробовать рис с морепродуктами или рис с голубым крабом (arroz con cangrejo azul) — одно из фирменных блюд региона.</p>
+  <p lang="en">The delta's main riches are its nature and its cuisine. Here they grow the famous Arroz del Delta del Ebre rice, farm oysters and mussels, and cook dishes with local eel. Be sure to try rice with seafood or rice with blue crab (arroz con cangrejo azul) — one of the region's signature dishes.</p>
+  <p lang="ru">🦩 Фламинго здесь можно увидеть практически круглый год, но самые крупные колонии и лучшие шансы их встретить — с марта по июль, в период гнездования. Осень и зима тоже хороши для наблюдения за птицами, когда в дельту прилетает множество перелётных видов.</p>
+  <p lang="en">🦩 Flamingos can be spotted here almost year-round, but the largest colonies and best chances of seeing them are from March to July, during the nesting season. Autumn and winter are also great for birdwatching, when many migratory species arrive in the delta.</p>
+
+  <h3><span lang="ru">Ещё стоит увидеть</span><span lang="en">Other things worth seeing</span></h3>
+  <ul>
+    <li lang="ru"><strong>Римский акведук Les Ferreres (Pont del Diable)</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJZypLVgT9oxIRgW6d0oSjB6k" target="_blank" rel="noopener">Google Карты</a>) — всего в 4 км от центра Таррагоны. На машине это около 10–15 минут, а при желании туда можно даже дойти пешком примерно за 45–50 минут. Отличная короткая вылазка или прогулка на полдня.</li>
+    <li lang="en"><strong>Les Ferreres Roman Aqueduct (Pont del Diable)</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJZypLVgT9oxIRgW6d0oSjB6k" target="_blank" rel="noopener">Google Maps</a>) — just 4 km from central Tarragona. By car it's about a 10–15 minute drive, and if you'd like, you can even walk there in about 45–50 minutes. A great short trip or a half-day walk.</li>
+    <li lang="ru"><strong>Сиурана</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJ595IjMJKoRIRo18yciJOMbQ" target="_blank" rel="noopener">Google Карты</a>) — это уже полноценная экскурсия. Горная деревня находится примерно в 50 км от Таррагоны, около часа езды. Сюда едут ради потрясающих панорам, средневековых улочек, пеших маршрутов и скал, которые считаются одним из лучших мест для скалолазания в Европе.</li>
+    <li lang="en"><strong>Siurana</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJ595IjMJKoRIRo18yciJOMbQ" target="_blank" rel="noopener">Google Maps</a>) — already a full excursion. This mountain village is about 50 km from Tarragona, around an hour's drive. People come here for the breathtaking panoramas, medieval streets, hiking trails, and cliffs considered one of the best climbing spots in Europe.</li>
+  </ul>
+</section>
+
+<section class="chapter" id="sec-food">
+  <div class="chapter-head">
+    <div class="milestone">VII</div>
+    <h2><span lang="ru">🍽️ Гастрономия: что попробовать</span><span lang="en">🍽️ Food: what to try</span></h2>
+  </div>
+
+  <h3><span lang="ru">Что попробовать на завтрак</span><span lang="en">Breakfast</span></h3>
+  <p lang="ru">Испанцы завтракают достаточно просто, но вкусно. Если хочется прочувствовать местную кухню, лучше отказаться от привычного европейского завтрака и попробовать то, что едят сами местные жители.</p>
+  <p lang="en">Spaniards eat a fairly simple but delicious breakfast. If you want to experience the local cuisine, skip the usual European breakfast and try what the locals actually eat.</p>
+
+  <h4>🥪 <span lang="ru">Бокадильо — главный испанский сэндвич</span><span lang="en">Bocadillo — the main Spanish sandwich</span></h4>
+  <p lang="ru">Бокадильо — самый популярный завтрак и перекус в Испании. Готовится на хрустящем багете, который почти всегда натирают свежим помидором (pa amb tomàquet) и сбрызгивают хорошим оливковым маслом. Этот простой способ приготовления хлеба считается одной из визитных карточек каталонской кухни.</p>
+  <p lang="en">Bocadillo is the most popular breakfast and snack in Spain. It's made on a crusty baguette that's almost always rubbed with fresh tomato (pa amb tomàquet) and drizzled with good extra virgin olive oil. This simple way of preparing bread is considered one of the trademarks of Catalan cuisine.</p>
+  <p lang="ru">Самые популярные начинки:</p>
+  <p lang="en">The most popular fillings:</p>
+  <ul>
+    <li lang="ru">🐖 хамон иберико — обязательно попробуйте;</li><li lang="en">🐖 Jamón Ibérico — be sure to try this one;</li>
+    <li lang="ru">🥓 хамон серрано;</li><li lang="en">🥓 Jamón Serrano;</li>
+    <li lang="ru">🧀 сыр;</li><li lang="en">🧀 cheese;</li>
+    <li lang="ru">🥚 испанский картофельный тортилья;</li><li lang="en">🥚 Spanish potato tortilla;</li>
+    <li lang="ru">🐟 тунец с помидором;</li><li lang="en">🐟 tuna with tomato;</li>
+    <li lang="ru">🌭 каталонская колбаса fuet или longaniza.</li><li lang="en">🌭 Catalan fuet or longaniza sausage.</li>
+  </ul>
+  <p lang="ru">Если пробовать только один вид бокадильо — берите с хамоном иберико. Это один из главных гастрономических символов Испании.</p>
+  <p lang="en">If you're only going to try one bocadillo, go for Jamón Ibérico. It's one of the main gastronomic symbols of Spain.</p>
+
+  <h4>🥔 <span lang="ru">Tortilla de Patatas</span><span lang="en">Tortilla de Patatas</span></h4>
+  <p lang="ru">Ещё один классический испанский завтрак — тортилья. Несмотря на название, это не мексиканская лепёшка, а плотный омлет из картофеля, яиц и иногда лука.</p>
+  <p lang="en">Another classic Spanish breakfast — tortilla. Despite the name, it's not a Mexican flatbread but a thick omelet made of potatoes, eggs, and sometimes onion.</p>
+  <p lang="ru">Едят как самостоятельно, так и внутри бокадильо. Это очень популярно у местных и делает завтрак сытным.</p>
+  <p lang="en">It's eaten both on its own and inside a bocadillo. This is very popular among locals and makes a hearty breakfast.</p>
+
+  <h4>🥐 <span lang="ru">Свежая выпечка</span><span lang="en">Fresh pastries</span></h4>
+  <p lang="ru">Во многих кафе местные завтракают круассаном или шоколадной булочкой (pain au chocolat) с чашкой кофе. Если хочется сладкого завтрака, обязательно загляните в одну из местных пекарен — в Таррагоне очень сильны традиции ремесленной выпечки.</p>
+  <p lang="en">In many cafés, locals have breakfast with a croissant or pain au chocolat and a cup of coffee. If you're after a sweet breakfast, be sure to stop by one of the local bakeries — Tarragona has very strong artisan baking traditions.</p>
+
+  <h5>🫓 <span lang="ru">Что такое кока?</span><span lang="en">What is coca?</span></h5>
+  <p lang="ru">Кока — одно из самых традиционных блюд Каталонии. Это открытая лепёшка из тонкого теста, которая может быть как солёной, так и сладкой.</p>
+  <p lang="en">Coca is one of the most traditional dishes in Catalonia. It's an open flatbread made of thin dough that can be either savory or sweet.</p>
+  <p lang="ru">Солёные варианты — нечто среднее между фокаччей и очень тонкой пиццей. Их готовят с жареными овощами, грибами, луком, анчоусами, сыром или колбасой.</p>
+  <p lang="en">The savory versions are somewhere between a focaccia and a very thin pizza. They're made with roasted vegetables, mushrooms, onion, anchovies, cheese, or sausage.</p>
+  <p lang="ru">Сладкие коки чаще всего готовят с кремом, фруктами, орехами или цукатами, традиционно — к праздникам.</p>
+  <p lang="en">Sweet cocas are most often made with cream, fruit, nuts, or candied fruit, and are traditionally prepared for holidays.</p>
+
+  <div class="tip" lang="ru">💡 Мой совет: даже если не планируете покупки в El Corte Inglés, загляните в его гастрономический отдел. Это одно из лучших мест в Таррагоне, чтобы купить качественные испанские продукты и необычные съедобные сувениры.</div>
+  <div class="tip" lang="en">💡 My tip: even if you're not planning to shop at El Corte Inglés, stop by its gourmet food section. It's one of the best places in Tarragona to buy quality Spanish products and unusual edible souvenirs.</div>
+
+  <div class="tip" lang="ru">💡 Типичный каталонский завтрак — чашка кофе с молоком (café con leche) и бокадильо с хамоном или тортильей. Просто, вкусно, и именно так многие местные начинают день.</div>
+  <div class="tip" lang="en">💡 A typical Catalan breakfast is a cup of coffee with milk (café con leche) and a bocadillo with jamón or tortilla. Simple, delicious, and how many locals start their day.</div>
+
+  <h3><span lang="ru">Где попробовать лучший хамон и бокадильо</span><span lang="en">Where to try the best jamón and bocadillo</span></h3>
+  <h4>🥖 Ibericus</h4>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJy7ubhdT8oxIRLR1ZcgKKf7c" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Если хочется попробовать настоящий испанский бокадильо или качественный хамон, обязательно загляните в Ibericus. Это одно из лучших мест в центре Таррагоны, чтобы познакомиться с испанскими деликатесами из свинины.</p>
+  <p lang="en">If you want to try a real Spanish bocadillo or quality jamón, be sure to stop by Ibericus. It's one of the best places in central Tarragona to get acquainted with Spanish cured meats.</p>
+  <p lang="ru">Здесь большой выбор хамона — от серрано до иберико, а также различные колбасы, сыры и готовые бокадильо.</p>
+  <p lang="en">There's a wide selection of jamón here, from Jamón Serrano to Jamón Ibérico, as well as various sausages, cheeses, and ready-made bocadillos.</p>
+  <p lang="ru">Стоит попробовать:</p>
+  <p lang="en">Worth trying:</p>
+  <ul>
+    <li lang="ru">🐖 бокадильо с хамоном иберико — классический испанский выбор;</li><li lang="en">🐖 Bocadillo with Jamón Ibérico — the classic Spanish choice.</li>
+    <li lang="ru">🥩 тарелку ассорти из иберийских деликатесов;</li><li lang="en">🥩 A plate of assorted Iberian cured meats.</li>
+    <li lang="ru">🧀 хамон с местным сыром и бокалом вина.</li><li lang="en">🧀 Jamón with local cheese and a glass of wine.</li>
+  </ul>
+  <div class="tip" lang="ru">💡 Небольшой совет: если хотите понять, почему испанцы так гордятся своим хамоном, не останавливайтесь на серрано. Берите сразу хамон иберико, а по возможности — иберико де бельота.</div>
+  <div class="tip" lang="en">💡 A small tip: if you want to understand why Spaniards are so proud of their jamón, don't stop at Serrano. Go straight for Jamón Ibérico, and if possible, Jamón Ibérico de Bellota.</div>
+
+  <h3><span lang="ru">Что попробовать: тапас</span><span lang="en">What to try: tapas</span></h3>
+  <p lang="ru">Испания — страна тапас, небольших блюд, которыми принято делиться с друзьями за бокалом вина или пива. Если вы впервые в Испании, лучше заказать несколько разных блюд и попробовать понемногу от каждого.</p>
+  <p lang="en">Spain is the country of tapas — small dishes meant to be shared among friends over a glass of wine or beer. If it's your first time in Spain, it's best to order several different dishes and try a little of everything.</p>
+
+  <h4>🍅 Pa amb tomàquet</h4>
+  <p lang="ru">Самая известная каталонская закуска. Хрустящий хлеб натирают спелым помидором, сбрызгивают хорошим оливковым маслом и слегка солят. Часто подают с хамоном, сыром или колбасой. Несмотря на простоту, это одно из любимых блюд каталонцев.</p>
+  <p lang="en">The most famous Catalan appetizer. Crusty bread is rubbed with ripe tomato, drizzled with good extra virgin olive oil, and lightly salted. It's often served with jamón, cheese, or sausage. Despite its simplicity, it's one of Catalans' favorite dishes.</p>
+
+  <h4>🐖 Jamón Ibérico</h4>
+  <p lang="ru">Главный гастрономический символ Испании. Лучше заказывать отдельной тарелкой — тонко нарезанный хамон, вместе с хлебом с помидором. Если есть выбор, берите хамон иберико де бельота.</p>
+  <p lang="en">Spain's main gastronomic symbol. It's best ordered as a separate plate of thinly sliced jamón, eaten together with tomato bread. If you have a choice, go for Jamón Ibérico de Bellota.</p>
+
+  <h4>🫒 <span lang="ru">Оливки (Aceitunas)</span><span lang="en">Olives (Aceitunas)</span></h4>
+  <p lang="ru">Во многих барах оливки подают как закуску к напиткам. В Испании много сортов — от мягких зелёных до пикантных, маринованных с чесноком, лимоном или специями.</p>
+  <p lang="en">Many bars serve olives as a snack with drinks. Spain has many varieties, from mild green ones to piquant ones marinated with garlic, lemon, or spices.</p>
+
+  <h4>🧆 Croquetas</h4>
+  <p lang="ru">Небольшие хрустящие крокеты с кремовой начинкой. Самые популярные виды — с хамоном, курицей, грибами, треской или сыром. Почти в каждом ресторане свой фирменный рецепт.</p>
+  <p lang="en">Small crispy croquettes with a creamy filling. The most popular varieties are jamón, chicken, mushroom, cod, or cheese. Almost every restaurant has its own signature recipe.</p>
+
+  <h4>🥔 Patatas Bravas</h4>
+  <p lang="ru">Одно из самых популярных испанских блюд. Жареный картофель подают с острым соусом брава и часто с чесночным соусом алиоли. Рецепт соуса отличается от заведения к заведению, так что стоит пробовать это блюдо несколько раз.</p>
+  <p lang="en">One of the most popular Spanish dishes. Fried potatoes served with spicy brava sauce and often with garlic alioli. The sauce recipe varies from place to place, so it's worth trying this dish several times.</p>
+
+  <h4>🐟 <span lang="ru">Анчоусы (Anchoas)</span><span lang="en">Anchovies (Anchoas)</span></h4>
+  <p lang="ru">Испанские анчоусы сильно отличаются от привычных консервированных. Они более нежные, мясистые и обладают насыщенным вкусом. Часто подаются с оливковым маслом, перцем или на кусочке хлеба.</p>
+  <p lang="en">Spanish anchovies are very different from the usual canned ones. They're more tender, meatier, and have a rich flavor. They're often served with olive oil, pepper, or on a piece of bread.</p>
+
+  <h4>🍢 Pintxos</h4>
+  <p lang="ru">Хотя пинчос родом из Страны Басков, они очень популярны и в Таррагоне. Это небольшие закуски на кусочке хлеба, скреплённые шпажкой.</p>
+  <p lang="en">Although pintxos originated in the Basque Country, they're very popular in Tarragona too. These are small snacks on a piece of bread, held together with a skewer.</p>
+  <p lang="ru">Самые вкусные варианты:</p>
+  <p lang="en">The tastiest varieties:</p>
+  <ul>
+    <li lang="ru">с анчоусами;</li><li lang="en">with anchovies;</li>
+    <li lang="ru">с хамоном;</li><li lang="en">with jamón;</li>
+    <li lang="ru">с козьим сыром;</li><li lang="en">with goat cheese;</li>
+    <li lang="ru">с тунцом;</li><li lang="en">with tuna;</li>
+    <li lang="ru">с жареными овощами.</li><li lang="en">with roasted vegetables.</li>
+  </ul>
+  <div class="tip" lang="ru">💡 Если хочется попробовать Испанию за один ужин, закажите стол из нескольких тапас: хлеб с помидором, тарелку хамона, оливки, крокеты, пататас бравас и пару разных пинчос. Такое сочетание позволяет попробовать большинство классических испанских закусок.</div>
+  <div class="tip" lang="en">💡 If you want to taste Spain in a single dinner, order a table of several tapas: tomato bread, a plate of jamón, olives, croquetas, patatas bravas, and a couple of different pintxos. This combination lets you sample most of the classic Spanish appetizers.</div>
+
+  <h4>🦑 Calamares a la Romana</h4>
+  <p lang="ru">Кольца кальмара в лёгком хрустящем кляре. Одна из самых популярных закусок на средиземноморском побережье. Лучше всего есть сразу после приготовления, сбрызнув лимоном.</p>
+  <p lang="en">Squid rings in a light, crispy batter. One of the most popular appetizers along the Mediterranean coast. Best eaten right after cooking, with a squeeze of lemon.</p>
+
+  <h4>🦑 Chipirones a la Andaluza</h4>
+  <p lang="ru">Маленькие кальмарчики, быстро обжаренные в тонкой панировке. Получаются очень нежными и считаются классической закуской к пиву или белому вину.</p>
+  <p lang="en">Small baby squid, quickly fried in a thin coating. They turn out very tender and are considered a classic snack with beer or white wine.</p>
+
+  <h4>🦐 Gambas al Ajillo</h4>
+  <p lang="ru">Креветки, приготовленные в оливковом масле с большим количеством чеснока и небольшим количеством чили. Обязательно макайте хлеб в ароматное масло — многие считают его не менее вкусным, чем сами креветки.</p>
+  <p lang="en">Prawns cooked in olive oil with plenty of garlic and a bit of chili. Be sure to dip bread in the fragrant oil — many consider it just as tasty as the prawns themselves.</p>
+
+  <h4>🐙 Pulpo a la Gallega</h4>
+  <p lang="ru">Отварной осьминог с оливковым маслом, паприкой и крупной солью. Хотя блюдо родом из Галисии, его готовят практически по всей Испании, включая Таррагону.</p>
+  <p lang="en">Boiled octopus with olive oil, paprika, and coarse salt. Although the dish originated in Galicia, it's prepared practically all over Spain, including Tarragona.</p>
+
+  <h4>🦪 Mejillones al Vapor <span lang="ru">или a la Marinera</span><span lang="en">or a la Marinera</span></h4>
+  <p lang="ru">Свежие мидии, приготовленные на пару или в томатно-винном соусе. Благодаря близости моря это одно из выдающихся блюд местных ресторанов.</p>
+  <p lang="en">Fresh mussels, either steamed or in a tomato-wine sauce. Thanks to the proximity of the sea, this is one of the standout dishes at local restaurants.</p>
+
+  <h4>🧀 Quesos Españoles</h4>
+  <p lang="ru">Тарелка испанских сыров. Попробуйте выдержанный манчего, а если есть местные каталонские сыры — обязательно закажите и их.</p>
+  <p lang="en">A plate of Spanish cheeses. Try an aged Manchego, and if local Catalan cheeses are available, be sure to order those too.</p>
+
+  <h4>🌶️ Padrón</h4>
+  <p lang="ru">Маленькие зелёные перчики, обжаренные в оливковом масле с крупной солью. Есть испанская поговорка: «одни острые, другие нет». Большинство мягкие, но время от времени попадается очень острый.</p>
+  <p lang="en">Small green peppers fried in olive oil with coarse salt. There's a Spanish saying: "some are spicy, some aren't." Most are mild, but every now and then you'll get a very hot one.</p>
+
+  <h3><span lang="ru">Что попробовать на обед</span><span lang="en">What to try for lunch</span></h3>
+  <p lang="ru">Обед — главный приём пищи в Испании. Обычно испанцы обедают между 13:30 и 15:30, и именно в это время рестораны подают свои лучшие блюда.</p>
+  <p lang="en">Lunch is the main meal in Spain. Spaniards typically eat lunch between 1:30 and 3:30 pm, and this is when restaurants serve their best dishes.</p>
+
+  <h4>🥘 Paella</h4>
+  <p lang="ru">Самое известное испанское блюдо. Хотя паэлья родом из Валенсии, её готовят почти в каждом ресторане на Коста-Дораде.</p>
+  <p lang="en">Spain's most famous dish. Although paella originated in Valencia, it's made in almost every restaurant along the Costa Daurada.</p>
+  <p lang="ru">Самые популярные варианты:</p>
+  <p lang="en">The most popular versions:</p>
+  <ul>
+    <li lang="ru">с морепродуктами (Paella de Marisco);</li><li lang="en">with seafood (Paella de Marisco);</li>
+    <li lang="ru">смешанная — с мясом и морепродуктами (Paella Mixta);</li><li lang="en">mixed — with meat and seafood (Paella Mixta);</li>
+    <li lang="ru">чёрный рис (Arroz Negro) с чернилами каракатицы, обычно подают с чесночным соусом алиоли.</li><li lang="en">black rice (Arroz Negro) with cuttlefish ink, usually served with aioli.</li>
+  </ul>
+  <div class="tip" lang="ru">💡 Хорошая паэлья готовится около 30–40 минут, поэтому её редко подают быстро.</div>
+  <div class="tip" lang="en">💡 A good paella takes about 30–40 minutes to prepare, so it's rarely served quickly.</div>
+
+  <h4>🐟 <span lang="ru">Свежая рыба и морепродукты</span><span lang="en">Fresh fish and seafood</span></h4>
+  <p lang="ru">Поскольку Таррагона — портовый город, свежую рыбу здесь обязательно стоит попробовать.</p>
+  <p lang="en">Since Tarragona is a port city, fresh fish is a must-try here.</p>
+  <p lang="ru">Чаще всего в меню встречаются:</p>
+  <p lang="en">Most commonly found on menus:</p>
+  <ul>
+    <li lang="ru">дорада (Dorada);</li><li lang="en">Dorada (gilt-head bream);</li>
+    <li lang="ru">морской окунь (Lubina);</li><li lang="en">Lubina (sea bass);</li>
+    <li lang="ru">тюрбо (Rodaballo);</li><li lang="en">Rodaballo (turbot);</li>
+    <li lang="ru">морской чёрт (Rape);</li><li lang="en">Rape (monkfish);</li>
+    <li lang="ru">хек (Merluza);</li><li lang="en">Merluza (hake);</li>
+    <li lang="ru">красные креветки (Gamba Roja);</li><li lang="en">red prawns (Gamba Roja);</li>
+    <li lang="ru">каракатица (Sepia);</li><li lang="en">cuttlefish (Sepia);</li>
+    <li lang="ru">осьминог (Pulpo).</li><li lang="en">octopus (Pulpo).</li>
+  </ul>
+  <p lang="ru">Если в меню есть Pescado del día («рыба дня») — это обычно самый свежий улов.</p>
+  <p lang="en">If Pescado del día ("fish of the day") is on the menu, it's usually the freshest catch.</p>
+
+  <h4>🍲 Suquet de Peix</h4>
+  <p lang="ru">Традиционная каталонская рыбная похлёбка со свежей рыбой, картофелем и насыщенным бульоном. Одно из самых аутентичных блюд региона, хотя оно есть не в каждом меню.</p>
+  <p lang="en">A traditional Catalan fish stew made with fresh fish, potatoes, and a rich broth. One of the most authentic dishes in the region, though it's not on every menu.</p>
+
+  <h4>🍅 <span lang="ru">Попробуйте гаспачо летом</span><span lang="en">Try gazpacho in summer</span></h4>
+  <p lang="ru">В жару многие рестораны подают гаспачо — холодный томатный суп с овощами и оливковым маслом. Он очень освежает и особенно популярен летом.</p>
+  <p lang="en">In hot weather, many restaurants serve Gazpacho — a cold tomato soup with vegetables and olive oil. It's very refreshing and especially popular in summer.</p>
+
+  <h4>🧅 Calçots</h4>
+  <p lang="ru">Зимой и весной обязательно попробуйте кальсотс — особый сладкий каталонский лук, приготовленный на открытом огне и подаваемый с соусом ромеско. В сезон многие рестораны предлагают специальное меню Calçotada с кальсотс, мясом на гриле, вином и десертом. Это одна из самых известных гастрономических традиций Каталонии, а её родиной считается город Валлс, всего в 20 минутах от Таррагоны.</p>
+  <p lang="en">In winter and spring, be sure to try calçots — a special sweet Catalan onion, grilled over an open flame and eaten with romesco sauce. In season, many restaurants offer special Calçotada menus featuring calçots, grilled meat, wine, and dessert. This is one of Catalonia's best-known culinary traditions, and the town of Valls, just 20 minutes from Tarragona, is considered its birthplace.</p>
+
+  <h3><span lang="ru">Местные деликатесы и десерты</span><span lang="en">Local delicacies and desserts</span></h3>
+
+  <h4>🫒 <span lang="ru">Оливковое масло</span><span lang="en">Olive oil</span></h4>
+  <p lang="ru">Испания — крупнейший в мире производитель оливкового масла. В Каталонии часто подают местное масло первого холодного отжима (Extra Virgen), которое само по себе является гастрономической достопримечательностью.</p>
+  <p lang="en">Spain is the world's largest producer of olive oil. In Catalonia, local first cold-pressed olive oil (Extra Virgen) is often served, and it's a gastronomic highlight in its own right.</p>
+
+  <h4>🧀 <span lang="ru">Испанские сыры</span><span lang="en">Spanish cheeses</span></h4>
+  <p lang="ru">В Испании производят более 150 видов сыра. Самые известные:</p>
+  <p lang="en">Spain produces more than 150 kinds of cheese. The most famous:</p>
+  <ul>
+    <li lang="ru"><strong>Манчего</strong> — самый известный испанский сыр из овечьего молока. Бывает молодой, выдержанный и очень выдержанный.</li>
+    <li lang="en"><strong>Manchego</strong> — Spain's most famous sheep's-milk cheese. Comes young, aged, and very aged.</li>
+    <li lang="ru"><strong>Идиасабаль</strong> — копчёный сыр из овечьего молока из Страны Басков.</li>
+    <li lang="en"><strong>Idiazábal</strong> — smoked sheep's-milk cheese from the Basque Country.</li>
+    <li lang="ru"><strong>Маон</strong> — сыр с острова Менорка с лёгкой солоноватостью.</li>
+    <li lang="en"><strong>Mahón</strong> — a cheese from the island of Menorca with a light saltiness.</li>
+    <li lang="ru"><strong>Гарротча</strong> — нежный каталонский сыр из козьего молока.</li>
+    <li lang="en"><strong>Garrotxa</strong> — a delicate Catalan goat's-milk cheese.</li>
+    <li lang="ru"><strong>Тупи</strong> — необычный выдержанный каталонский сыр, иногда с добавлением ликёра.</li>
+    <li lang="en"><strong>Tupi</strong> — an unusual aged Catalan cheese, sometimes made with the addition of liqueur.</li>
+  </ul>
+
+  <h4>🍖 Sobrasada</h4>
+  <p lang="ru">Мягкая намазываемая колбаса с паприкой. Родом с Мальорки, но её легко найти по всей Испании. Вкусна на свежем хлебе или тосте.</p>
+  <p lang="en">A soft, spreadable sausage made with paprika. It originated in Mallorca but is easy to find across Spain. Delicious on fresh bread or toast.</p>
+
+  <h4>🍑 Membrillo</h4>
+  <p lang="ru">Испанская айвовая паста. Несмотря на название, по текстуре она ближе к плотному желе. Традиционно подаётся вместе с сыром манчего — классическое испанское сочетание.</p>
+  <p lang="en">Spanish quince paste. Despite the name, its texture is closer to a dense jelly. It's traditionally served together with Manchego cheese — a classic Spanish pairing.</p>
+
+  <h4>🌰 Marcona</h4>
+  <p lang="ru">Если увидите в продаже миндаль Marcona — обязательно попробуйте. Его называют «королём миндаля» за сладкий вкус и нежную текстуру.</p>
+  <p lang="en">If you see Marcona almonds for sale, be sure to try them. They're called the "king of almonds" for their sweet flavor and tender texture.</p>
+
+  <h4>🍮 <span lang="ru">Десерты</span><span lang="en">Desserts</span></h4>
+  <p lang="ru"><strong>Crema Catalana ⭐</strong> — самый известный десерт Каталонии. Похож на крем-брюле, но готовится с лимонной и апельсиновой цедрой и корицей. Сверху — тонкая карамельная корочка, которую разбивают ложкой.</p>
+  <p lang="en"><strong>Crema Catalana ⭐</strong> — Catalonia's most famous dessert. It resembles crème brûlée but is made with lemon and orange zest and cinnamon. On top is a thin caramelized crust that you crack with a spoon.</p>
+  <p lang="ru"><strong>Mel i Mató</strong> — очень простой каталонский десерт: свежий мягкий сыр мато с мёдом. Лёгкий, свежий и не слишком сладкий.</p>
+  <p lang="en"><strong>Mel i Mató</strong> — a very simple Catalan dessert: fresh soft mató cheese with honey. Light, fresh, and not overly sweet.</p>
+  <p lang="ru"><strong>Churros con Chocolate</strong> — хотя блюдо родом из центральной Испании, его любят по всей стране. Хрустящие палочки заварного теста подают с густым горячим шоколадом.</p>
+  <p lang="en"><strong>Churros con Chocolate</strong> — although this dish originated in central Spain, it's loved across the whole country. Crispy choux pastry sticks served with thick hot chocolate.</p>
+  <p lang="ru"><strong>Carquinyolis</strong> — традиционное каталонское миндальное печенье, похожее на итальянское бискотти. Прекрасно сочетается с кофе.</p>
+  <p lang="en"><strong>Carquinyolis</strong> — a traditional Catalan almond biscuit, similar to Italian biscotti. Pairs wonderfully with coffee.</p>
+  <p lang="ru"><strong>Turrón</strong> — если вы приехали на Рождество, обязательно попробуйте туррон — знаменитую испанскую миндальную нугу. Существует множество видов: мягкий, твёрдый, шоколадный, с фисташками и другими орехами.</p>
+  <p lang="en"><strong>Turrón</strong> — if you're visiting for Christmas, be sure to try turrón — the famous Spanish almond nougat. There are many varieties: soft, hard, chocolate, with pistachios and other nuts.</p>
+
+  <div class="tip" lang="ru">💡 Если бы мне нужно было назвать всего пять блюд, лучше всего передающих кухню Каталонии, я бы назвала: 🧅 кальсотс с соусом ромеско (в сезон); 🥖 pa amb tomàquet; 🐖 хамон иберико; 🧀 манчего с айвовой пастой; 🍮 крема каталана. Именно эти вкусы у большинства путешественников ассоциируются с Испанией и Каталонией.</div>
+  <div class="tip" lang="en">💡 If I had to name just five foods that best capture the cuisine of Catalonia, I'd say: 🧅 Calçots with romesco sauce (in season); 🥖 Pa amb tomàquet; 🐖 Jamón Ibérico; 🧀 Manchego with membrillo; 🍮 Crema Catalana. These are the flavors most travelers end up associating with Spain and Catalonia.</div>
+
+  <h3><span lang="ru">Что пить в Таррагоне</span><span lang="en">What to drink in Tarragona</span></h3>
+
+  <h4>🍾 Cava</h4>
+  <p lang="ru">Каталония — родина кавы, знаменитого испанского игристого вина, произведённого традиционным методом (как шампанское). Большая часть лучших кав страны производится в регионе Пенедес, недалеко от Таррагоны. Отличный аперитив или сопровождение к морепродуктам.</p>
+  <p lang="en">Catalonia is the birthplace of cava, Spain's famous sparkling wine made using the traditional method (like champagne). Most of the country's best cavas are produced in the Penedès region, near Tarragona. A great aperitif or pairing for seafood.</p>
+
+  <h4>🌿 <span lang="ru">Ликёр Шартрёз</span><span lang="en">Chartreuse liqueur</span></h4>
+  <p lang="ru">Знаменитый травяной ликёр из более чем 130 трав, давно связанный с Таррагоной. Обычно его пьют как дижестив после еды, но в городе также легко найти мороженое и другие десерты со вкусом Шартрёза — один из местных гастрономических символов.</p>
+  <p lang="en">A famous herbal liqueur made from more than 130 herbs, long associated with Tarragona. It's usually drunk as a digestif after a meal, but it's also easy to find ice cream and other desserts flavored with Chartreuse in the city — one of the local gastronomic symbols.</p>
+
+  <h4>🍷 <span lang="ru">Вермут (Vermut)</span><span lang="en">Vermouth (Vermut)</span></h4>
+  <p lang="ru">Каталония — один из главных регионов Испании по производству вермута, и традиция «ir de vermut» (пойти на вермут перед обедом, обычно по субботам или воскресеньям) всё ещё очень жива. Вермут подают охлаждённым, с долькой апельсина и оливкой. Расположенный неподалёку Реус славится культурой вермута — там даже есть свой музей (Museu del Vermut).</p>
+  <p lang="en">Catalonia is one of the main vermouth-producing regions in Spain, and the tradition of "ir de vermut" (going for a vermouth before lunch, usually on Saturdays or Sundays) is still very much alive. Vermouth is served chilled, with a slice of orange and an olive. Nearby Reus is famous for its vermouth culture — it even has its own museum (Museu del Vermut).</p>
+
+  <h4>🥛 Horchata (Orxata)</h4>
+  <p lang="ru">Освежающий сладкий напиток из земляного миндаля (чуфа), молока и сахара — не путать с мексиканской орчатой на основе риса. Особенно хорош в жару, часто подаётся с фартонес — длинными сладкими булочками для макания.</p>
+  <p lang="en">A refreshing sweet drink made from tiger nuts (chufa), milk, and sugar — not to be confused with Mexican rice-based horchata. Especially good in hot weather, often served with fartons — long sweet buns for dipping.</p>
+
+  <h4>🍧 Granizado</h4>
+  <p lang="ru">Ледяной освежающий напиток, нечто среднее между гранитой и слашем. Самые популярные вкусы — лимон (granizado de limón) и кофе (granizado de café). Отлично спасает от жары и продаётся практически везде летом — от кафе до пляжных киосков.</p>
+  <p lang="en">An icy refreshing drink, somewhere between a granita and a slush. The most popular flavors are lemon (granizado de limón) and coffee (granizado de café). Great relief in the heat and sold almost everywhere in summer, from cafés to beach kiosks.</p>
+
+  <h4>🍇 Mosto</h4>
+  <p lang="ru">Виноградный сок — по сути, неферментированное вино. Его часто заказывают те, кто не пьёт алкоголь, но хочет присоединиться к компании за бокалом «вина». Подают в бокале для вина, что делает его отличной ненавязчивой альтернативой.</p>
+  <p lang="en">Grape juice — essentially unfermented wine. It's often ordered by people who don't drink alcohol but still want to join in over a glass of wine. It's served in a wine glass, making it a great unobtrusive alternative.</p>
+
+  <h4>☕ Café con hielo</h4>
+  <p lang="ru">Это не просто холодный кофе, а небольшой ритуал: горячий эспрессо подают отдельно от стакана со льдом (иногда с сахаром), и вы сами выливаете его на лёд, чтобы охладить. Очень освежает в жаркие месяцы.</p>
+  <p lang="en">Not just iced coffee, but a small ritual: hot espresso is served separately from a glass of ice (sometimes with sugar), and you pour it over the ice yourself to cool it down. Very refreshing in the hot months.</p>
+
+  <h4>🍇 <span lang="ru">Местные вина</span><span lang="en">Local wines</span></h4>
+  <p lang="ru">Вокруг Таррагоны расположено несколько известных каталонских винодельческих регионов: <strong>DOQ Priorat</strong> — одно из самых престижных красных вин Испании, <strong>DO Montsant</strong> и <strong>DO Tarragona</strong>. Если вы любите вино, стоит попробовать хотя бы бокал местного красного или белого.</p>
+  <p lang="en">Several well-known Catalan wine regions surround Tarragona: <strong>DOQ Priorat</strong> — among the most prestigious red wines in Spain, <strong>DO Montsant</strong>, and <strong>DO Tarragona</strong>. If you like wine, it's worth trying at least one glass of local red or white.</p>
+
+  <h4>🍯 Moscatell de Reus</h4>
+  <p lang="ru">Исторически город Реус был одним из мировых центров торговли мускатным вином (moscatell) в XIX веке. Это сладкое десертное вино из мускатного винограда до сих пор производится в регионе — хорошее сопровождение к десерту или сыру.</p>
+  <p lang="en">Historically, the city of Reus was one of the world's major centers of muscat wine (moscatell) trade in the 19th century. This sweet dessert wine made from muscat grapes is still produced in the region — a good pairing for dessert or cheese.</p>
+</section>
+
+<section class="chapter" id="sec-coffee">
+  <div class="chapter-head">
+    <div class="milestone">VIII</div>
+    <h2><span lang="ru">☕ Кофе, мороженое и выпечка</span><span lang="en">☕ Coffee, ice cream, and pastries</span></h2>
+  </div>
+
+  <h3><span lang="ru">Где выпить хороший кофе в Таррагоне</span><span lang="en">Where to drink specialty coffee in Tarragona</span></h3>
+
+  <h4>☕ Olo Café ⭐ <span lang="ru">Мой фаворит</span><span lang="en">My favorite</span></h4>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJwzVVCAD9oxIRY0FuHxeWPys" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Самая новая и, на мой взгляд, лучшая кофейня спешалти-кофе в Таррагоне. Расположена прямо в сердце Старого города. Используют собственную обжарку — зёрна обжариваются неподалёку, в Эль-Вендрель.</p>
+  <p lang="en">The newest, and in my view the best, specialty coffee shop in Tarragona. Located right in the heart of the Old Town. They use their own house-roasted beans, roasted nearby in El Vendrell.</p>
+  <p lang="ru">Обязательно попробуйте:</p>
+  <p lang="en">Be sure to try:</p>
+  <ul>
+    <li lang="ru">классический эспрессо и фильтр-кофе;</li><li lang="en">classic espresso and filter coffee;</li>
+    <li lang="ru">большой выбор холодных кофейных напитков;</li><li lang="en">a large selection of cold coffee drinks;</li>
+    <li lang="ru">матчу;</li><li lang="en">matcha;</li>
+    <li lang="ru">вкусные сэндвичи и выпечку.</li><li lang="en">tasty sandwiches and pastries.</li>
+  </ul>
+  <p lang="ru">Здесь также очень приятная терраса в Старом городе — идеальное место для завтрака или короткой остановки во время прогулки.</p>
+  <p lang="en">There's also a very pleasant terrace in the Old Town — a perfect spot for breakfast or a short break during a walk.</p>
+
+  <h4>☕ Casa Quadrat</h4>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJ6_kEYtb9oxIRaQ4xoJHXQG8" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Первая кофейня спешалти-кофе в Старом городе. Сыграла большую роль в развитии культуры хорошего кофе в историческом центре Таррагоны.</p>
+  <p lang="en">The first specialty coffee shop in the Old Town. It played a big role in kickstarting specialty coffee culture in Tarragona's historic center.</p>
+  <p lang="ru">Особенно рекомендую напитки на молоке — используют фермерское каталонское молоко, поставляемое специально для кофеен, что прекрасно раскрывает вкус кофе.</p>
+  <p lang="en">I especially recommend the milk-based drinks — they use farm-sourced Catalan milk supplied specifically for coffee shops, which brings out the coffee's flavor beautifully.</p>
+  <p lang="ru">Также стоит попробовать: фирменные сэндвичи; завтраки и бранчи; вечером — натуральные испанские вина от небольших производителей.</p>
+  <p lang="en">Also worth trying: signature sandwiches; breakfasts and brunches; in the evening — natural Spanish wines from small producers.</p>
+
+  <h4>☕ Odila Specialty Coffee</h4>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJjcrexO79oxIRtL3D1K3I-hk" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Небольшая уютная кофейня с отличным спешалти-кофе и очень дружелюбной атмосферой. Отличное место, чтобы выпить качественный кофе, проходя по центру города.</p>
+  <p lang="en">A small, cozy coffee shop with excellent specialty coffee and a very friendly atmosphere. A great spot for a quality coffee while passing through the city center.</p>
+
+  <h4>☕ Nicoffee</h4>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJn7sMKGD9oxIRvfkZupvR9mk" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Самая новая кофейня спешалти-кофе в городе, открылась летом 2026 года.</p>
+  <p lang="en">The newest specialty coffee shop in the city, opened in summer 2026.</p>
+  <p lang="ru">Особенно рекомендую матчу и фирменные кофейные напитки. Бариста обучался и работал вместе с украинским бариста. Для меня это хороший знак качества, так как украинская кофейная культура сегодня считается одной из сильнейших в Европе.</p>
+  <p lang="en">I especially recommend the matcha and the signature coffee drinks. The barista trained and worked alongside a Ukrainian barista. To me, that's a good sign of quality, since Ukrainian coffee culture is considered one of the strongest in Europe today.</p>
+
+  <h3><span lang="ru">Где попробовать мороженое в Таррагоне</span><span lang="en">Where to try ice cream in Tarragona</span></h3>
+  <p lang="ru">После прогулки по Старому городу обязательно остановитесь на мороженое. В Таррагоне есть несколько отличных джелатерий, где готовят настоящее ремесленное мороженое.</p>
+  <p lang="en">After a walk around the Old Town, be sure to stop for ice cream. Tarragona has several excellent gelaterias making genuine artisan ice cream.</p>
+
+  <h4>🍦 Bico de Xeado ⭐ <span lang="ru">Мой фаворит</span><span lang="en">My favorite</span></h4>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJN2DLkG39oxIRjQ6nn3IXIxA" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Лучшая джелатерия в центре Таррагоны. Готовят ремесленное мороженое из натуральных ингредиентов, ассортимент постоянно меняется.</p>
+  <p lang="en">The best gelateria in central Tarragona. They make artisan ice cream from natural ingredients, and the selection is constantly changing.</p>
+  <p lang="ru">Обязательно попробуйте вкус Шартрёз. Шартрёз — знаменитый ликёр, который давно считается одним из символов Таррагоны. Мороженое не содержит алкоголя, но сохраняет характерный цитрусово-травяной вкус и прекрасно освежает в жаркий летний день.</p>
+  <p lang="en">Be sure to try the Chartreuse flavor. Chartreuse is a famous liqueur that has long been considered one of Tarragona's symbols. The ice cream contains no alcohol but keeps the characteristic citrusy, herbal flavor and is wonderfully refreshing on a hot summer day.</p>
+
+  <h4>🍦 Karamell Helado Artesanal</h4>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJbf1a-hP9oxIR1I3Cs28Z_q4" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Небольшая ремесленная джелатерия в центре города с фирменными вкусами и натуральными ингредиентами. Отличное место, если хочется попробовать современное каталонское мороженое небольшими партиями.</p>
+  <p lang="en">A small artisan gelateria in the city center with signature flavors and natural ingredients. A great spot if you want to try modern, small-batch Catalan ice cream.</p>
+
+  <h4>🍦 GELICIOS</h4>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJiS01QpL9oxIRz8co4co74PE" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Новая джелатерия, открывшаяся летом 2026 года на площади Plaça del Fòrum, прямо в сердце Старого города. Готовят полностью ремесленное мороженое из натуральных ингредиентов по собственным рецептам, с большим вниманием к необычным вкусам и качеству продукта.</p>
+  <p lang="en">A new gelateria that opened in summer 2026 on Plaça del Fòrum, right in the heart of the Old Town. They make fully artisanal ice cream from natural ingredients using their own recipes, with strong attention to unusual flavors and product quality.</p>
+
+  <h4>🍦 Mucca da Latte</h4>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJn1g07bT9oxIRbwZ21sBAGXU" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Ещё одна отличная джелатерия в Старом городе. Большой выбор классического итальянского джелато, сорбетов и сезонных вкусов. Отличный выбор во время прогулки по историческому центру.</p>
+  <p lang="en">Another excellent gelateria in the Old Town. A wide selection of classic Italian gelato, sorbets, and seasonal flavors. A great choice if you're strolling through the historic center.</p>
+  <p lang="ru"><em>У сети также есть вторая точка на Rambla Nova, 8</em> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJNy0BKAD9oxIRB0-eOA8aogY" target="_blank" rel="noopener">Google Карты</a>).</p>
+  <p lang="en"><em>The chain also has a second location on Rambla Nova, 8</em> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJNy0BKAD9oxIRB0-eOA8aogY" target="_blank" rel="noopener">Google Maps</a>).</p>
+
+  <h4>🍦 Olivier</h4>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJe5CmAtX8oxIRb3Jc3_ECkS4" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Если вы окажетесь на Rambla Nova, стоит заглянуть и в Gelateria Olivier — одну из старейших и самых известных итальянских джелатерий города, работающую уже несколько десятилетий. Считается настоящей классикой Таррагоны, рецепты передаются уже в третьем поколении одной семьи.</p>
+  <p lang="en">If you find yourself on Rambla Nova, it's worth stopping by Gelateria Olivier too — one of the oldest and most famous Italian gelaterias in the city, running for several decades. It's considered a true Tarragona classic, with recipes passed down through three generations of the same family.</p>
+
+  <h3><span lang="ru">Лучшие пекарни и кондитерские Таррагоны</span><span lang="en">The best bakeries and pastry shops in Tarragona</span></h3>
+
+  <h4>🥐 Cal Jan</h4>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJ078b_GH9oxIRNp9gDxOZJuA" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Если вы на Центральном рынке, обязательно загляните в эту небольшую пекарню из Торредембарры. Несмотря на скромный размер, Cal Jan считается одной из лучших кондитерских региона. В последние годы она получила немало наград, включая лучшую кондитерскую провинции Таррагона и лучший шоколадный панеттоне Испании.</p>
+  <p lang="en">If you're at the Central Market, be sure to stop by this small bakery from Torredembarra. Despite its modest size, Cal Jan is considered one of the best pastry shops in the region. In recent years it has won numerous awards, including best pastry shop in the province of Tarragona and best chocolate panettone in Spain.</p>
+
+  <h4>🥐 Panet Rambla Nova II</h4>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJk4kQFDf9oxIRtJWZovR13c8" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Сеть пекарен, встречающаяся по всему городу. Отличное место для быстрого завтрака или перекуса. Если хочется попробовать что-то в каталонском стиле, закажите бокадильо — традиционный испанский сэндвич на багете. Самые популярные варианты: с хамоном; с каталонской колбасой fuet; с тортильей де пататас; с тунцом и помидором.</p>
+  <p lang="en">A bakery chain found throughout the city. A great spot for a quick breakfast or snack. If you want to try something Catalan-style, order a bocadillo — the traditional Spanish baguette sandwich. The most popular versions: with jamón; with Catalan fuet sausage; with tortilla de patatas; with tuna and tomato.</p>
+
+  <h4>🥐 Lanttonia Cafe & Bakery</h4>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJ7ZY5nUn9oxIRlJKeO6tdZR8" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Эта пекарня находится немного в стороне от туристического центра, в жилом районе, но заглянуть туда точно стоит. Многие местные считают, что здесь одни из лучших круассанов и pain au chocolat в Таррагоне.</p>
+  <p lang="en">This bakery is a bit off the tourist center, in a residential area, but it's definitely worth the small detour. Many locals consider it home to some of the best croissants and pain au chocolat in Tarragona.</p>
+  <p lang="ru">Особенно рекомендую: 🥐 классический круассан; 🍫 pain au chocolat — один из лучших в городе; 🍪 домашнее печенье; 🥪 свежие сэндвичи на завтрак.</p>
+  <p lang="en">Especially recommended: 🥐 the classic croissant; 🍫 pain au chocolat — one of the best in the city; 🍪 homemade cookies; 🥪 fresh breakfast sandwiches.</p>
+  <p lang="ru">Отличное место, если хочется позавтракать в стороне от туристических улиц и увидеть, куда за выпечкой ходят сами жители Таррагоны. Здесь также хороший кофе, что делает Lanttonia идеальным местом для неспешного завтрака или позднего бранча.</p>
+  <p lang="en">A great place if you want to have breakfast away from the tourist streets and see where Tarragona locals themselves go for their pastries. Good coffee here too, making Lanttonia perfect for a relaxed breakfast or late brunch.</p>
+
+  <h3>🍕 <span lang="ru">Рестораны в Таррагоне</span><span lang="en">Restaurants in Tarragona</span></h3>
+
+  <h4>🌮 <span lang="ru">Мексиканская кухня</span><span lang="en">Mexican cuisine</span></h4>
+  <p lang="ru"><strong>Frida</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJI_pUJ9L8oxIRgDYeBDDImtw" target="_blank" rel="noopener">Google Карты</a>) — один из лучших мексиканских ресторанов города. Отличные тако, гуакамоле и коктейли.</p>
+  <p lang="en"><strong>Frida</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJI_pUJ9L8oxIRgDYeBDDImtw" target="_blank" rel="noopener">Google Maps</a>) — one of the best Mexican restaurants in the city. Great tacos, guacamole, and cocktails.</p>
+
+  <h4>🥩 <span lang="ru">Мясо</span><span lang="en">Meat</span></h4>
+  <p lang="ru"><strong>Braseria La Catedral</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJ_0YCldH8oxIRWk5rQPzUo5c" target="_blank" rel="noopener">Google Карты</a>) — хороший выбор для стейков и мяса на гриле, рядом с собором.</p>
+  <p lang="en"><strong>Braseria La Catedral</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJ_0YCldH8oxIRWk5rQPzUo5c" target="_blank" rel="noopener">Google Maps</a>) — a good choice for steaks and grilled meat, near the cathedral.</p>
+
+  <h4>🦐 <span lang="ru">Морепродукты и паэлья</span><span lang="en">Seafood and paella</span></h4>
+  <p lang="ru"><strong>El Posit</strong> (Эль-Серральо) (<a href="https://www.google.com/maps/place/?q=place_id:ChIJuT6ICtLioxIRgcXkXPJXyX0" target="_blank" rel="noopener">Google Карты</a>) — одно из лучших мест для паэльи и риса с морепродуктами.</p>
+  <p lang="en"><strong>El Posit</strong> (El Serrallo) (<a href="https://www.google.com/maps/place/?q=place_id:ChIJuT6ICtLioxIRgcXkXPJXyX0" target="_blank" rel="noopener">Google Maps</a>) — one of the best places for paella and seafood rice.</p>
+  <p lang="ru"><strong>L'Àncora</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJ5S5GctLioxIR_2EhZCVjNKU" target="_blank" rel="noopener">Google Карты</a>) — более доступный ресторан с большим выбором свежей рыбы и морепродуктов. Хорошее соотношение цены и качества.</p>
+  <p lang="en"><strong>L'Àncora</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJ5S5GctLioxIR_2EhZCVjNKU" target="_blank" rel="noopener">Google Maps</a>) — a more affordable restaurant with a wide choice of fresh fish and seafood. Good value for money.</p>
+  <p lang="ru"><strong>L'Arrosseria del Serrallo</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJieMqW9LioxIRMCMl65CIYZ8" target="_blank" rel="noopener">Google Карты</a>) — ресторан прямо на набережной Эль-Серральо с видом на порт, специализируется на рисовых блюдах и паэлье.</p>
+  <p lang="en"><strong>L'Arrosseria del Serrallo</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJieMqW9LioxIRMCMl65CIYZ8" target="_blank" rel="noopener">Google Maps</a>) — a restaurant right on the El Serrallo waterfront with port views, specializing in rice dishes and paella.</p>
+  <p lang="ru">Если увидите в меню Arroz Negro — обязательно попробуйте, ещё одно классическое блюдо этого побережья.</p>
+  <p lang="en">If you see Arroz Negro on the menu, be sure to try it — another classic dish of this coast.</p>
+
+  <h4>🍷 <span lang="ru">Гастробар</span><span lang="en">Gastro bar</span></h4>
+  <p lang="ru"><strong>El Cranc</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJ190Kb5LjoxIR2U2ZtntD0AM" target="_blank" rel="noopener">Google Карты</a>) — отличное место для тапас, вина и непринуждённого ужина.</p>
+  <p lang="en"><strong>El Cranc</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJ190Kb5LjoxIR2U2ZtntD0AM" target="_blank" rel="noopener">Google Maps</a>) — a great spot for tapas, wine, and a casual dinner.</p>
+
+  <h4>⭐ <span lang="ru">Для особого случая</span><span lang="en">For a special occasion</span></h4>
+  <p lang="ru"><strong>El Terrat Restaurant</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJc06mOtX8oxIRbLuZ75_rG2I" target="_blank" rel="noopener">Google Карты</a>) — один из лучших ресторанов Таррагоны с современной авторской кухней. Уже несколько лет подряд отмечен в гиде Мишлен.</p>
+  <p lang="en"><strong>El Terrat Restaurant</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJc06mOtX8oxIRbLuZ75_rG2I" target="_blank" rel="noopener">Google Maps</a>) — one of the best restaurants in Tarragona, with modern signature cuisine. It has been featured in the Michelin guide for several years running.</p>
+  <p lang="ru"><strong>AQ</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJH-RLkdH8oxIRPi_ROngZV-A" target="_blank" rel="noopener">Google Карты</a>) — ещё один очень сильный современный средиземноморский ресторан, любимый и местными, и гурманами-путешественниками.</p>
+  <p lang="en"><strong>AQ</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJH-RLkdH8oxIRPi_ROngZV-A" target="_blank" rel="noopener">Google Maps</a>) — another very strong modern Mediterranean restaurant, loved by both locals and food-focused travelers.</p>
+  <p lang="ru"><strong>Taller</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJO_mUZ9LioxIR0G-8wk_ym6U" target="_blank" rel="noopener">Google Карты</a>) — отличный ресторан для спокойного ужина с интересной авторской кухней.</p>
+  <p lang="en"><strong>Taller</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJO_mUZ9LioxIR0G-8wk_ym6U" target="_blank" rel="noopener">Google Maps</a>) — an excellent restaurant for a relaxed dinner with interesting signature cuisine.</p>
+
+  <h4>🥘 <span lang="ru">Каталонская кухня</span><span lang="en">Catalan cuisine</span></h4>
+  <p lang="ru"><strong>La Cuineta</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJVWLXh9H8oxIRX_mCJUzV0qQ" target="_blank" rel="noopener">Google Карты</a>) — один из лучших традиционных каталонских ресторанов. Особенно хорош, если хочется попробовать местные блюда, помимо морепродуктов. Местные жители часто сами его рекомендуют.</p>
+  <p lang="en"><strong>La Cuineta</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJVWLXh9H8oxIRX_mCJUzV0qQ" target="_blank" rel="noopener">Google Maps</a>) — one of the best traditional Catalan restaurants. Especially good if you want to try local dishes beyond just seafood. Locals themselves often recommend it.</p>
+
+  <h4>🍖 <span lang="ru">Астурийская кухня</span><span lang="en">Asturian cuisine</span></h4>
+  <p lang="ru"><strong>El Encuentro Asturiano</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJD5ICRdX8oxIRRHainKfIKF0" target="_blank" rel="noopener">Google Карты</a>) — простое недорогое место, где можно попробовать знаменитый качопо — огромное блюдо из двух тонких котлет, фаршированных сыром и ветчиной. Порции очень большие, так что одного блюда часто хватает на двоих.</p>
+  <p lang="en"><strong>El Encuentro Asturiano</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJD5ICRdX8oxIRRHainKfIKF0" target="_blank" rel="noopener">Google Maps</a>) — a simple, inexpensive spot where you can try the famous cachopo — a huge dish of two thin cutlets stuffed with cheese and ham. The portions are very large, so one dish is often enough for two.</p>
+
+  <h4>🍣 <span lang="ru">Японская кухня</span><span lang="en">Japanese cuisine</span></h4>
+  <p lang="ru">Если хочется суши, в Таррагоне есть несколько очень достойных вариантов.</p>
+  <p lang="en">If you're craving sushi, Tarragona has a few very solid options.</p>
+  <p lang="ru"><strong>K10 Sushi</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJw-R6FwDjoxIR256A9r4GOeU" target="_blank" rel="noopener">Google Карты</a>) — один из самых популярных японских ресторанов города. Находится в стороне от центра, в промышленной зоне Франколи, но многие специально едут туда. Большой ресторан в формате буфета «по меню», хороший выбор суши, сашими, роллов и горячих блюд.</p>
+  <p lang="en"><strong>K10 Sushi</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJw-R6FwDjoxIR256A9r4GOeU" target="_blank" rel="noopener">Google Maps</a>) — one of the most popular Japanese restaurants in the city. Located outside the center, in the Francolí industrial area, but many people make a special trip here. A large restaurant with an à la carte buffet format, a good selection of sushi, sashimi, rolls, and hot dishes.</p>
+  <p lang="ru"><strong>Oita Sushi</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJFdWrMef9oxIRHq3OPbTYwIc" target="_blank" rel="noopener">Google Карты</a>) — современный японский ресторан рядом с центром (проспект Prat de la Riba). Тоже работает в формате буфета по меню. Большой выбор суши, нигири, сашими, рамена и горячих блюд, приятный интерьер и хорошее соотношение цены и качества.</p>
+  <p lang="en"><strong>Oita Sushi</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJFdWrMef9oxIRHq3OPbTYwIc" target="_blank" rel="noopener">Google Maps</a>) — a modern Japanese restaurant close to the center (Avinguda Prat de la Riba). Also works in an à la carte buffet format. A wide selection of sushi, nigiri, sashimi, ramen, and hot dishes, a nice interior, and good value for money.</p>
+
+  <h4>🍕 <span lang="ru">Итальянская кухня и пицца</span><span lang="en">Italian cuisine and pizza</span></h4>
+  <p lang="ru"><strong>Sul Mare La Pizzeria</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJHcJ7bVPjoxIRHJeQo0FxX2w" target="_blank" rel="noopener">Google Карты</a>) — отличный выбор для ужина с красивым видом. Расположен прямо у марины, с террасой с видом на яхты и порт. Готовят настоящую неаполитанскую пиццу в дровяной печи, используя итальянскую муку, томаты San Marzano DOP и долгую ферментацию теста. Отличное место для ужина на закате.</p>
+  <p lang="en"><strong>Sul Mare La Pizzeria</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJHcJ7bVPjoxIRHJeQo0FxX2w" target="_blank" rel="noopener">Google Maps</a>) — a great choice if you want dinner with a beautiful view. Located right at the marina, with a terrace overlooking the yachts and the port. They make genuine Neapolitan pizza in a wood-fired oven, using Italian flour, San Marzano DOP tomatoes, and long-fermented dough. A great spot for a sunset dinner.</p>
+  <p lang="ru"><strong>DODITALY Focacceria Italiana</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJ9XXTcAD9oxIRq667QsCnMtE" target="_blank" rel="noopener">Google Карты</a>) — небольшое итальянское кафе в Старом городе, специализирующееся на фокачче. Идеально для быстрого обеда или перекуса во время прогулки. В меню — свежая фокачча, итальянские сыры, колбасы и классические итальянские продукты.</p>
+  <p lang="en"><strong>DODITALY Focacceria Italiana</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJ9XXTcAD9oxIRq667QsCnMtE" target="_blank" rel="noopener">Google Maps</a>) — a small Italian café in the Old Town specializing in focaccia. Perfect for a quick lunch or a snack during a walk. The menu includes fresh focaccia, Italian cheeses, cured meats, and classic Italian products.</p>
+  <p lang="ru"><strong>Pizzeria Tarricone</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJLfgL3Wr9oxIRp5GmM0Dq9kA" target="_blank" rel="noopener">Google Карты</a>) — одна из лучших пиццерий Таррагоны. Готовят классическую дровяную неаполитанскую пиццу, ресторан регулярно получает очень высокие оценки как от местных, так и от туристов. Отличный выбор, если главная цель — вкусная пицца.</p>
+  <p lang="en"><strong>Pizzeria Tarricone</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJLfgL3Wr9oxIRp5GmM0Dq9kA" target="_blank" rel="noopener">Google Maps</a>) — one of the best pizzerias in Tarragona. They make classic wood-fired Neapolitan pizza, and the restaurant regularly gets very high ratings from both locals and tourists. A great choice if delicious pizza is your main goal.</p>
+</section>
+
+<section class="chapter" id="sec-shopping">
+  <div class="chapter-head">
+    <div class="milestone">IX</div>
+    <h2><span lang="ru">🛍️ Шопинг и сувениры</span><span lang="en">🛍️ Shopping and souvenirs</span></h2>
+  </div>
+
+  <h3><span lang="ru">Магазины и сувенирные лавки</span><span lang="en">Shops and souvenir stores</span></h3>
+  <p lang="ru">Если хочется привезти из Таррагоны что-то, кроме магнитов, отправляйтесь в Старый город. Главная туристическая улица, ведущая к собору — Carrer Major. Именно здесь сосредоточено большинство интересных магазинов с местными товарами.</p>
+  <p lang="en">If you want to bring back something from Tarragona besides magnets, head to the Old Town. The main tourist street leading to the cathedral is Carrer Major. Most of the interesting shops selling local goods are concentrated here.</p>
+
+  <h4>👜 Corium Tarragona</h4>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJQ_tlof_9oxIRkdulHI7vEYk" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Если хочется привезти из Таррагоны красивый и практичный подарок, загляните в Corium на Carrer Major, по пути к собору. Это один из лучших магазинов города с изделиями из натуральной кожи.</p>
+  <p lang="en">If you want to bring back a beautiful and practical gift from Tarragona, stop by Corium on Carrer Major, on the way to the cathedral. It's one of the best shops in the city for genuine leather goods.</p>
+  <p lang="ru">Здесь можно найти: кожаные сумки; рюкзаки; кошельки; ремни; дорожные аксессуары; небольшие кожаные подарки.</p>
+  <p lang="en">Here you can find: leather bags; backpacks; wallets; belts; travel accessories; small leather gifts.</p>
+  <p lang="ru">Специализация магазина — качественные изделия из натуральной кожи классического дизайна. Некоторые вещи можно бесплатно персонализировать (инициалами или именем), что делает это отличным вариантом для памятного подарка или сувенира из поездки.</p>
+  <p lang="en">The shop's specialty is quality genuine-leather goods with a classic design. Some items can be personalized for free (with initials or a name), making it a great option for a memorable gift or a souvenir from the trip.</p>
+
+  <h4>🎁 La Botiga del Bon Gust</h4>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJlf1r29P8oxIR4vYHWw3xv0c" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Если ищете необычные подарки из Каталонии, обязательно загляните в La Botiga del Bon Gust на Carrer Major. Это один из самых интересных магазинов Старого города с аутентичными каталонскими товарами.</p>
+  <p lang="en">If you're after unusual gifts from Catalonia, be sure to check out La Botiga del Bon Gust on Carrer Major. It's one of the most interesting shops in the Old Town, with authentic Catalan goods.</p>
+  <p lang="ru">Стоит обратить внимание на: 🏺 расписную каталонскую керамику ручной работы; 🍷 местные ликёры, включая Шартрёз и другие региональные напитки; 🧴 натуральную косметику и мыло; 🫒 гастрономические сувениры; 🎁 небольшие подарки от местных мастеров.</p>
+  <p lang="en">Worth checking out here: 🏺 hand-painted Catalan ceramics; 🍷 local liqueurs, including Chartreuse and other regional drinks; 🧴 natural cosmetics and soap; 🫒 gourmet food souvenirs; 🎁 small gifts and items by local artisans.</p>
+  <div class="tip" lang="ru">💡 Мой совет: если мало времени и хочется купить несколько действительно хороших сувениров в одном месте, La Botiga del Bon Gust — отличный выбор. Наряду с Corium (кожаные изделия) и Sabor a España (гастрономические продукты), этот магазин — один из самых интересных в Старом городе.</div>
+  <div class="tip" lang="en">💡 My tip: if you're short on time and want to buy several genuinely good souvenirs in one place, La Botiga del Bon Gust is an excellent choice. Along with Corium (leather goods) and Sabor a España (gourmet products), this shop is among the most interesting shopping spots in the Old Town.</div>
+
+  <h4>🍫 Torrons Artesans Vicens</h4>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJh6QO7dP8oxIR7nuqJJBs2hE" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Torrons Artesans Vicens — один из самых известных производителей туррона в Испании, история которого началась ещё в 1775 году. Бренд родом из города Аграмунт (Каталония), считающегося одной из столиц производства туррона.</p>
+  <p lang="en">Torrons Artesans Vicens is one of the most famous turrón makers in Spain, with a history dating back to 1775. The brand comes from the town of Agramunt (Catalonia), considered one of the capitals of turrón production.</p>
+  <p lang="ru">Отличное место, чтобы привезти вкусный подарок из Испании. Помимо классического туррона, здесь продают шоколад, миндальные сладости и современные авторские коллекции, созданные вместе с известными испанскими шеф-поварами.</p>
+  <p lang="en">It's a great place to bring back a tasty gift from Spain. Besides classic turróns, they also sell chocolate, almond sweets, and modern signature collections created together with famous Spanish chefs.</p>
+  <p lang="ru">Стоит купить: 🌰 классический мягкий Turrón de Jijona; 🥜 хрустящий Turrón de Alicante; 🍫 шоколадный туррон; 🌟 авторские вкусы от известных шефов (например, Жорди Рока или Кике Дакоста); 🎁 красивые подарочные наборы.</p>
+  <p lang="en">Worth buying: 🌰 the classic soft Turrón de Jijona; 🥜 crunchy Turrón de Alicante; 🍫 chocolate turróns; 🌟 signature flavors from famous chefs (such as Jordi Roca or Quique Dacosta); 🎁 beautiful gift sets.</p>
+  <div class="tip" lang="ru">💡 Совет: хотя туррон традиционно считается рождественским десертом, магазины Torrons Vicens продают его круглый год. Это один из самых популярных гастрономических сувениров, который легко увезти домой или подарить друзьям.</div>
+  <div class="tip" lang="en">💡 Tip: although turrón is traditionally seen as a Christmas dessert, Torrons Vicens shops sell it year-round. It's one of the most popular gastronomic souvenirs and is easy to take home or give as a gift to friends.</div>
+
+  <h4>🥑 Ametller Origen</h4>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJS7rvuSv9oxIRwBjl9tPbAqA" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Каталонская сеть гастрономических супермаркетов, которая работает напрямую с собственными фермами и местными производителями. Отличное место, если хочется купить по-настоящему свежие качественные продукты, а не обычный набор супермаркета.</p>
+  <p lang="en">A Catalan chain of gourmet supermarkets that works directly with its own farms and local producers. A great place if you want to buy truly fresh, quality products rather than a typical supermarket selection.</p>
+  <p lang="ru">Здесь можно найти: 🍅 свежие фрукты и овощи, часто со своих полей; 🍱 готовые блюда — от салатов до горячих гарниров; 🥖 собственную выпечку и хлеб; 🧀 сыры, хамон и другие местные деликатесы; 🍷 вино и каву от небольших производителей; 🌿 органические продукты.</p>
+  <p lang="en">Here you can find: 🍅 fresh fruit and vegetables, often from their own fields; 🍱 ready-to-eat meals — from salads to hot side dishes; 🥖 their own baked goods and bread; 🧀 cheeses, jamón, and other local delicacies; 🍷 wine and cava from small producers; 🌿 organic products.</p>
+  <div class="tip" lang="ru">💡 Хороший вариант, если хочется собрать пикник, взять готовый ужин в отель или просто купить качественные продукты в подарок — без похода на рынок.</div>
+  <div class="tip" lang="en">💡 A good option if you want to put together a picnic, grab a ready-made dinner for the hotel, or simply buy quality products as a gift — without a trip to the market.</div>
+
+  <h4>🛍️ Parc Central</h4>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJddKhPjL9oxIRBnnabKt_0x8" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Parc Central — главный торговый центр Таррагоны. Самое удобное место, если хочется совместить прогулку по городу с шопингом.</p>
+  <p lang="en">Parc Central is Tarragona's main shopping mall. The most convenient place if you want to combine a walk around the city with some shopping.</p>
+  <p lang="ru">Здесь представлены почти все популярные испанские и международные бренды: 👗 Inditex: Zara, Zara Home, Massimo Dutti, Stradivarius, Bershka, Oysho, Pull&Bear; 🛍️ Mango; 👕 H&M; 👙 Women'secret; 🧦 Calzedonia; 🤍 Intimissimi; 💄 Primor и Druni — два самых популярных магазина косметики и парфюмерии в Испании.</p>
+  <p lang="en">Almost all the popular Spanish and international brands are represented here: 👗 Inditex: Zara, Zara Home, Massimo Dutti, Stradivarius, Bershka, Oysho, Pull&Bear; 🛍️ Mango; 👕 H&M; 👙 Women'secret; 🧦 Calzedonia; 🤍 Intimissimi; 💄 Primor and Druni — two of the most popular cosmetics and perfume stores in Spain.</p>
+
+  <h5>⚽ <span lang="ru">Для любителей спорта</span><span lang="en">For sports fans</span></h5>
+  <p lang="ru">В торговом центре есть официальный магазин ФК Барселона, где можно купить официальную атрибутику и сувениры, а также нанести имя и номер на футболку.</p>
+  <p lang="en">The mall has an official FC Barcelona store, where you can buy official gear and souvenirs and have a name and number printed on a shirt.</p>
+
+  <h4>🛍️ El Corte Inglés</h4>
+  <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJUUjnli_9oxIRyPbPuBhI38E" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
+  <p lang="ru">Что касается одежды, El Corte Inglés — классический испанский универмаг с широким выбором брендов среднего ценового сегмента. Но даже если шопинг вас не интересует, стоит зайти хотя бы ради продуктового отдела.</p>
+  <p lang="en">When it comes to clothing, El Corte Inglés is the classic Spanish department store, with a wide range of mid-priced brands. But even if shopping isn't your thing, it's worth visiting for the food hall alone.</p>
+  <p lang="ru">На первом этаже находится супермаркет и гастрономический отдел Gourmet — одна из лучших коллекций продуктов в Таррагоне. Здесь можно купить: оливковое масло премиальных производителей; выдержанный бальзамический уксус; качественные испанские консервы; вина и каву; сыры, хамон и другие гастрономические сувениры.</p>
+  <p lang="en">On the ground floor there's a supermarket and a Gourmet department, home to one of the best product collections in Tarragona. Here you can buy: premium producer olive oils; aged balsamic vinegars; high-quality Spanish canned goods; wines and cava; cheeses, jamón, and other gourmet souvenirs.</p>
+  <p lang="ru">Если хочется привезти домой что-то вкусное, это одно из лучших мест в городе.</p>
+  <p lang="en">If you want to bring home something delicious, this is one of the best places in the city.</p>
+
+  <h5>🍞 <span lang="ru">Хлеб из Нулеса</span><span lang="en">Bread from Nules</span></h5>
+  <p lang="ru">В El Corte Inglés также продаётся хлеб небольшой пекарни Forn de Pa Nules (из города Нулес). Многие местные приходят специально за ним. Хлеб быстро раскупается, поэтому некоторые даже делают предзаказ.</p>
+  <p lang="en">El Corte Inglés also sells bread from a small bakery called Forn de Pa Nules (from the town of Nules). Many locals come here specifically for it. The bread sells out quickly, so some people even place advance orders.</p>
+  <p lang="ru">Помимо классических видов хлеба, часто появляются сезонные новинки: хлеб с кальсотс; панеттоне с кальсотс; хлеб с тёмным шоколадом; разные коки с грибами, овощами и другими сезонными начинками.</p>
+  <p lang="en">Besides the classic bread varieties, seasonal specials often appear: calçots bread; calçots panettone; dark chocolate bread; various cocas with mushrooms, vegetables, and other seasonal toppings.</p>
+
+  <h4>💰 <span lang="ru">Цены и Tax Free</span><span lang="en">Prices and Tax Free</span></h4>
+  <p lang="ru">Испания считается одной из лучших стран по соотношению цены и качества для покупки одежды брендов Inditex. Многие вещи здесь дешевле, чем в большинстве других европейских стран.</p>
+  <p lang="en">Spain is considered one of the best-value countries for buying Inditex-brand clothing. Many items here are cheaper than in most other European countries.</p>
+  <p lang="ru">Если вы живёте за пределами Евросоюза, можно оформить Tax Free при покупке и вернуть часть НДС. В Таррагоне оформить это можно в магазинах-участниках программы, а также удобно получить помощь с оформлением и возвратом в <strong>El Corte Inglés</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJUUjnli_9oxIRyPbPuBhI38E" target="_blank" rel="noopener">Google Карты</a>).</p>
+  <p lang="en">If you live outside the European Union, you can arrange Tax Free at the time of purchase and get part of the VAT back. In Tarragona, you can do the paperwork at shops participating in the program, and it's also convenient to get help with the paperwork and refund at <strong>El Corte Inglés</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJUUjnli_9oxIRyPbPuBhI38E" target="_blank" rel="noopener">Google Maps</a>).</p>
+  <div class="tip" lang="ru">💡 Мой совет: если планируете покупать одежду, косметику и подарки, удобнее сначала пройтись по Parc Central, а затем заглянуть в El Corte Inglés за гастрономическими сувенирами. Так весь шопинг можно уложить в один день.</div>
+  <div class="tip" lang="en">💡 My tip: if you're planning to buy clothes, cosmetics, and gifts, it's more convenient to walk through Parc Central first, then stop by El Corte Inglés for gourmet souvenirs. That way you'll cover almost all your shopping in a single day.</div>
+
+  <h3><span lang="ru">Что привезти в подарок</span><span lang="en">What to bring back as a gift</span></h3>
+  <p lang="ru">Если хочется привезти домой не просто обычный магнит на холодильник, а маленький кусочек Каталонии — обратите внимание на местные гастрономические продукты.</p>
+  <p lang="en">If you'd like to take home something more than an ordinary fridge magnet — a little piece of Catalonia — look to the local gourmet products.</p>
+
+  <h4>🫒 <span lang="ru">Оливковое масло</span><span lang="en">Olive oil</span></h4>
+  <p lang="ru">Таррагона находится рядом с регионом Siurana DOP, одним из самых известных регионов производства оливкового масла в Испании. Масло отсюда обладает насыщенным фруктовым вкусом с лёгкой остринкой и считается одним из лучших в стране.</p>
+  <p lang="en">Tarragona is close to the Siurana DOP region, one of the best-known olive-oil-producing areas in Spain. Oil from here has a rich, fruity flavor with light spice and is considered among the best in the country.</p>
+  <div class="tip" lang="ru">💡 Если вы приехали осенью, обязательно купите масло нового урожая (aceite nuevo). Оно особенно ароматное и считается настоящим деликатесом.</div>
+  <div class="tip" lang="en">💡 If you're visiting in autumn, be sure to buy the new-harvest oil (aceite nuevo). It's especially aromatic and considered a true delicacy.</div>
+
+  <h4>🥩 Jamón Ibérico</h4>
+  <p lang="ru">Один из главных гастрономических символов Испании. В подарок удобно покупать хамон уже нарезанным и упакованным в вакуум — так его легко везти.</p>
+  <p lang="en">One of the main gastronomic symbols of Spain. For a gift, it's convenient to buy jamón already sliced and vacuum-packed — it travels easily.</p>
+
+  <h4>🍾 Cava</h4>
+  <p lang="ru">Каталония — родина кавы, знаменитого испанского игристого вина. Регион Пенедес, недалеко от Таррагоны, производит большую часть лучших кав страны.</p>
+  <p lang="en">Catalonia is the birthplace of cava, Spain's famous sparkling wine. The Penedès region, not far from Tarragona, produces most of the country's best cavas.</p>
+  <p lang="ru">Кава — отличный подарок и часто заметно дешевле сопоставимых игристых вин в других странах.</p>
+  <p lang="en">Cava makes a great gift and is often noticeably cheaper than comparable sparkling wines in other countries.</p>
+
+  <h4>🥜 <span lang="ru">Орехи</span><span lang="en">Nuts</span></h4>
+  <p lang="ru">Испания славится своими орехами, особенно миндалём. Обратите внимание на миндаль Marcona, который считается одним из лучших в мире за сладкий вкус и нежную текстуру.</p>
+  <p lang="en">Spain is famous for its nuts, especially almonds. Look out for Marcona almonds, considered among the best in the world for their sweet flavor and tender texture.</p>
+
+  <h4>🍑 <span lang="ru">Джемы и мармелады</span><span lang="en">Jams and marmalades</span></h4>
+  <p lang="ru">В Каталонии готовят отличные джемы из местных фруктов. Особенно рекомендую: персиковый; абрикосовый; апельсиновый.</p>
+  <p lang="en">Catalonia has excellent jams made from local fruit. I especially recommend: peach; apricot; orange.</p>
+  <p lang="ru">Также стоит попробовать традиционный membrillo — плотную айвовую пасту, обычно подаваемую с сыром.</p>
+  <p lang="en">Also worth trying is traditional membrillo — a dense quince paste usually served with cheese.</p>
+
+  <h4>🧀 <span lang="ru">Испанские сыры</span><span lang="en">Spanish cheeses</span></h4>
+  <p lang="ru">Если есть возможность везти продукты в сумке-холодильнике, купите выдержанный манчего или один из местных каталонских сыров. Они прекрасно сочетаются с айвовой пастой и бокалом кавы.</p>
+  <p lang="en">If you can carry products in a cooler bag, buy an aged Manchego or one of the local Catalan cheeses. They pair beautifully with membrillo and a glass of cava.</p>
+
+  <h4>🍫 Turrón</h4>
+  <p lang="ru">Один из самых известных испанских сладких сувениров. Классический миндальный туррон продаётся круглый год, а в <strong>Torrons Vicens</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJh6QO7dP8oxIR7nuqJJBs2hE" target="_blank" rel="noopener">Google Карты</a>) можно найти как традиционные, так и современные авторские вкусы.</p>
+  <p lang="en">One of the best-known Spanish sweet souvenirs. Classic almond turrón is sold year-round, and at <strong>Torrons Vicens</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJh6QO7dP8oxIR7nuqJJBs2hE" target="_blank" rel="noopener">Google Maps</a>) you can find both traditional and modern signature flavors.</p>
+
+  <div class="tip" lang="ru">💡 Мой идеальный набор съедобных сувениров из Таррагоны: бутылка оливкового масла Siurana, бутылка кавы, хамон иберико, миндаль Marcona, туррон и баночка хорошего апельсинового или абрикосового джема. Такой набор прекрасно передаёт вкус Каталонии и станет отличным подарком для близких.</div>
+  <div class="tip" lang="en">💡 My perfect set of edible souvenirs from Tarragona: a bottle of Siurana olive oil, a bottle of cava, Jamón Ibérico, Marcona almonds, turrón, and a jar of good orange or apricot jam. This set captures the taste of Catalonia perfectly and makes a wonderful gift for loved ones.</div>
+
+  <h4>🐟 <span lang="ru">Рыбные консервы</span><span lang="en">Canned fish</span></h4>
+  <p lang="ru">Испания известна не только свежими морепродуктами, но и одними из лучших рыбных консервов в мире. Отличный сувенир: долго хранится, легко перевозится и отличается высоким качеством.</p>
+  <p lang="en">Spain is known not only for fresh seafood but also for some of the best canned fish in the world. It's a great souvenir: it keeps for a long time, travels easily, and is high quality.</p>
+  <p lang="ru">Обратите внимание на: 🐟 анчоусы из Кантабрии (Anchoas del Cantábrico) — считаются лучшими в Испании за насыщенный вкус и нежную текстуру; 🐠 сардины в оливковом масле; 🦑 кальмары и каракатицу в собственном соусе или чернилах; 🐙 осьминога; 🦪 мидии в маринаде (Mejillones en escabeche) — один из самых популярных испанских консервированных продуктов; 🐚 морские моллюски (Berberechos) — небольшие моллюски, считающиеся настоящим деликатесом.</p>
+  <p lang="en">Look out for: 🐟 anchovies from Cantabria (Anchoas del Cantábrico) — considered the best in Spain for their rich flavor and tender texture; 🐠 sardines in olive oil; 🦑 squid and cuttlefish in their own sauce or ink; 🐙 octopus; 🦪 mussels in escabeche (Mejillones en escabeche) — one of the most popular Spanish canned products; 🐚 cockles (Berberechos) — small shellfish considered a true delicacy.</p>
+  <div class="tip" lang="ru">💡 Лучший выбор консервов обычно можно найти в гастрономическом отделе <strong>El Corte Inglés</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJUUjnli_9oxIRyPbPuBhI38E" target="_blank" rel="noopener">Google Карты</a>). Испанские рыбные консервы — это не «походная еда», а настоящий гастрономический продукт, который во многих ресторанах подают как самостоятельную закуску к бокалу вина или кавы.</div>
+  <div class="tip" lang="en">💡 The best selection of canned goods can usually be found in the gourmet food hall at <strong>El Corte Inglés</strong> (<a href="https://www.google.com/maps/place/?q=place_id:ChIJUUjnli_9oxIRyPbPuBhI38E" target="_blank" rel="noopener">Google Maps</a>). Spanish canned fish isn't "hiking food" — it's a genuine gourmet product that many restaurants serve as a standalone appetizer with a glass of wine or cava.</div>
+</section>
+
+</main>
+
+<footer>
+  <p lang="ru">Гид по Таррагоне · сделано с любовью к Каталонии. Со временем здесь появятся другие языки и другие города побережья.</p>
+  <p lang="en">Tarragona guide · made with love for Catalonia. More languages and more coastal towns are coming over time.</p>
+</footer>
+
+<a href="#toc" class="backtotop" id="backtotop" aria-label="Back to top">↑</a>
+
+<script>
+var buttons = document.querySelectorAll('.langswitch button');
+buttons.forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var lang = btn.getAttribute('data-setlang');
+    document.documentElement.setAttribute('data-lang', lang);
+    document.documentElement.setAttribute('lang', lang);
+    buttons.forEach(function(b){ b.classList.remove('active'); });
+    btn.classList.add('active');
+    try{ localStorage.setItem('tarraco-lang', lang); }catch(e){}
+  });
+});
+try{
+  var saved = localStorage.getItem('tarraco-lang');
+  if(saved === 'en' || saved === 'ru'){
+    document.documentElement.setAttribute('data-lang', saved);
+    document.documentElement.setAttribute('lang', saved);
+    buttons.forEach(function(b){
+      b.classList.toggle('active', b.getAttribute('data-setlang') === saved);
+    });
+  }
+}catch(e){}
+
+window.addEventListener('scroll', function(){
+  var btn = document.getElementById('backtotop');
+  if(window.scrollY > 400){ btn.classList.add('show'); }
+  else{ btn.classList.remove('show'); }
+});
+</script>
+
+</body>
+</html>
