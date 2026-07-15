@@ -30,8 +30,8 @@ body{
   line-height:1.6;
   -webkit-font-smoothing:antialiased;
 }
-[lang="ru"]{ display:none; }
-[lang="en"]{ display:none; }
+[lang="ru"]:not(html){ display:none; }
+[lang="en"]:not(html){ display:none; }
 html[data-lang="ru"] [lang="ru"]{ display:initial; }
 html[data-lang="en"] [lang="en"]{ display:initial; }
 html[data-lang="ru"] li[lang="ru"], html[data-lang="en"] li[lang="en"]{ display:list-item; }
