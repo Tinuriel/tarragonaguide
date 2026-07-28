@@ -235,6 +235,33 @@ li{ margin:4px 0; }
 }
 .tip strong{ color:var(--terracotta); }
 
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+  margin:14px 0 20px;
+}
+.gallery figure{ margin:0; }
+.gallery img{
+  display:block;
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:10px;
+  box-shadow:0 4px 14px rgba(20,29,36,.15);
+}
+.gallery figcaption{
+  font-family:'Inter',sans-serif;
+  font-size:.72rem;
+  color:#5a6570;
+  margin-top:6px;
+  text-align:center;
+}
+@media (max-width:560px){
+  .gallery{ grid-template-columns:1fr; }
+  .gallery img{ height:280px; }
+}
+
 footer{
   border-top:1px solid var(--line);
   padding:30px 20px 60px;
@@ -372,6 +399,24 @@ footer a{ color:#5a6570; }
   <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJFSNmSNP8oxIRQbxevE88M1s" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
   <p lang="ru">Знаменитая смотровая площадка на высоте около 40 метров над морем. Отсюда открывается лучший панорамный вид на побережье, порт и пляжи Таррагоны. По местной традиции стоит дотронуться до металлического ограждения — считается, что это приносит удачу.</p>
   <p lang="en">A famous viewpoint about 40 meters above the sea. From here you get the best panoramic view of the coastline, the port, and the beaches of Tarragona. Local tradition says you should touch the metal railing — it's believed to bring good luck.</p>
+
+  <div class="gallery">
+    <figure>
+      <img src="images/balcony-1.jpg" alt="Balcó del Mediterrani view">
+      <figcaption lang="ru">Вид со смотровой площадки</figcaption>
+      <figcaption lang="en">View from the viewpoint</figcaption>
+    </figure>
+    <figure>
+      <img src="images/balcony-2.jpg" alt="Balcó del Mediterrani railing">
+      <figcaption lang="ru">Знаменитое ограждение</figcaption>
+      <figcaption lang="en">The famous railing</figcaption>
+    </figure>
+    <figure>
+      <img src="images/balcony-3.jpg" alt="Balcó del Mediterrani panorama">
+      <figcaption lang="ru">Панорама на побережье</figcaption>
+      <figcaption lang="en">Panorama of the coastline</figcaption>
+    </figure>
+  </div>
 
   <h3><span lang="ru">Район Эль-Серральо</span><span lang="en">El Serrallo district</span></h3>
   <p class="place"><a href="https://www.google.com/maps/place/?q=place_id:ChIJJ3Uvis3ioxIRo0iqPST_-Jc" target="_blank" rel="noopener"><span lang="ru">Открыть в Google Картах</span><span lang="en">Open in Google Maps</span></a></p>
