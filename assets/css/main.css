@@ -373,6 +373,7 @@ nav.sections a.current{ border-bottom-color:var(--terracotta); color:var(--terra
 .card img, .card .ph{
   display:block;
   width:100%;
+  height:auto;
   aspect-ratio:4/3;
   object-fit:cover;
 }
@@ -400,6 +401,15 @@ nav.sections a.current{ border-bottom-color:var(--terracotta); color:var(--terra
   padding:10px 14px;
   margin:28px 0 0;
 }
+
+article h2{
+  font-family:'Newsreader',serif;
+  font-weight:600;
+  font-size:1.45rem;
+  margin:34px 0 10px;
+  scroll-margin-top:110px;
+}
+article h3{ font-size:1.15rem; margin-top:24px; }
 
 .siblings{
   display:flex;

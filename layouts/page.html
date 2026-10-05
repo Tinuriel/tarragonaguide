@@ -13,7 +13,8 @@
   {{ partial "translation-note.html" . }}
 </article>
 <nav class="siblings">
-  {{ with .PrevInSection }}<a href="{{ .RelPermalink }}">{{ i18n "next" }}<br>{{ .Title }}</a>{{ end }}
-  {{ with .NextInSection }}<a class="next" href="{{ .RelPermalink }}">{{ i18n "previous" }}<br>{{ .Title }}</a>{{ end }}
+  {{- /* Hugo's Prev/NextInSection run opposite to the weight order shown in lists. */}}
+  {{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ i18n "previous" }}<br>{{ .Title }}</a>{{ end }}
+  {{ with .PrevInSection }}<a class="next" href="{{ .RelPermalink }}">{{ i18n "next" }}<br>{{ .Title }}</a>{{ end }}
 </nav>
 {{ end }}

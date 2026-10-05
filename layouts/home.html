@@ -11,7 +11,7 @@
     <a class="more" href="{{ .RelPermalink }}">{{ i18n "seeAll" }}</a>
   </div>
   <ul class="cards">
-    {{ range first 4 .Pages.ByWeight }}{{ partial "card.html" . }}{{ end }}
+    {{ range first 3 .Pages.ByWeight }}{{ partial "card.html" . }}{{ end }}
   </ul>
 </section>
 {{ end }}
