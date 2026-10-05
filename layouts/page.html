@@ -1,0 +1,19 @@
+{{ define "main" }}
+<p class="crumbs"><a href="{{ site.Home.RelPermalink }}">{{ i18n "home" }}</a> / <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></p>
+<article>
+  <header class="page-head">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+    {{ with .Params.place_id }}<p class="place"><a href="https://www.google.com/maps/place/?q=place_id:{{ . }}" target="_blank" rel="noopener">📍 {{ i18n "openInMaps" }}</a></p>{{ end }}
+  </header>
+  {{ if not .Params.hide_cover }}{{ with .Params.cover }}{{ with $.Resources.Get . }}
+  <figure class="cover">{{ partial "img.html" (dict "img" . "alt" $.Title "eager" true) }}</figure>
+  {{ end }}{{ end }}{{ end }}
+  {{ .Content }}
+  {{ partial "translation-note.html" . }}
+</article>
+<nav class="siblings">
+  {{ with .PrevInSection }}<a href="{{ .RelPermalink }}">{{ i18n "next" }}<br>{{ .Title }}</a>{{ end }}
+  {{ with .NextInSection }}<a class="next" href="{{ .RelPermalink }}">{{ i18n "previous" }}<br>{{ .Title }}</a>{{ end }}
+</nav>
+{{ end }}

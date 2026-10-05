@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.Locale }}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ .Title }} · {{ site.Title }}{{ end }}</title>
+{{- with .Description | default .Summary | plainify | strings.TrimSpace }}
+<meta name="description" content="{{ . | truncate 160 }}">
+{{- end }}
+<link rel="canonical" href="{{ .Permalink }}">
+{{- range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ .Permalink }}">
+{{- end }}
+{{- range .AllTranslations }}{{ if eq .Language.Name "ru" }}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+{{- end }}{{ end }}
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:locale" content="{{ replace site.Language.Locale "-" "_" }}">
+{{- with partial "cover.html" . }}
+<meta property="og:image" content="{{ (.Resize "1200x webp").Permalink }}">
+{{- end }}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+{{- with resources.Get "css/main.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}">
+{{- end }}
+</head>
+<body>
+<div class="skyline"></div>
+{{ partial "header.html" . }}
+<main id="top">
+{{ block "main" . }}{{ end }}
+</main>
+<footer>
+  <nav>
+    {{- range site.Sections.ByWeight }}
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    {{- end }}
+  </nav>
+  <p>{{ i18n "footer" }}</p>
+</footer>
+<a href="#top" class="backtotop" id="backtotop" aria-label="{{ i18n "backToTop" }}">↑</a>
+<script>
+document.querySelectorAll('.langswitch a').forEach(function(a){
+  a.addEventListener('click', function(){
+    try{ localStorage.setItem('tarraco-lang', a.getAttribute('hreflang')); }catch(e){}
+  });
+});
+window.addEventListener('scroll', function(){
+  document.getElementById('backtotop').classList.toggle('show', window.scrollY > 400);
+});
+</script>
+</body>
+</html>

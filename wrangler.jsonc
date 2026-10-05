@@ -1,0 +1,13 @@
+{
+  // Cloudflare Workers static site. `wrangler deploy` (run by Workers Builds
+  // on every push) first runs the build command, then uploads ./public.
+  "name": "tarragonaguide",
+  "compatibility_date": "2026-10-01",
+  "build": {
+    "command": "npm ci --no-audit --no-fund && npm run build"
+  },
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  }
+}

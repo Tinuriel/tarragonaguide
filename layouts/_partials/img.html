@@ -1,0 +1,7 @@
+{{- /* Responsive WebP image. Params: img (resource), alt, sizes (optional), eager (optional) */ -}}
+{{- $img := .img -}}
+{{- $widths := slice 400 800 1200 -}}
+{{- $srcset := slice -}}
+{{- range $widths }}{{ if le . $img.Width }}{{ $srcset = $srcset | append (printf "%s %dw" ($img.Resize (printf "%dx webp" .)).RelPermalink .) }}{{ end }}{{ end -}}
+{{- $fallback := $img.Resize (printf "%dx webp" (int (math.Min 800 $img.Width))) -}}
+<img src="{{ $fallback.RelPermalink }}" srcset="{{ delimit $srcset ", " }}" sizes="{{ .sizes | default "(max-width: 760px) 100vw, 720px" }}" width="{{ $fallback.Width }}" height="{{ $fallback.Height }}" alt="{{ .alt }}"{{ if not .eager }} loading="lazy"{{ end }} decoding="async">

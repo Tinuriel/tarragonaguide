@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>{{ .Permalink }}</title>
+<link rel="canonical" href="{{ .Permalink }}">
+<meta name="robots" content="noindex">
+<script>
+(function(){
+  var target = {{ .Permalink }};
+  {{- if eq .Permalink site.Home.Permalink }}
+  // Root of the site: send visitors to the language they chose before or their browser language.
+  var map = { ru: 'ru', be: 'ru', kk: 'ru', uk: 'uk', en: 'en', es: 'es', ca: 'es', gl: 'es', eu: 'es' };
+  var lang = null;
+  try{ lang = localStorage.getItem('tarraco-lang'); }catch(e){}
+  if(!map[lang]){
+    lang = null;
+    var prefs = navigator.languages || [navigator.language || ''];
+    for(var i = 0; i < prefs.length && !lang; i++){ lang = map[String(prefs[i]).slice(0,2).toLowerCase()] || null; }
+  }
+  if(lang){ target = target.replace(/\/{{ site.Language.Name }}\/$/, '/' + map[lang] + '/'); }
+  {{- end }}
+  location.replace(target);
+})();
+</script>
+<meta http-equiv="refresh" content="1; url={{ .Permalink }}">
+</head>
+<body><a href="{{ .Permalink }}">{{ .Permalink }}</a></body>
+</html>

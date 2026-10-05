@@ -1,0 +1,11 @@
+{
+  "name": "tarragonaguide",
+  "private": true,
+  "scripts": {
+    "dev": "hugo server",
+    "build": "hugo --minify --gc"
+  },
+  "devDependencies": {
+    "hugo-extended": "0.166.0"
+  }
+}

@@ -1,0 +1,25 @@
+{{- $current := . -}}
+{{- $translations := dict -}}
+{{- range .AllTranslations }}{{ $translations = merge $translations (dict .Language.Name .) }}{{ end -}}
+<header class="top">
+  <div class="topbar">
+    <a class="brand" href="{{ site.Home.RelPermalink }}">{{ i18n "brand" }}<span class="mark">guide</span></a>
+    <nav class="langswitch" aria-label="Language">
+      {{- range site.Home.AllTranslations }}
+        {{- $lang := .Language.Name }}
+        {{- with index $translations $lang }}
+      <a href="{{ .RelPermalink }}" hreflang="{{ $lang }}" lang="{{ $lang }}"{{ if eq $lang $current.Language.Name }} class="active" aria-current="true"{{ end }}>{{ .Language.Label }}</a>
+        {{- else }}
+      <a href="{{ .RelPermalink }}" hreflang="{{ $lang }}" lang="{{ $lang }}" class="missing">{{ .Language.Label }}</a>
+        {{- end }}
+      {{- end }}
+    </nav>
+  </div>
+  <nav class="sections">
+    <ul>
+      {{- range site.Sections.ByWeight }}
+      <li><a href="{{ .RelPermalink }}"{{ if or (eq $current .) ($current.IsDescendant .) }} class="current"{{ end }}>{{ .Title }}</a></li>
+      {{- end }}
+    </ul>
+  </nav>
+</header>
