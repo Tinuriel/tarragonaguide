@@ -244,6 +244,9 @@ li{ margin:4px 0; }
   .gallery{ grid-template-columns:1fr; }
   .gallery img{ height:280px; }
 }
+/* A single photo is shown whole (no cropping), e.g. a portrait shot */
+.gallery figure:only-child{ width:100%; max-width:420px; margin:0 auto; }
+.gallery figure:only-child img{ height:auto; }
 
 footer{
   border-top:1px solid var(--line);
