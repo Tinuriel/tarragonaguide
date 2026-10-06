@@ -58,5 +58,6 @@ npm run dev     # локальный просмотр на http://localhost:1313
 npm run build   # сборка в папку public/
 ```
 
-Публикация: Cloudflare Workers собирает сайт сам при каждом изменении в основной ветке
-(`wrangler.jsonc`). Старая одностраничная версия сохранена в `_legacy/index.html`.
+Публикация: при каждом изменении в ветке `main` GitHub Actions собирает сайт и выкладывает
+его на GitHub Pages (`.github/workflows/pages.yml`). Для этого один раз нужно включить
+Settings → Pages → Source: **GitHub Actions**. Для Cloudflare Workers есть `wrangler.jsonc`. Старая одностраничная версия сохранена в `_legacy/index.html`.
