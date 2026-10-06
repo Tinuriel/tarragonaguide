@@ -2,8 +2,10 @@
 
 Multilingual travel portal about Tarragona and Catalonia, built with **Hugo**
 (installed via npm: `npm install`, then `npm run dev` / `npm run build`) and
-deployed to **Cloudflare Workers** (`wrangler.jsonc`: Workers Builds runs the
-build command and uploads `./public` on every push to the production branch).
+deployed by `.github/workflows/pages.yml` to **GitHub Pages** on every push to
+`main` (Pages source must be "GitHub Actions"). `wrangler.jsonc` also supports
+Cloudflare Workers Builds. Never rely on the raw repo being served: the site only
+exists after the Hugo build.
 
 ## Languages
 
