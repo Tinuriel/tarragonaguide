@@ -72,4 +72,4 @@ When the owner provides new text (Russian or Ukrainian):
    `reviewed: false` on them.
 4. Run `npx hugo --gc` and make sure it builds with no errors or warnings.
 
-`_legacy/index.html` is the old single-page bilingual (RU/EN) site kept for reference.
+`_legacy/index.html` is the old single-page site (RU/EN/UK blocks) kept for reference.
