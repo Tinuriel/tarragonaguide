@@ -1,0 +1,19 @@
+{{ define "main" }}
+<section class="hero">
+  <div class="eyebrow">{{ i18n "eyebrow" }}</div>
+  <h1>{{ .Title }}</h1>
+  <div class="lede">{{ .Content }}</div>
+</section>
+{{ range site.Sections.ByWeight }}
+<section class="section-block">
+  <div class="chapter-head">
+    <h2><a href="{{ .RelPermalink }}" style="color:inherit;text-decoration:none">{{ with .Params.emoji }}{{ . }} {{ end }}{{ .Title }}</a></h2>
+    <a class="more" href="{{ .RelPermalink }}">{{ i18n "seeAll" }}</a>
+  </div>
+  <ul class="cards">
+    {{ range first 3 .Pages.ByWeight }}{{ partial "card.html" . }}{{ end }}
+  </ul>
+</section>
+{{ end }}
+{{ partial "translation-note.html" . }}
+{{ end }}

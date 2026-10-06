@@ -1,0 +1,21 @@
+{{- /* Photo grid from images in the post folder. One image per line, caption after "|":
+{{< gallery >}}
+cathedral-1.jpg | Street by the cathedral
+cathedral-2.jpg | The cathedral
+{{< /gallery >}}
+*/ -}}
+<div class="gallery">
+{{- range split (strings.TrimSpace .Inner) "\n" }}
+  {{- $parts := split . "|" }}
+  {{- $file := index $parts 0 | strings.TrimSpace }}
+  {{- $caption := "" }}{{ if gt (len $parts) 1 }}{{ $caption = index $parts 1 | strings.TrimSpace }}{{ end }}
+  {{- with $.Page.Resources.Get $file }}
+  <figure>
+    {{ partial "img.html" (dict "img" . "alt" $caption "sizes" "(max-width: 560px) 100vw, 240px") }}
+    {{- with $caption }}<figcaption>{{ . }}</figcaption>{{ end }}
+  </figure>
+  {{- else }}
+    {{- if $file }}{{ errorf "gallery: image %q not found in %s" $file $.Page.File.Path }}{{ end }}
+  {{- end }}
+{{- end }}
+</div>

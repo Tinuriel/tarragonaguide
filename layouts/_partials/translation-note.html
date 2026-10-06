@@ -1,0 +1,3 @@
+{{- with .Params.translated_from }}{{ if not $.Params.reviewed }}
+<p class="note">🌐 {{ i18n "translatedFrom" (dict "From" (i18n (printf "langName_%s" .))) }}</p>
+{{- end }}{{ end -}}

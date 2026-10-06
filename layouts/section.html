@@ -1,0 +1,11 @@
+{{ define "main" }}
+<p class="crumbs"><a href="{{ site.Home.RelPermalink }}">{{ i18n "home" }}</a></p>
+<header class="page-head">
+  <h1>{{ with .Params.emoji }}{{ . }} {{ end }}{{ .Title }}</h1>
+  {{ with .Content }}<div class="lede">{{ . }}</div>{{ end }}
+</header>
+<ul class="cards">
+  {{ range .Pages.ByWeight }}{{ partial "card.html" . }}{{ end }}
+</ul>
+{{ partial "translation-note.html" . }}
+{{ end }}

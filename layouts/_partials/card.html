@@ -1,0 +1,13 @@
+<li>
+  <a class="card" href="{{ .RelPermalink }}">
+    {{- with partial "cover.html" . }}
+    {{ partial "img.html" (dict "img" . "alt" "" "sizes" "(max-width: 480px) 100vw, 240px") }}
+    {{- else }}
+    <span class="ph" aria-hidden="true">{{ .Params.emoji | default "📍" }}</span>
+    {{- end }}
+    <span class="body">
+      <h3>{{ .Title }}</h3>
+      {{- with .Description }}<p>{{ . }}</p>{{ end }}
+    </span>
+  </a>
+</li>

@@ -1,0 +1,3 @@
+{{- /* Inline map link inside a sentence: {{< map "GOOGLE_PLACE_ID" >}} → "Google Maps" in the page language */ -}}
+<a href="https://www.google.com/maps/place/?q=place_id:{{ .Get 0 }}" target="_blank" rel="noopener">{{ i18n "googleMaps" }}</a>
+{{- /**/ -}}

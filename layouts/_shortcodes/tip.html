@@ -1,0 +1,6 @@
+{{- /* Highlighted tip box. Markdown works inside:
+{{< tip >}}
+💡 Text…
+{{< /tip >}}
+*/ -}}
+<div class="tip">{{ .Inner | strings.TrimSpace | .Page.RenderString (dict "display" "block") }}</div>
