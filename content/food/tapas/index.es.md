@@ -1,7 +1,6 @@
 ---
 title: "Qué probar: tapas"
 description: "Las tapas imprescindibles, del pa amb tomàquet y el jamón a las patatas bravas, los calamares y los pimientos de Padrón."
-date: 2026-10-05
 weight: 30
 emoji: 🍢
 translated_from: ru

@@ -1,7 +1,6 @@
 ---
 title: "Barrio de El Serrallo"
 description: "El antiguo barrio de pescadores junto al puerto, con los mejores restaurantes de pescado de la ciudad."
-date: 2026-10-05
 weight: 70
 place_id: ChIJJ3Uvis3ioxIRo0iqPST_-Jc
 emoji: ⚓

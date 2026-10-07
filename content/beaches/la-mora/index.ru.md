@@ -1,7 +1,6 @@
 ---
 title: "Пляж Ла-Мора"
 description: "Красивый семейный пляж со спокойным морем и мелким песком, любимый местными жителями."
-date: 2026-10-05
 weight: 50
 place_id: ChIJgWsqRwD7oxIRneFbHKHmM9Q
 emoji: 🏖️

@@ -1,7 +1,6 @@
 ---
 title: "Las mejores panaderías y pastelerías de Tarragona"
 description: "Dónde comprar buena bollería en Tarragona, desde la premiada Cal Jan del Mercat Central hasta los cruasanes de Lanttonia."
-date: 2026-10-05
 weight: 90
 cover: lanttonia-1.jpg
 emoji: 🥐

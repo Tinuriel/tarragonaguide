@@ -1,7 +1,6 @@
 ---
 title: "Mercado Central"
 description: "Un histórico mercado cubierto con marisco, jamón, quesos y otros productos locales."
-date: 2026-10-05
 weight: 80
 place_id: ChIJ_YvtiSr9oxIR0K-Rc5Md_K8
 emoji: 🛒

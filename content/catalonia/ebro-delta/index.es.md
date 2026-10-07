@@ -1,7 +1,6 @@
 ---
 title: "Delta del Ebro (Delta de l'Ebre)"
 description: "Un parque natural de lagunas, arrozales y flamencos a una hora en coche de Tarragona."
-date: 2026-10-05
 weight: 50
 place_id: ChIJOU-l_Ar-oBIRTE8yWLSCIAo
 emoji: 🌾

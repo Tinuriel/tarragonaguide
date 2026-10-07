@@ -1,7 +1,6 @@
 ---
 title: "Старый город (Part Alta)"
 description: "Исторический центр Таррагоны с мощёными улочками, площадями и кафе — для неспешных прогулок."
-date: 2026-10-05
 weight: 30
 place_id: ChIJC_uBBtT8oxIR4aCPjMzOOnY
 emoji: 🏘️

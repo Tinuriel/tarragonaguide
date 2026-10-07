@@ -1,7 +1,6 @@
 ---
 title: "Магазини та сувенірні крамниці"
 description: "Де робити покупки в Таррагоні: крамниці на Carrer Major у Старому місті, гастрономічні супермаркети, торговий центр Parc Central, El Corte Inglés і Tax Free."
-date: 2026-10-05
 weight: 40
 emoji: 🛍️
 translated_from: ru

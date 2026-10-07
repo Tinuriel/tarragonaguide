@@ -1,7 +1,6 @@
 ---
 title: "Пляж Платжа-Льярга"
 description: "Найдовший пляж Таррагони — близько 3 км піску, сосни вздовж берега й спокійна атмосфера."
-date: 2026-10-05
 weight: 30
 place_id: ChIJKVlVXVn7oxIRlSNmBynRlc4
 emoji: 🏖️

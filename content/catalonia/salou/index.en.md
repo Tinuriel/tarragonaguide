@@ -1,7 +1,6 @@
 ---
 title: "Salou"
 description: "The best-known resort on the Costa Daurada, with sandy beaches, a palm-lined promenade and PortAventura World."
-date: 2026-10-05
 weight: 20
 place_id: ChIJ93ilr4JZoRIRUYXO4oP1Ftk
 emoji: 🎢

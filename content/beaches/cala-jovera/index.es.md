@@ -1,7 +1,6 @@
 ---
 title: "Cala Jovera"
 description: "Una pequeña y pintoresca cala a los pies del castillo medieval de Tamarit."
-date: 2026-10-05
 weight: 60
 place_id: ChIJN2Jiv8D6oxIRnwDiKQNQg1s
 emoji: 🏖️

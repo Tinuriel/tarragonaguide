@@ -2,6 +2,7 @@
 title: "Madeleine by Ferrières"
 description: "Французька кондитерська в Poblenou з неймовірним Instagram: кошик із полуницею, еклери, краффіни і чи варто туди їхати."
 date: 2026-10-07
+blog: true
 weight: 10
 cover: madeleine-2.jpg
 emoji: 🥐

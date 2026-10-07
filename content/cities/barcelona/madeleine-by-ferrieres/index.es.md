@@ -2,6 +2,7 @@
 title: "Madeleine by Ferrières"
 description: "Una pastelería francesa del Poblenou con un Instagram increíble: tartaleta de fresas, éclairs, cruffins y si merece la pena ir."
 date: 2026-10-07
+blog: true
 weight: 10
 cover: madeleine-2.jpg
 emoji: 🥐

@@ -1,7 +1,6 @@
 ---
 title: "Кала-Жовера"
 description: "Невелика мальовнича бухта біля підніжжя середньовічного замку Тамарит."
-date: 2026-10-05
 weight: 60
 place_id: ChIJN2Jiv8D6oxIRnwDiKQNQg1s
 emoji: 🏖️

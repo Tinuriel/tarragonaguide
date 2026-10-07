@@ -1,7 +1,6 @@
 ---
 title: "Магазины и сувенирные лавки"
 description: "Где делать покупки в Таррагоне: магазины Carrer Major в Старом городе, гастрономические супермаркеты, торговый центр Parc Central, El Corte Inglés и Tax Free."
-date: 2026-10-05
 weight: 40
 emoji: 🛍️
 ---

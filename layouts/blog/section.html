@@ -5,13 +5,15 @@
   {{ with .Content }}<div class="lede">{{ . }}</div>{{ end }}
 </header>
 {{- $posts := partial "posts.html" . }}
+{{- $sections := slice }}{{ range site.Sections.ByWeight }}{{ if where $posts "FirstSection.Section" .Section }}{{ $sections = $sections | append . }}{{ end }}{{ end }}
+{{- if gt (len $sections) 1 }}
 <div class="filters" role="group" aria-label="{{ i18n "filterBy" }}" hidden>
   <button type="button" data-filter="" aria-pressed="true">{{ i18n "filterAll" }}</button>
-  {{- range site.Sections.ByWeight }}{{ $s := .Section }}
-  {{- if where $posts "FirstSection.Section" $s }}
-  <button type="button" data-filter="{{ $s }}" aria-pressed="false">{{ .Title }}</button>
-  {{- end }}{{ end }}
+  {{- range $sections }}
+  <button type="button" data-filter="{{ .Section }}" aria-pressed="false">{{ .Title }}</button>
+  {{- end }}
 </div>
+{{- end }}
 <ul class="cards" id="posts">
   {{ range $posts }}{{ partial "card.html" (dict "page" . "meta" true) }}{{ end }}
 </ul>

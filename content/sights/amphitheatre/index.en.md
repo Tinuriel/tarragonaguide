@@ -1,7 +1,6 @@
 ---
 title: "Roman Amphitheatre"
 description: "Tarragona's best-known symbol: a 2nd-century amphitheatre right by the sea, where gladiators once fought."
-date: 2026-10-05
 weight: 10
 place_id: ChIJe8Q26tL8oxIRsDftZxemzgA
 emoji: 🏟️

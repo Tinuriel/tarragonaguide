@@ -1,7 +1,6 @@
 ---
 title: "Римский цирк"
 description: "Один из лучше всего сохранившихся римских цирков в мире, с подземными галереями."
-date: 2026-10-05
 weight: 20
 place_id: ChIJvaNcpNP8oxIRAQxSDMun2rw
 emoji: 🏇

@@ -1,7 +1,6 @@
 ---
 title: "La Pineda"
 description: "A quiet resort with a wide sandy beach, a water park and a spa — a great choice for families with children."
-date: 2026-10-05
 weight: 30
 place_id: ChIJu4Hd2FZYoRIRKK1tkDiawdQ
 emoji: 🏖️

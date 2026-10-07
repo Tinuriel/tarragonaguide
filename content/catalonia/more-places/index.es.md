@@ -1,7 +1,6 @@
 ---
 title: "Otros lugares que merecen la pena"
 description: "El acueducto romano del Pont del Diable, junto a la ciudad, y el pueblo de montaña de Siurana, a una hora."
-date: 2026-10-05
 weight: 60
 emoji: 🧭
 translated_from: ru

@@ -1,7 +1,6 @@
 ---
 title: "Cala Fonda (Waikiki)"
 description: "Una de las calas salvajes más bonitas de la costa, a la que se llega a pie por un pinar."
-date: 2026-10-05
 weight: 40
 place_id: ChIJIaeM5Lz6oxIRMd9TIHQV56E
 emoji: 🏖️

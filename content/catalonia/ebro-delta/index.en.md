@@ -1,7 +1,6 @@
 ---
 title: "Ebro Delta (Delta de l'Ebre)"
 description: "A nature park of lagoons, rice fields and flamingos about an hour's drive from Tarragona."
-date: 2026-10-05
 weight: 50
 place_id: ChIJOU-l_Ar-oBIRTE8yWLSCIAo
 emoji: 🌾

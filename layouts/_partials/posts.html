@@ -1,4 +1,4 @@
-{{- /* All posts of the current language, newest first (posts with the same date keep section/weight order). */ -}}
+{{- /* Blog posts (front matter `blog: true`) of the current language, newest first (posts with the same date keep section/weight order). */ -}}
 {{- $posts := slice -}}
-{{- range site.Sections.ByWeight }}{{ range .RegularPagesRecursive.ByWeight }}{{ $posts = $posts | append . }}{{ end }}{{ end -}}
+{{- range site.Sections.ByWeight }}{{ range where .RegularPagesRecursive.ByWeight "Params.blog" true }}{{ $posts = $posts | append . }}{{ end }}{{ end -}}
 {{- return sort $posts "Date" "desc" -}}

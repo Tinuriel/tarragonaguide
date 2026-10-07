@@ -1,7 +1,6 @@
 ---
 title: "Платжа-Льярга (Салоу)"
 description: "Один из самых красивых пляжей Салоу в районе Кап-Салоу, окружённый сосновым лесом."
-date: 2026-10-05
 weight: 80
 place_id: ChIJwVBb3kVZoRIROixuOVZDpdQ
 emoji: 🏖️

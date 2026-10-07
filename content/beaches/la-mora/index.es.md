@@ -1,7 +1,6 @@
 ---
 title: "Platja de la Mora"
 description: "Una bonita playa familiar de mar tranquilo y arena fina, de las favoritas de la gente de aquí."
-date: 2026-10-05
 weight: 50
 place_id: ChIJgWsqRwD7oxIRneFbHKHmM9Q
 emoji: 🏖️

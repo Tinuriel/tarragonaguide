@@ -1,7 +1,6 @@
 ---
 title: "Tiendas y souvenirs"
 description: "Dónde ir de compras en Tarragona: las tiendas de la calle Major en la Part Alta, supermercados gourmet, el centro comercial Parc Central, El Corte Inglés y el Tax Free."
-date: 2026-10-05
 weight: 40
 emoji: 🛍️
 translated_from: ru

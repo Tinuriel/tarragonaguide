@@ -1,7 +1,6 @@
 ---
 title: "The Best Bakeries and Pastry Shops in Tarragona"
 description: "Where to find great pastries in Tarragona, from award-winning Cal Jan at the Central Market to the croissants at Lanttonia."
-date: 2026-10-05
 weight: 90
 cover: lanttonia-1.jpg
 emoji: 🥐

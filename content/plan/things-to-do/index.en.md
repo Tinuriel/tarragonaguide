@@ -1,7 +1,6 @@
 ---
 title: "Things to do in Tarragona"
 description: "What to do in Tarragona and which festivals are worth catching: Santa Tecla, Carnival and Tarraco Viva."
-date: 2026-10-05
 weight: 30
 emoji: 🎉
 translated_from: ru

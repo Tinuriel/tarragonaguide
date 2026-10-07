@@ -1,7 +1,6 @@
 ---
 title: "Breakfast"
 description: "How the locals have breakfast: bocadillo, tortilla, fresh pastries and Catalan coca."
-date: 2026-10-05
 weight: 10
 emoji: 🥪
 translated_from: ru

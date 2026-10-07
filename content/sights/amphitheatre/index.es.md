@@ -1,7 +1,6 @@
 ---
 title: "Anfiteatro romano"
 description: "El símbolo de Tarragona: un anfiteatro del siglo II junto al mar donde antaño combatían los gladiadores."
-date: 2026-10-05
 weight: 10
 place_id: ChIJe8Q26tL8oxIRsDftZxemzgA
 emoji: 🏟️

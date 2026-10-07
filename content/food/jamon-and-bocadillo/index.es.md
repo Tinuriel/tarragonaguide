@@ -1,7 +1,6 @@
 ---
 title: "Dónde probar el mejor jamón y bocadillo"
 description: "Ibericus, uno de los mejores sitios del centro de Tarragona para probar jamón ibérico y un bocadillo de verdad."
-date: 2026-10-05
 weight: 20
 place_id: ChIJy7ubhdT8oxIRLR1ZcgKKf7c
 emoji: 🐖

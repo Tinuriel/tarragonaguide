@@ -1,7 +1,6 @@
 ---
 title: "Where to try the best jamón and bocadillo"
 description: "Ibericus, one of the best places in central Tarragona for Jamón Ibérico and a proper bocadillo."
-date: 2026-10-05
 weight: 20
 place_id: ChIJy7ubhdT8oxIRLR1ZcgKKf7c
 emoji: 🐖

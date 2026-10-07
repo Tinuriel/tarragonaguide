@@ -33,9 +33,11 @@ content/
 
 Sections: `sights`, `beaches`, `food`, `catalonia`, `plan`, `cities` (other cities,
 with one sub-folder per city, e.g. `cities/barcelona/<slug>/`).
-`blog` is a special section with no posts of its own: `/blog/` lists every post
-of all sections newest first (by `date`), with a filter by section; the home
-page shows the 3 newest posts at the top.
+`blog` is a special section with no posts of its own: `/blog/` lists the posts of
+any section that have `blog: true`, newest first (by `date`), with a filter by
+section (shown once 2+ sections have blog posts); the home page shows the 3 newest
+at the top. New review/place posts from the owner go to the blog (`blog: true`);
+older guide pages are not in the blog unless the owner asks.
 Files in the same folder are automatically linked as translations of each other.
 
 ## Post front matter
@@ -44,7 +46,8 @@ Files in the same folder are automatically linked as translations of each other.
 ---
 title: "Кафедральный собор"
 description: "One sentence shown on cards and in search results."
-date: 2026-10-07           # REQUIRED: day the post was added (same in all languages)
+date: 2026-10-07           # day the post was added; required for blog posts, shown on the page
+blog: true                 # optional, list this post in the blog
 weight: 40                 # order inside the section (same in all languages)
 cover: cathedral-2.jpg     # optional, photo from the folder
 place_id: ChIJ...          # optional, Google Maps place id or share link → "Open in Google Maps"
@@ -57,7 +60,7 @@ reviewed: false            # ONLY on translated files; true after a human proofr
 ---
 ```
 
-Non-content fields (`date`, `weight`, `cover`, `place_id`, `emoji`, `info.address`,
+Non-content fields (`date`, `blog`, `weight`, `cover`, `place_id`, `emoji`, `info.address`,
 `info.instagram`, `info.website`) must be identical in
 all four files of a post.
 

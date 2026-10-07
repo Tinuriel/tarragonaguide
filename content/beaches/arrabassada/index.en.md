@@ -1,7 +1,6 @@
 ---
 title: "L'Arrabassada Beach"
 description: "One of Tarragona's best city beaches, with clean water, a wide sandy shore and a Blue Flag."
-date: 2026-10-05
 weight: 20
 place_id: ChIJ63kC97P8oxIREL7-qdY76uE
 emoji: 🏖️

@@ -1,7 +1,6 @@
 ---
 title: "Part Alta (casco antiguo)"
 description: "El centro histórico de Tarragona, con callejuelas empedradas, plazas y cafés para pasear sin prisa."
-date: 2026-10-05
 weight: 30
 place_id: ChIJC_uBBtT8oxIR4aCPjMzOOnY
 emoji: 🏘️

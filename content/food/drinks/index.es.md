@@ -1,7 +1,6 @@
 ---
 title: "Qué beber en Tarragona"
 description: "Cava, chartreuse, vermut, horchata, granizado y vinos de la zona: qué beber en Tarragona y alrededores."
-date: 2026-10-05
 weight: 60
 emoji: 🍷
 translated_from: ru

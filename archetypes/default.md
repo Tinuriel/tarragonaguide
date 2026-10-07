@@ -1,7 +1,8 @@
 ---
 title: "{{ replace .File.ContentBaseName "-" " " | title }}"
 description: ""
-date: {{ .Date }}           # date added; the blog lists posts newest first
+date: {{ .Date }}           # date added (shown on the page)
+blog: true                  # list in the blog (newest first)
 weight: 100
 # cover: photo-1.jpg        # photo from this folder used on cards and at the top
 # place_id: ChIJ...         # Google Maps place id → "Open in Google Maps" button

@@ -1,7 +1,6 @@
 ---
 title: "Tarragona Cathedral"
 description: "A Romanesque and Gothic cathedral at the heart of the old town, with a cloister and a museum."
-date: 2026-10-05
 weight: 40
 cover: cathedral-2.jpg
 place_id: ChIJp1-Julr9oxIRDCFN9_vDw-A

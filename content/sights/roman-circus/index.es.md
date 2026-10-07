@@ -1,7 +1,6 @@
 ---
 title: "Circo romano"
 description: "Uno de los circos romanos mejor conservados del mundo, con galerías subterráneas visitables."
-date: 2026-10-05
 weight: 20
 place_id: ChIJvaNcpNP8oxIRAQxSDMun2rw
 emoji: 🏇

@@ -1,7 +1,6 @@
 ---
 title: "What to try for lunch"
 description: "The main meal of the day: paella, fresh fish, suquet, gazpacho and calçots."
-date: 2026-10-05
 weight: 40
 emoji: 🥘
 translated_from: ru

@@ -1,7 +1,6 @@
 ---
 title: "Старе місто (Part Alta)"
 description: "Історичний центр Таррагони з бруківкою, площами й кав'ярнями — для неквапливих прогулянок."
-date: 2026-10-05
 weight: 30
 place_id: ChIJC_uBBtT8oxIR4aCPjMzOOnY
 emoji: 🏘️

@@ -1,7 +1,6 @@
 ---
 title: "Roman Walls (Passeig Arqueològic)"
 description: "The oldest surviving Roman walls outside Italy, with sections more than 2,200 years old."
-date: 2026-10-05
 weight: 50
 place_id: ChIJM0ewqNb8oxIR9V1bKRG0d9g
 emoji: 🧱

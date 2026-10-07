@@ -1,7 +1,6 @@
 ---
 title: "Platja Llarga"
 description: "Tarragona's longest beach — about 3 km of sand with pine trees along the shore and a calm atmosphere."
-date: 2026-10-05
 weight: 30
 place_id: ChIJKVlVXVn7oxIRlSNmBynRlc4
 emoji: 🏖️

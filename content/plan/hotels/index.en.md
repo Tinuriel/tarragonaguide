@@ -1,7 +1,6 @@
 ---
 title: "Hotels in Tarragona"
 description: "Where to stay in Tarragona: three hotels I recommend — by the amphitheatre, in the modern centre and near the beach."
-date: 2026-10-05
 weight: 10
 emoji: 🏨
 translated_from: ru

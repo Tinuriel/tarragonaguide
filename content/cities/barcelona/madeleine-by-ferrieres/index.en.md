@@ -2,6 +2,7 @@
 title: "Madeleine by Ferrières"
 description: "A French pastry shop in Poblenou with an incredible Instagram: strawberry tartlet, éclairs, cruffins, and whether it's worth the trip."
 date: 2026-10-07
+blog: true
 weight: 10
 cover: madeleine-2.jpg
 emoji: 🥐

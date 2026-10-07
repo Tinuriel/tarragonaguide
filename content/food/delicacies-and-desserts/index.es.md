@@ -1,7 +1,6 @@
 ---
 title: "Delicias locales y postres"
 description: "Aceite de oliva, quesos españoles, sobrasada, membrillo, almendra marcona y los postres catalanes imprescindibles."
-date: 2026-10-05
 weight: 50
 emoji: 🍮
 translated_from: ru

@@ -1,7 +1,6 @@
 ---
 title: "Roman Circus"
 description: "One of the best-preserved Roman circuses in the world, with underground galleries you can walk through."
-date: 2026-10-05
 weight: 20
 place_id: ChIJvaNcpNP8oxIRAQxSDMun2rw
 emoji: 🏇

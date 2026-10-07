@@ -1,7 +1,6 @@
 ---
 title: "Reus"
 description: "La ciudad natal de Antoni Gaudí, con un museo interactivo, casas modernistas y un museo del vermut."
-date: 2026-10-05
 weight: 10
 place_id: ChIJXZ5tuORQoRIR0s7eSdKQIS4
 emoji: 🏛️

@@ -1,7 +1,6 @@
 ---
 title: "Altafulla"
 description: "A cosy, quiet town with white houses, a medieval castle and Tamarit Castle standing right above the sea."
-date: 2026-10-05
 weight: 40
 place_id: ChIJjd44-HrwoxIR_t3WIhA4-fw
 emoji: 🏰

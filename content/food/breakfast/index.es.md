@@ -1,7 +1,6 @@
 ---
 title: "Qué desayunar"
 description: "Cómo desayunan los de aquí: bocadillo, tortilla, bollería recién hecha y coca catalana."
-date: 2026-10-05
 weight: 10
 emoji: 🥪
 translated_from: ru

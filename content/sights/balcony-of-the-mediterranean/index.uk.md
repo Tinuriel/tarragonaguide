@@ -1,7 +1,6 @@
 ---
 title: "Балкон Середземномор'я (Balcó del Mediterrani)"
 description: "Знаменитий оглядовий майданчик над морем із найкращою панорамою узбережжя Таррагони."
-date: 2026-10-05
 weight: 60
 cover: balcony-3.jpg
 place_id: ChIJFSNmSNP8oxIRQbxevE88M1s

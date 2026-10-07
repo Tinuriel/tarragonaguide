@@ -1,7 +1,6 @@
 ---
 title: "Salou"
 description: "El destino más conocido de la Costa Daurada, con playas de arena, un paseo de palmeras y PortAventura World."
-date: 2026-10-05
 weight: 20
 place_id: ChIJ93ilr4JZoRIRUYXO4oP1Ftk
 emoji: 🎢

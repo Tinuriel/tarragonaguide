@@ -1,7 +1,6 @@
 ---
 title: "Old Town (Part Alta)"
 description: "Tarragona's historic centre of cobbled lanes, small squares and cafés, made for slow wandering."
-date: 2026-10-05
 weight: 30
 place_id: ChIJC_uBBtT8oxIR4aCPjMzOOnY
 emoji: 🏘️

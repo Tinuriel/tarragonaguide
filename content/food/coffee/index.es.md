@@ -1,7 +1,6 @@
 ---
 title: "Dónde tomar buen café en Tarragona"
 description: "Mis cafeterías de especialidad favoritas en Tarragona, desde Olo Café en la Part Alta hasta la nueva Nicoffee."
-date: 2026-10-05
 weight: 70
 cover: olo-1.jpg
 emoji: ☕

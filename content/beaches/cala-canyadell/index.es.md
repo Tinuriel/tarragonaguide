@@ -1,7 +1,6 @@
 ---
 title: "Cala Canyadell (Altafulla / Torredembarra)"
 description: "Una cala acogedora entre Altafulla y Torredembarra, con arena dorada, pinos y rocas."
-date: 2026-10-05
 weight: 70
 place_id: ChIJIVVdSxXwoxIRSODaNYL4pbs
 emoji: 🏖️
