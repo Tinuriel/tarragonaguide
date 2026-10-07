@@ -1,0 +1,14 @@
+{{- /* Info box for a single establishment: front matter `info` (+ `place_id` for the map link). */ -}}
+{{- $i := .Params.info -}}
+<aside class="info">
+  <dl>
+    {{- with $i.address }}<dt>{{ i18n "infoAddress" }}</dt><dd>{{ . }}</dd>{{ end }}
+    {{- with $i.hours }}<dt>{{ i18n "infoHours" }}</dt><dd>{{ . }}</dd>{{ end }}
+    {{- with $i.price }}<dt>{{ i18n "infoPrice" }}</dt><dd>{{ . }}</dd>{{ end -}}
+  </dl>
+  <p class="links">
+    {{- with .Params.place_id }}<a href="{{ partial "maps-url.html" . }}" target="_blank" rel="noopener">📍 {{ i18n "openInMaps" }}</a>{{ end }}
+    {{- with $i.instagram }}<a href="https://www.instagram.com/{{ . }}/" target="_blank" rel="noopener">📷 Instagram</a>{{ end }}
+    {{- with $i.website }}<a href="{{ . }}" target="_blank" rel="noopener">🌐 {{ i18n "infoWebsite" }}</a>{{ end }}
+  </p>
+</aside>

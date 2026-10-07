@@ -1,6 +1,7 @@
 ---
 title: "El Miracle Beach"
 description: "Tarragona's most urban beach, just a short walk from the centre and the Roman amphitheatre."
+date: 2026-10-05
 weight: 10
 place_id: ChIJ5dOOgyzjoxIRI5OoqAgLEcE
 emoji: 🏖️

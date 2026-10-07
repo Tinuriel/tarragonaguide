@@ -1,6 +1,7 @@
 ---
 title: "A walking route around Tarragona"
 description: "A walk from the Central Market past the Roman monuments and the Balcony of the Mediterranean down to the sea, the marina and the El Serrallo fishing quarter."
+date: 2026-10-05
 weight: 20
 emoji: 🚶
 translated_from: ru

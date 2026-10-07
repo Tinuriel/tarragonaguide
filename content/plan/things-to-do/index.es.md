@@ -1,6 +1,7 @@
 ---
 title: "Qué hacer en Tarragona"
 description: "Qué hacer en Tarragona y qué fiestas merece la pena vivir: Santa Tecla, el Carnaval y Tarraco Viva."
+date: 2026-10-05
 weight: 30
 emoji: 🎉
 translated_from: ru

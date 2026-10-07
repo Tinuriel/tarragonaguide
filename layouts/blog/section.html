@@ -1,0 +1,31 @@
+{{ define "main" }}
+{{ partial "crumbs.html" . }}
+<header class="page-head">
+  <h1>{{ with .Params.emoji }}{{ . }} {{ end }}{{ .Title }}</h1>
+  {{ with .Content }}<div class="lede">{{ . }}</div>{{ end }}
+</header>
+{{- $posts := partial "posts.html" . }}
+<div class="filters" role="group" aria-label="{{ i18n "filterBy" }}" hidden>
+  <button type="button" data-filter="" aria-pressed="true">{{ i18n "filterAll" }}</button>
+  {{- range site.Sections.ByWeight }}{{ $s := .Section }}
+  {{- if where $posts "FirstSection.Section" $s }}
+  <button type="button" data-filter="{{ $s }}" aria-pressed="false">{{ .Title }}</button>
+  {{- end }}{{ end }}
+</div>
+<ul class="cards" id="posts">
+  {{ range $posts }}{{ partial "card.html" (dict "page" . "meta" true) }}{{ end }}
+</ul>
+<script>
+(function(){
+  var bar=document.querySelector('.filters'); if(!bar) return; bar.hidden=false;
+  var items=document.querySelectorAll('#posts > li');
+  function apply(key){
+    bar.querySelectorAll('button').forEach(function(b){ b.setAttribute('aria-pressed', String(b.dataset.filter===key)); });
+    items.forEach(function(li){ li.hidden = key!=='' && li.dataset.section!==key; });
+  }
+  bar.addEventListener('click', function(e){ var b=e.target.closest('button'); if(b){ apply(b.dataset.filter); history.replaceState(null,'',b.dataset.filter ? '#'+b.dataset.filter : location.pathname); } });
+  var h=location.hash.slice(1); if(h && bar.querySelector('[data-filter="'+h+'"]')) apply(h);
+})();
+</script>
+{{ partial "translation-note.html" . }}
+{{ end }}

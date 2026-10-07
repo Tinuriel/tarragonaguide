@@ -1,6 +1,7 @@
 ---
 title: "Пляж Платжа-Льярга"
 description: "Самый длинный пляж Таррагоны — около 3 км песка, сосны вдоль берега и спокойная атмосфера."
+date: 2026-10-05
 weight: 30
 place_id: ChIJKVlVXVn7oxIRlSNmBynRlc4
 emoji: 🏖️

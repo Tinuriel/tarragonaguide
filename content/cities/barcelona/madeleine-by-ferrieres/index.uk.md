@@ -1,14 +1,17 @@
 ---
 title: "Madeleine by Ferrières"
 description: "Французька кондитерська в Poblenou з неймовірним Instagram: кошик із полуницею, еклери, краффіни і чи варто туди їхати."
+date: 2026-10-07
 weight: 10
 cover: madeleine-2.jpg
 emoji: 🥐
+place_id: https://maps.app.goo.gl/NUWQjdcebe5VcD459
+info:
+  address: "Carrer de Llull, 145, Barcelona (Poblenou)"
+  instagram: madeleinebyferrieresbarcelona
 translated_from: ru
 reviewed: false
 ---
-{{< place "https://maps.app.goo.gl/NUWQjdcebe5VcD459" >}}
-
 Сьогодні я побувала в новій для себе французькій кондитерській у районі Poblenou. Очікування були дуже високими: фото в Instagram у них просто неймовірні — я одразу зрозуміла, що не зможу обрати й захочу все й одразу. Усе виглядає дуже красиво й дуже смачно, та й за Google Картами здавалося, що вибір там величезний.
 
 Але на місці, хоча вибір начебто й не маленький і вітрини не порожні, усього було якось мало. Можливо, багато що вже встигли розкупити — особливо в першій частині, з несолодкою випічкою.

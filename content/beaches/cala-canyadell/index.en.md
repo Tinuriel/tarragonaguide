@@ -1,6 +1,7 @@
 ---
 title: "Cala Canyadell (Altafulla / Torredembarra)"
 description: "A cosy cove between Altafulla and Torredembarra with golden sand, pine trees and rocks."
+date: 2026-10-05
 weight: 70
 place_id: ChIJIVVdSxXwoxIRSODaNYL4pbs
 emoji: 🏖️

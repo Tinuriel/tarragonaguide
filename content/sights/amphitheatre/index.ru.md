@@ -1,6 +1,7 @@
 ---
 title: "Римский амфитеатр"
 description: "Символ Таррагоны: амфитеатр II века у самого моря, где когда-то сражались гладиаторы."
+date: 2026-10-05
 weight: 10
 place_id: ChIJe8Q26tL8oxIRsDftZxemzgA
 emoji: 🏟️

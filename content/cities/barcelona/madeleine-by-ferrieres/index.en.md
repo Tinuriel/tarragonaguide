@@ -1,14 +1,17 @@
 ---
 title: "Madeleine by Ferrières"
 description: "A French pastry shop in Poblenou with an incredible Instagram: strawberry tartlet, éclairs, cruffins, and whether it's worth the trip."
+date: 2026-10-07
 weight: 10
 cover: madeleine-2.jpg
 emoji: 🥐
+place_id: https://maps.app.goo.gl/NUWQjdcebe5VcD459
+info:
+  address: "Carrer de Llull, 145, Barcelona (Poblenou)"
+  instagram: madeleinebyferrieresbarcelona
 translated_from: ru
 reviewed: false
 ---
-{{< place "https://maps.app.goo.gl/NUWQjdcebe5VcD459" >}}
-
 Today I visited a French pastry shop in Poblenou that was new to me. My expectations were sky-high: their Instagram photos are simply incredible — I knew straight away I wouldn't be able to choose and would want everything at once. It all looks beautiful and delicious, and on Google Maps the selection seemed huge too.
 
 But once I was there, even though the choice wasn't exactly small and the display cases weren't empty, there somehow wasn't much of anything. Maybe a lot had already sold out — especially in the first section, with the savoury bakes.

@@ -1,0 +1,5 @@
+{{- /* "7 October 2026 · Section" line for a post. */ -}}
+<p class="meta">
+  {{- with .Date }}{{ if not .IsZero }}<time datetime="{{ .Format "2006-01-02" }}">{{ time.Format ":date_long" . }}</time>{{ end }}{{ end -}}
+  {{- with .Parent }} · {{ .Title }}{{ end -}}
+</p>

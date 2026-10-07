@@ -1,6 +1,7 @@
 ---
 title: "Local delicacies and desserts"
 description: "Olive oil, Spanish cheeses, sobrasada, membrillo, Marcona almonds and the essential Catalan desserts."
+date: 2026-10-05
 weight: 50
 emoji: 🍮
 translated_from: ru

@@ -1,6 +1,7 @@
 ---
 title: "Qué llevar de regalo"
 description: "Recuerdos gastronómicos de Tarragona: aceite de oliva de Siurana, jamón, cava, almendras, mermeladas, quesos, turrón y conservas de pescado."
+date: 2026-10-05
 weight: 50
 emoji: 🎁
 translated_from: ru

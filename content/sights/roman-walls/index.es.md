@@ -1,6 +1,7 @@
 ---
 title: "Murallas romanas (Passeig Arqueològic)"
 description: "Las murallas romanas más antiguas conservadas fuera de Italia, con tramos de más de 2.200 años."
+date: 2026-10-05
 weight: 50
 place_id: ChIJM0ewqNb8oxIR9V1bKRG0d9g
 emoji: 🧱

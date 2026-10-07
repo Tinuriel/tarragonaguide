@@ -1,6 +1,7 @@
 ---
 title: "Cala Jovera"
 description: "A small, picturesque cove at the foot of medieval Tamarit Castle."
+date: 2026-10-05
 weight: 60
 place_id: ChIJN2Jiv8D6oxIRnwDiKQNQg1s
 emoji: 🏖️

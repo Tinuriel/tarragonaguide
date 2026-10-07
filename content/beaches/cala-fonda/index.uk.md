@@ -1,6 +1,7 @@
 ---
 title: "Кала-Фонда (Вайкікі)"
 description: "Один із найгарніших диких пляжів узбережжя, до якого йдуть через сосновий ліс."
+date: 2026-10-05
 weight: 40
 place_id: ChIJIaeM5Lz6oxIRMd9TIHQV56E
 emoji: 🏖️

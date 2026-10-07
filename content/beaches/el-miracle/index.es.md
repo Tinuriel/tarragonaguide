@@ -1,6 +1,7 @@
 ---
 title: "Playa del Miracle"
 description: "La playa más urbana de Tarragona, a un paso del centro y del anfiteatro romano."
+date: 2026-10-05
 weight: 10
 place_id: ChIJ5dOOgyzjoxIRI5OoqAgLEcE
 emoji: 🏖️

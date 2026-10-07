@@ -1,6 +1,7 @@
 ---
 title: "Район Ель-Серральо"
 description: "Старовинний рибальський квартал біля порту з найкращими рибними ресторанами міста."
+date: 2026-10-05
 weight: 70
 place_id: ChIJJ3Uvis3ioxIRo0iqPST_-Jc
 emoji: ⚓

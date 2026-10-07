@@ -437,3 +437,42 @@ footer nav{ display:flex; flex-wrap:wrap; gap:6px 16px; margin-bottom:10px; }
   nav.sections ul{ padding:0 16px; }
   .langswitch a{ padding:7px 10px; }
 }
+
+/* Blog: date line, section filter, establishment info box */
+.meta{
+  margin:0 0 6px;
+  font-size:.75rem;
+  font-weight:600;
+  letter-spacing:.04em;
+  color:var(--sea);
+}
+.card .meta{ font-size:.7rem; margin-bottom:4px; }
+.filters{ display:flex; flex-wrap:wrap; gap:8px; margin:18px 0 4px; }
+.filters button{
+  font:inherit;
+  font-size:.82rem;
+  font-weight:600;
+  padding:6px 14px;
+  border:1px solid var(--ink);
+  border-radius:20px;
+  background:transparent;
+  color:var(--ink);
+  cursor:pointer;
+}
+.filters button[aria-pressed="true"]{ background:var(--ink); color:var(--paper); }
+.cards li[hidden]{ display:none; }
+.info{
+  margin:6px 0 24px;
+  padding:14px 18px;
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:var(--stone);
+  font-size:.92rem;
+}
+.info dl{ display:grid; grid-template-columns:max-content 1fr; gap:4px 14px; margin:0; }
+.info dl:empty{ display:none; }
+.info dt{ font-weight:600; color:#5a6570; }
+.info dd{ margin:0; }
+.info .links{ display:flex; flex-wrap:wrap; gap:6px 18px; margin:10px 0 0; }
+.info dl:empty + .links{ margin-top:0; }
+.info .links a{ font-weight:600; }

@@ -1,6 +1,7 @@
 ---
 title: "Дельта реки Эбро (Delta de l'Ebre)"
 description: "Природный парк с лагунами, рисовыми полями и фламинго примерно в часе езды от Таррагоны."
+date: 2026-10-05
 weight: 50
 place_id: ChIJOU-l_Ar-oBIRTE8yWLSCIAo
 emoji: 🌾

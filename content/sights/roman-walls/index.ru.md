@@ -1,6 +1,7 @@
 ---
 title: "Римские стены (Passeig Arqueològic)"
 description: "Древнейшие сохранившиеся римские стены за пределами Италии, которым более 2200 лет."
+date: 2026-10-05
 weight: 50
 place_id: ChIJM0ewqNb8oxIR9V1bKRG0d9g
 emoji: 🧱

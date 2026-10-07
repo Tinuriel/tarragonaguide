@@ -1,6 +1,7 @@
 ---
 title: "Кафедральный собор"
 description: "Романский и готический собор в самом сердце старого города, с внутренним двориком и музеем."
+date: 2026-10-05
 weight: 40
 cover: cathedral-2.jpg
 place_id: ChIJp1-Julr9oxIRDCFN9_vDw-A

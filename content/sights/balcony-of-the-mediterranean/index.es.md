@@ -1,6 +1,7 @@
 ---
 title: "Balcón del Mediterráneo (Balcó del Mediterrani)"
 description: "Un famoso mirador sobre el mar con la mejor panorámica de la costa de Tarragona."
+date: 2026-10-05
 weight: 60
 cover: balcony-3.jpg
 place_id: ChIJFSNmSNP8oxIRQbxevE88M1s

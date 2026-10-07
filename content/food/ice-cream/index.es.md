@@ -1,6 +1,7 @@
 ---
 title: "Dónde tomar helado en Tarragona"
 description: "Las mejores heladerías artesanas de Tarragona, y por qué hay que probar el helado de Chartreuse."
+date: 2026-10-05
 weight: 80
 emoji: 🍦
 translated_from: ru

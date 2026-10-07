@@ -1,6 +1,7 @@
 ---
 title: "Hoteles en Tarragona"
 description: "Dónde alojarse en Tarragona: tres hoteles que recomiendo, junto al anfiteatro, en el centro moderno y cerca de la playa."
+date: 2026-10-05
 weight: 10
 emoji: 🏨
 translated_from: ru

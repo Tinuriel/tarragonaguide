@@ -1,6 +1,7 @@
 ---
 title: "What to try: tapas"
 description: "The essential Spanish tapas, from pa amb tomàquet and jamón to patatas bravas, squid and Padrón peppers."
+date: 2026-10-05
 weight: 30
 emoji: 🍢
 translated_from: ru

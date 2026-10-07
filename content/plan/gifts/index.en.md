@@ -1,6 +1,7 @@
 ---
 title: "What to bring back as a gift"
 description: "Edible souvenirs from Tarragona: Siurana olive oil, jamón, cava, almonds, jams, cheeses, turrón and tinned fish."
+date: 2026-10-05
 weight: 50
 emoji: 🎁
 translated_from: ru

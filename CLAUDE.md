@@ -31,7 +31,11 @@ content/
     photo-1.jpg …             photos shared by all 4 languages
 ```
 
-Sections: `sights`, `beaches`, `food`, `catalonia`, `plan`.
+Sections: `sights`, `beaches`, `food`, `catalonia`, `plan`, `cities` (other cities,
+with one sub-folder per city, e.g. `cities/barcelona/<slug>/`).
+`blog` is a special section with no posts of its own: `/blog/` lists every post
+of all sections newest first (by `date`), with a filter by section; the home
+page shows the 3 newest posts at the top.
 Files in the same folder are automatically linked as translations of each other.
 
 ## Post front matter
@@ -40,16 +44,21 @@ Files in the same folder are automatically linked as translations of each other.
 ---
 title: "Кафедральный собор"
 description: "One sentence shown on cards and in search results."
+date: 2026-10-07           # REQUIRED: day the post was added (same in all languages)
 weight: 40                 # order inside the section (same in all languages)
 cover: cathedral-2.jpg     # optional, photo from the folder
-place_id: ChIJ...          # optional, Google Maps place id → "Open in Google Maps"
+place_id: ChIJ...          # optional, Google Maps place id or share link → "Open in Google Maps"
 emoji: ⛪                  # optional, card placeholder when there is no photo
+info:                      # optional, ONLY for a post about one establishment:
+  address: "Carrer de Llull, 145, Barcelona"   # info box at the top of the post
+  hours: "…"               # (translated per language); also price, instagram, website
 translated_from: ru        # ONLY on translated files
 reviewed: false            # ONLY on translated files; true after a human proofread
 ---
 ```
 
-Non-content fields (`weight`, `cover`, `place_id`, `emoji`) must be identical in
+Non-content fields (`date`, `weight`, `cover`, `place_id`, `emoji`, `info.address`,
+`info.instagram`, `info.website`) must be identical in
 all four files of a post.
 
 ## Shortcodes (use instead of raw HTML)

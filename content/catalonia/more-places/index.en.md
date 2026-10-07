@@ -1,6 +1,7 @@
 ---
 title: "More places worth seeing"
 description: "The Roman aqueduct known as the Devil's Bridge just outside town, and the mountain village of Siurana an hour away."
+date: 2026-10-05
 weight: 60
 emoji: 🧭
 translated_from: ru

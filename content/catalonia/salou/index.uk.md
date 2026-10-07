@@ -1,6 +1,7 @@
 ---
 title: "Салоу"
 description: "Найвідоміший курорт Коста-Дорада з піщаними пляжами, пальмовою набережною та парком PortAventura World."
+date: 2026-10-05
 weight: 20
 place_id: ChIJ93ilr4JZoRIRUYXO4oP1Ftk
 emoji: 🎢

@@ -1,6 +1,7 @@
 ---
 title: "Altafulla"
 description: "Un pueblo tranquilo y acogedor, con casas blancas, un castillo medieval y el castillo de Tamarit junto al mar."
+date: 2026-10-05
 weight: 40
 place_id: ChIJjd44-HrwoxIR_t3WIhA4-fw
 emoji: 🏰

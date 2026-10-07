@@ -1,6 +1,7 @@
 ---
 title: "Catedral de Tarragona"
 description: "Una catedral románica y gótica en pleno casco antiguo, con claustro y museo."
+date: 2026-10-05
 weight: 40
 cover: cathedral-2.jpg
 place_id: ChIJp1-Julr9oxIRDCFN9_vDw-A

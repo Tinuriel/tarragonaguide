@@ -1,6 +1,7 @@
 ---
 title: "Qué comer al mediodía"
 description: "La comida principal del día: paella, pescado fresco, suquet, gazpacho y calçots."
+date: 2026-10-05
 weight: 40
 emoji: 🥘
 translated_from: ru

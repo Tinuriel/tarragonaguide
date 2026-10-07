@@ -1,6 +1,7 @@
 ---
 title: "Playa de l'Arrabassada"
 description: "Una de las mejores playas urbanas de Tarragona, con agua limpia, arena amplia y Bandera Azul."
+date: 2026-10-05
 weight: 20
 place_id: ChIJ63kC97P8oxIREL7-qdY76uE
 emoji: 🏖️

@@ -1,6 +1,7 @@
 ---
 title: "Пляж Эль-Миракль"
 description: "Самый городской пляж Таррагоны — в двух шагах от центра и римского амфитеатра."
+date: 2026-10-05
 weight: 10
 place_id: ChIJ5dOOgyzjoxIRI5OoqAgLEcE
 emoji: 🏖️

@@ -1,4 +1,7 @@
-<li>
+{{- /* Card for a page. Pass (dict "page" $p "meta" true) to also show the date and section. */ -}}
+{{- $p := . }}{{ $meta := false }}{{ if reflect.IsMap . }}{{ $p = .page }}{{ $meta = .meta }}{{ end -}}
+{{- with $p -}}
+<li{{ if $meta }} data-section="{{ .FirstSection.Section }}"{{ end }}>
   <a class="card" href="{{ .RelPermalink }}">
     {{- with partial "cover.html" . }}
     {{ partial "img.html" (dict "img" . "alt" "" "sizes" "(max-width: 480px) 100vw, 240px") }}
@@ -6,8 +9,10 @@
     <span class="ph" aria-hidden="true">{{ .Params.emoji | default "📍" }}</span>
     {{- end }}
     <span class="body">
+      {{- if $meta }}{{ partial "post-meta.html" . }}{{ end }}
       <h3>{{ .Title }}</h3>
       {{- with .Description }}<p>{{ . }}</p>{{ end }}
     </span>
   </a>
 </li>
+{{- end }}

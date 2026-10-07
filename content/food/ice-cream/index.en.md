@@ -1,6 +1,7 @@
 ---
 title: "Where to Try Ice Cream in Tarragona"
 description: "The best artisan gelaterias in Tarragona — and why you should try the Chartreuse flavour."
+date: 2026-10-05
 weight: 80
 emoji: 🍦
 translated_from: ru

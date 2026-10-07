@@ -1,6 +1,7 @@
 ---
 title: "What to drink in Tarragona"
 description: "Cava, Chartreuse, vermouth, horchata, granizado and local wines — what to drink in and around Tarragona."
+date: 2026-10-05
 weight: 60
 emoji: 🍷
 translated_from: ru

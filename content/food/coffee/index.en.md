@@ -1,6 +1,7 @@
 ---
 title: "Where to Drink Specialty Coffee in Tarragona"
 description: "My favourite specialty coffee shops in Tarragona, from Olo Café in the Old Town to the brand-new Nicoffee."
+date: 2026-10-05
 weight: 70
 cover: olo-1.jpg
 emoji: ☕

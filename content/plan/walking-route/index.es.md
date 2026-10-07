@@ -1,6 +1,7 @@
 ---
 title: "Ruta a pie por Tarragona"
 description: "Un paseo desde el Mercat Central por los monumentos romanos y el Balcó del Mediterrani hasta el mar, el puerto deportivo y el barrio marinero de El Serrallo."
+date: 2026-10-05
 weight: 20
 emoji: 🚶
 translated_from: ru

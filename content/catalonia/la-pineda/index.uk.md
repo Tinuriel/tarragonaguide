@@ -1,6 +1,7 @@
 ---
 title: "Ла-Пінеда"
 description: "Спокійний курорт із широким піщаним пляжем, аквапарком і спа — чудовий варіант для відпочинку з дітьми."
+date: 2026-10-05
 weight: 30
 place_id: ChIJu4Hd2FZYoRIRKK1tkDiawdQ
 emoji: 🏖️

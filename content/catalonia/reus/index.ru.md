@@ -1,6 +1,7 @@
 ---
 title: "Реус"
 description: "Родной город Антони Гауди с интерактивным музеем, домами в стиле модерн и музеем вермута."
+date: 2026-10-05
 weight: 10
 place_id: ChIJXZ5tuORQoRIR0s7eSdKQIS4
 emoji: 🏛️

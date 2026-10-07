@@ -1,6 +1,7 @@
 ---
 title: "Platja Llarga (Salou)"
 description: "One of Salou's most beautiful beaches, in the Cap Salou area and surrounded by pine forest."
+date: 2026-10-05
 weight: 80
 place_id: ChIJwVBb3kVZoRIROixuOVZDpdQ
 emoji: 🏖️

@@ -1,6 +1,7 @@
 ---
 title: "Що скуштувати: тапас"
 description: "Головні іспанські тапас — від pa amb tomàquet і хамону до пататас бравас, кальмарів і перчиків падрон."
+date: 2026-10-05
 weight: 30
 emoji: 🍢
 translated_from: ru

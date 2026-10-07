@@ -1,6 +1,7 @@
 ---
 title: "Римські мури (Passeig Arqueològic)"
 description: "Найдавніші збережені римські мури за межами Італії, яким понад 2200 років."
+date: 2026-10-05
 weight: 50
 place_id: ChIJM0ewqNb8oxIR9V1bKRG0d9g
 emoji: 🧱

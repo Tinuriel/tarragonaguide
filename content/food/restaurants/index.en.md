@@ -1,6 +1,7 @@
 ---
 title: "Restaurants in Tarragona"
 description: "My restaurant picks in Tarragona: seafood and paella, Catalan and signature cuisine, sushi, pizza and more."
+date: 2026-10-05
 weight: 100
 emoji: 🍕
 translated_from: ru

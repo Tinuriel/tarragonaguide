@@ -1,6 +1,7 @@
 ---
 title: "Реус"
 description: "Рідне місто Антоні Гауді з інтерактивним музеєм, будинками в стилі модерн і музеєм вермуту."
+date: 2026-10-05
 weight: 10
 place_id: ChIJXZ5tuORQoRIR0s7eSdKQIS4
 emoji: 🏛️

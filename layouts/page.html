@@ -1,11 +1,13 @@
 {{ define "main" }}
-<p class="crumbs"><a href="{{ site.Home.RelPermalink }}">{{ i18n "home" }}</a> / <a href="{{ .Parent.RelPermalink }}">{{ .Parent.Title }}</a></p>
+{{ partial "crumbs.html" . }}
 <article>
   <header class="page-head">
+    {{ with .Date }}{{ if not .IsZero }}<p class="meta"><time datetime="{{ .Format "2006-01-02" }}">{{ time.Format ":date_long" . }}</time></p>{{ end }}{{ end }}
     <h1>{{ .Title }}</h1>
     {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
-    {{ with .Params.place_id }}<p class="place"><a href="https://www.google.com/maps/place/?q=place_id:{{ . }}" target="_blank" rel="noopener">📍 {{ i18n "openInMaps" }}</a></p>{{ end }}
+    {{ if not .Params.info }}{{ with .Params.place_id }}<p class="place"><a href="{{ partial "maps-url.html" . }}" target="_blank" rel="noopener">📍 {{ i18n "openInMaps" }}</a></p>{{ end }}{{ end }}
   </header>
+  {{ with .Params.info }}{{ partial "info.html" $ }}{{ end }}
   {{ if not .Params.hide_cover }}{{ with .Params.cover }}{{ with $.Resources.Get . }}
   <figure class="cover">{{ partial "img.html" (dict "img" . "alt" $.Title "eager" true) }}</figure>
   {{ end }}{{ end }}{{ end }}

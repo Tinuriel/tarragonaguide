@@ -1,6 +1,7 @@
 ---
 title: "La Pineda"
 description: "Un destino tranquilo con una amplia playa de arena, parque acuático y spa, ideal para ir con niños."
+date: 2026-10-05
 weight: 30
 place_id: ChIJu4Hd2FZYoRIRKK1tkDiawdQ
 emoji: 🏖️

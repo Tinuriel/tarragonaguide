@@ -1,6 +1,7 @@
 ---
 title: "Пляж Ель-Міракле"
 description: "Найміськіший пляж Таррагони — за кілька кроків від центру та римського амфітеатру."
+date: 2026-10-05
 weight: 10
 place_id: ChIJ5dOOgyzjoxIRI5OoqAgLEcE
 emoji: 🏖️

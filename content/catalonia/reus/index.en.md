@@ -1,6 +1,7 @@
 ---
 title: "Reus"
 description: "Antoni Gaudí's home town, with an interactive museum, Modernista houses and a vermouth museum."
+date: 2026-10-05
 weight: 10
 place_id: ChIJXZ5tuORQoRIR0s7eSdKQIS4
 emoji: 🏛️

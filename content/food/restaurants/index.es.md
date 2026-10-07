@@ -1,6 +1,7 @@
 ---
 title: "Restaurantes en Tarragona"
 description: "Mis restaurantes recomendados en Tarragona: marisco y paella, cocina catalana y de autor, sushi, pizza y mucho más."
+date: 2026-10-05
 weight: 100
 emoji: 🍕
 translated_from: ru

@@ -1,6 +1,7 @@
 ---
 title: "Platja Llarga (Salou)"
 description: "Una de las playas más bonitas de Salou, en la zona del Cap de Salou y rodeada de pinar."
+date: 2026-10-05
 weight: 80
 place_id: ChIJwVBb3kVZoRIROixuOVZDpdQ
 emoji: 🏖️

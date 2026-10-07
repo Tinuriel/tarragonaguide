@@ -1,6 +1,7 @@
 ---
 title: "Shops and souvenir stores"
 description: "Where to shop in Tarragona: the shops on Carrer Major in the Old Town, gourmet supermarkets, the Parc Central mall, El Corte Inglés and Tax Free."
+date: 2026-10-05
 weight: 40
 emoji: 🛍️
 translated_from: ru

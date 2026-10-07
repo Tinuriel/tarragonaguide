@@ -1,6 +1,7 @@
 ---
 title: "El Serrallo district"
 description: "An old fishing quarter by the port, home to the city's best seafood restaurants."
+date: 2026-10-05
 weight: 70
 place_id: ChIJJ3Uvis3ioxIRo0iqPST_-Jc
 emoji: ⚓
