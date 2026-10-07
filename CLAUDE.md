@@ -57,6 +57,8 @@ all four files of a post.
 - `{{< place "PLACE_ID" >}}` — "📍 Open in Google Maps" line, localized.
 - `{{< map "PLACE_ID" >}}` — inline link with text "Google Maps", localized:
   `**Olo Café** ({{< map "ChIJ..." >}})`.
+- Both map shortcodes also accept a full Google Maps link instead of the place id
+  (e.g. a `https://maps.app.goo.gl/…` share link) — it is used as is.
 - `{{< tip >}}💡 Markdown text{{< /tip >}}` — highlighted tip box.
 - `{{< gallery >}}` one `file.jpg | caption` per line `{{< /gallery >}}`.
 - Links to other posts: `[text]({{< relref "/beaches/el-miracle" >}})` — resolves
