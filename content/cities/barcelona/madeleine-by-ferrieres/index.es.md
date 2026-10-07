@@ -1,6 +1,6 @@
 ---
 title: "Madeleine by Ferrières"
-description: "Panadería y pastelería francesa en el Poblenou: pan, cruasanes, éclairs, tartas y canelés."
+description: "Una pastelería francesa del Poblenou con un Instagram increíble: tartaleta de fresas, éclairs, cruffins y si merece la pena ir."
 weight: 10
 cover: madeleine-2.jpg
 emoji: 🥐
@@ -9,16 +9,26 @@ reviewed: false
 ---
 {{< place "https://maps.app.goo.gl/NUWQjdcebe5VcD459" >}}
 
-Hoy he estado en una pastelería francesa del Poblenou que no conocía. Tenía muchísimas expectativas: en Instagram tienen unas fotos increíblemente apetecibles, y en Google Maps todo parecía igual de delicioso.
+Hoy he estado en una pastelería francesa del Poblenou que no conocía. Tenía muchísimas expectativas: sus fotos en Instagram son sencillamente increíbles; enseguida supe que no podría decidirme y que lo querría todo a la vez. Todo tiene una pinta preciosa y deliciosa, y en Google Maps también parecía que la variedad era enorme.
 
-Me llevé un hojaldre de albaricoque; nunca llegué a averiguar su nombre exacto.
+Pero allí, aunque la oferta no era pequeña y los escaparates no estaban vacíos, había como poca cosa de todo. Quizá ya se había vendido mucho, sobre todo en la primera parte, la de lo salado.
 
-El Poblenou no es un barrio por el que me mueva a menudo, y no pienso ir expresamente solo por esta pastelería. Pero si estás cerca, merece la pena entrar.
+Elegí una tartaleta de fresas para tomar allí y me llevé unos éclairs de frambuesa y, por lo que entiendo, unos cruffins de albaricoque.
+
+{{< tip >}}💡 Tenía muchas ganas de un milhojas, pero solo lo venden los domingos.{{< /tip >}}
+
+La tartaleta me la comí allí mismo. La base es de masa quebrada, dentro lleva una fina capa de fresa y lo más interesante es la crema y la nata montada. Rica, pero sin volverme loca.
+
+El té, de lo más normal. Me habría gustado una taza de porcelana: en porcelana el té negro sabe mejor y acompaña mejor el dulce.
+
+El local es bastante pequeño, pero las mesas son de tamaño normal y además hay tres pequeñas barras.
+
+Pensaba que iba a tener que ir al Poblenou a menudo solo por este sitio. Pero no iré expresamente: vivo en otra ciudad y no vengo a Barcelona tan a menudo. Si paso cerca, volveré a entrar. En resumen: sí, un buen sitio.
 
 {{< gallery >}}
 madeleine-1.jpg | La entrada por el Carrer de Llull
-madeleine-2.jpg | Tarta de fresas
-madeleine-3.jpg | Té y tarta de fresas
+madeleine-2.jpg | Tartaleta de fresas
+madeleine-3.jpg | Té y tartaleta de fresas
 madeleine-4.jpg | Pan y bollería en el mostrador
 madeleine-5.jpg | Canelés
 madeleine-6.jpg | El escaparate: éclairs, cruasanes y tartas
