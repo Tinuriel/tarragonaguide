@@ -4,13 +4,16 @@ description: "Panadería y pastelería francesa en el Poblenou: pan, cruasanes, 
 weight: 10
 cover: madeleine-2.jpg
 emoji: 🥐
-draft: true
 translated_from: ru
 reviewed: false
 ---
 {{< place "https://maps.app.goo.gl/NUWQjdcebe5VcD459" >}}
 
 Hoy he estado en una pastelería francesa del Poblenou que no conocía. Tenía muchísimas expectativas: en Instagram tienen unas fotos increíblemente apetecibles, y en Google Maps todo parecía igual de delicioso.
+
+Me llevé un hojaldre de albaricoque; nunca llegué a averiguar su nombre exacto.
+
+El Poblenou no es un barrio por el que me mueva a menudo, y no pienso ir expresamente solo por esta pastelería. Pero si estás cerca, merece la pena entrar.
 
 {{< gallery >}}
 madeleine-1.jpg | La entrada por el Carrer de Llull
