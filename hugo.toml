@@ -26,6 +26,11 @@ disableKinds = ["taxonomy", "term"]
     label = "ES"
     locale = "es-ES"
     title = "Tarragona · guía"
+  [languages.ca]
+    weight = 5
+    label = "CA"
+    locale = "ca-ES"
+    title = "Tarragona · guia"
 
 [imaging]
   resampleFilter = "Lanczos"

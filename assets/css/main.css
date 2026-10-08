@@ -435,7 +435,7 @@ footer nav{ display:flex; flex-wrap:wrap; gap:6px 16px; margin-bottom:10px; }
 @media (max-width:480px){
   .page-head h1{ font-size:1.8rem; }
   nav.sections ul{ padding:0 16px; }
-  .langswitch a{ padding:7px 10px; }
+  .langswitch a{ padding:7px 8px; }
 }
 
 /* Blog: date line, section filter, establishment info box */

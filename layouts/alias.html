@@ -10,7 +10,7 @@
   var target = {{ .Permalink }};
   {{- if eq .Permalink site.Home.Permalink }}
   // Root of the site: send visitors to the language they chose before or their browser language.
-  var map = { ru: 'ru', be: 'ru', kk: 'ru', uk: 'uk', en: 'en', es: 'es', ca: 'es', gl: 'es', eu: 'es' };
+  var map = { ru: 'ru', be: 'ru', kk: 'ru', uk: 'uk', en: 'en', es: 'es', ca: 'ca', gl: 'es', eu: 'es' };
   var lang = null;
   try{ lang = localStorage.getItem('tarraco-lang'); }catch(e){}
   if(!map[lang]){

@@ -15,8 +15,9 @@ exists after the Hugo build.
 | `uk` | UA | source language (the owner also writes in Ukrainian) |
 | `en` | EN | translated |
 | `es` | ES | translated |
+| `ca` | CA | translated (Catalan) |
 
-Every page exists in all four languages. URLs: `/<lang>/<section>/<slug>/`.
+Every page exists in all five languages. URLs: `/<lang>/<section>/<slug>/`.
 Slugs are English, identical in every language (they are the folder names).
 The site root `/` redirects to the visitor's saved/browser language.
 
@@ -27,8 +28,8 @@ content/
   _index.<lang>.md            home page intro
   <section>/_index.<lang>.md  section title (+ optional intro text)
   <section>/<slug>/           one post = one folder ("page bundle")
-    index.ru.md index.uk.md index.en.md index.es.md
-    photo-1.jpg …             photos shared by all 4 languages
+    index.ru.md index.uk.md index.en.md index.es.md index.ca.md
+    photo-1.jpg …             photos shared by all 5 languages
 ```
 
 Sections: `sights`, `beaches`, `food`, `catalonia`, `plan`, `cities` (other cities,
@@ -63,7 +64,7 @@ reviewed: false            # ONLY on translated files; true after a human proofr
 
 Non-content fields (`date`, `blog`, `weight`, `cover`, `place_id`, `emoji`, `info.address`,
 `info.instagram`, `info.website`) must be identical in
-all four files of a post.
+all five files of a post.
 
 ## Shortcodes (use instead of raw HTML)
 
@@ -81,11 +82,11 @@ all four files of a post.
 
 When the owner provides new text (Russian or Ukrainian):
 1. Create/update the file in that language without `translated_from`.
-2. Write the other three languages with `translated_from: <source>` and
+2. Write the other four languages with `translated_from: <source>` and
    `reviewed: false`. Translate naturally (not word for word), keep the owner's
    personal first-person voice, keep proper names of places/dishes as they are
    locally used (Catalan/Spanish), keep emoji, shortcodes and place ids unchanged.
-3. When a source file changes, update the three translations and reset
+3. When a source file changes, update the four translations and reset
    `reviewed: false` on them.
 4. Run `npx hugo --gc` and make sure it builds with no errors or warnings.
 
