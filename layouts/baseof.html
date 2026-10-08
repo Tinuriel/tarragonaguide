@@ -8,6 +8,9 @@
 <meta name="description" content="{{ . | truncate 160 }}">
 {{- end }}
 <link rel="canonical" href="{{ .Permalink }}">
+{{- if and .IsSection (not .RegularPagesRecursive) }}
+<meta name="robots" content="noindex">
+{{- end }}
 {{- range .AllTranslations }}
 <link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ .Permalink }}">
 {{- end }}

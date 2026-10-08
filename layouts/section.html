@@ -5,7 +5,7 @@
   {{ with .Content }}<div class="lede">{{ . }}</div>{{ end }}
 </header>
 <ul class="cards">
-  {{ range .Pages.ByWeight }}{{ partial "card.html" . }}{{ end }}
+  {{ range partial "listed.html" . }}{{ partial "card.html" . }}{{ end }}
 </ul>
 {{ partial "translation-note.html" . }}
 {{ end }}

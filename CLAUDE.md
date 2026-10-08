@@ -33,8 +33,15 @@ content/
 ```
 
 Sections: `sights`, `beaches`, `food`, `catalonia`, `plan`, `cities` (other cities,
-with one sub-folder per city, e.g. `cities/barcelona/<slug>/`; a city can have topic
-sub-sections with their own `_index.<lang>.md`, e.g. `cities/barcelona/shopping/<slug>/`).
+one sub-folder per city, e.g. `cities/barcelona/`).
+
+Every city gets the same standard sub-sections (each with `_index.<lang>.md` in all
+languages, titles and emoji same as Tarragona's sections): `sights` (weight 10),
+`beaches` (20), `food` (30), `shopping` (40), `plan` (50, general tips). Posts go inside
+them: `cities/barcelona/food/<slug>/`. A sub-section with no posts is hidden from the
+lists automatically (and marked noindex), so create all five when adding a new city —
+use `cities/barcelona/*/_index.*.md` as the template. When a post moves to another
+folder, add `aliases: ["/<old path>/"]` so the old URL redirects.
 `blog` is a special section with no posts of its own: `/blog/` lists the posts of
 any section that have `blog: true`, newest first (by `date`), with a filter by
 section (shown once 2+ sections have blog posts); the home page shows the 3 newest

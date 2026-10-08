@@ -1,0 +1,4 @@
+{{- /* Child pages of a section to show as cards: sub-sections with no posts yet (e.g. a city's empty "Beaches") are left out. */ -}}
+{{- $pages := slice -}}
+{{- range .Pages.ByWeight }}{{ if or (not .IsSection) .RegularPagesRecursive }}{{ $pages = $pages | append . }}{{ end }}{{ end -}}
+{{- return $pages -}}

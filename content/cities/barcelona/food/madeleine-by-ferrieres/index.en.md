@@ -6,6 +6,7 @@ blog: true
 weight: 10
 cover: madeleine-2.jpg
 emoji: 🥐
+aliases: ["/cities/barcelona/madeleine-by-ferrieres/"]
 place_id: https://maps.app.goo.gl/NUWQjdcebe5VcD459
 info:
   address: "Carrer de Llull, 145, Barcelona (Poblenou)"
