@@ -6,9 +6,10 @@ blog: true
 weight: 20
 cover: encants-1.jpg
 emoji: 🛍️
-place_id: https://www.google.com/maps/search/?api=1&query=Encants+Barcelona
+aliases: ["/cities/barcelona/mercat-dels-encants/"]
+place_id: https://maps.app.goo.gl/tyXm78CMfWBk3dd79
 info:
-  address: "Carrer de los Castillejos, 158, Barcelona (Glòries)"
+  address: "Carrer de los Castillejos, 158, Barcelona (Fort Pienc, Glòries)"
   hours: "Lun, mié, vie, sáb — 9:00–20:00"
   website: https://encantsbarcelona.com/
 translated_from: ru
@@ -18,7 +19,7 @@ Llevaba varios años queriendo visitar este mercado. Me encantan los mercados vi
 
 Por ejemplo, la vajilla: muchas veces es de mucha mejor calidad que la que venden en, digamos, Zara Home.
 
-El mercado abre cuatro días a la semana, lo cual está muy bien, porque muchos mercadillos solo se celebran una vez por semana. Es un mercado muy grande y muy antiguo, en la zona de Poblenou.
+El mercado abre cuatro días a la semana, lo cual está muy bien, porque muchos mercadillos solo se celebran una vez por semana. Es un mercado muy grande y muy antiguo, junto a la plaza de las Glòries, en el barrio de Fort Pienc (Eixample), en el límite con Poblenou.
 
 No estuve mucho tiempo, así que os cuento lo que me dio tiempo a ver.
 

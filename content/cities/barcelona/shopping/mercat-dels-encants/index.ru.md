@@ -6,9 +6,10 @@ blog: true
 weight: 20
 cover: encants-1.jpg
 emoji: 🛍️
-place_id: https://www.google.com/maps/search/?api=1&query=Encants+Barcelona
+aliases: ["/cities/barcelona/mercat-dels-encants/"]
+place_id: https://maps.app.goo.gl/tyXm78CMfWBk3dd79
 info:
-  address: "Carrer de los Castillejos, 158, Barcelona (Glòries)"
+  address: "Carrer de los Castillejos, 158, Barcelona (Fort Pienc, Glòries)"
   hours: "Пн, ср, пт, сб — 9:00–20:00"
   website: https://encantsbarcelona.com/
 ---
@@ -16,7 +17,7 @@ info:
 
 Например, посуда: часто она намного качественнее, чем та, что продаётся в той же Zara Home.
 
-Рынок работает четыре дня в неделю, и это весьма неплохо, потому что многие барахолки проходят только раз в неделю. Это очень большой и очень старый рынок в районе Poblenou.
+Рынок работает четыре дня в неделю, и это весьма неплохо, потому что многие барахолки проходят только раз в неделю. Это очень большой и очень старый рынок у площади Glòries, в районе Fort Pienc (Eixample), на границе с Poblenou.
 
 Я недолго ходила, поэтому расскажу, что успела увидеть.
 

@@ -32,7 +32,8 @@ content/
 ```
 
 Sections: `sights`, `beaches`, `food`, `catalonia`, `plan`, `cities` (other cities,
-with one sub-folder per city, e.g. `cities/barcelona/<slug>/`).
+with one sub-folder per city, e.g. `cities/barcelona/<slug>/`; a city can have topic
+sub-sections with their own `_index.<lang>.md`, e.g. `cities/barcelona/shopping/<slug>/`).
 `blog` is a special section with no posts of its own: `/blog/` lists the posts of
 any section that have `blog: true`, newest first (by `date`), with a filter by
 section (shown once 2+ sections have blog posts); the home page shows the 3 newest

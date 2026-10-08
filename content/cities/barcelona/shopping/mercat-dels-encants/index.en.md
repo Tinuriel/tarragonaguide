@@ -6,9 +6,10 @@ blog: true
 weight: 20
 cover: encants-1.jpg
 emoji: 🛍️
-place_id: https://www.google.com/maps/search/?api=1&query=Encants+Barcelona
+aliases: ["/cities/barcelona/mercat-dels-encants/"]
+place_id: https://maps.app.goo.gl/tyXm78CMfWBk3dd79
 info:
-  address: "Carrer de los Castillejos, 158, Barcelona (Glòries)"
+  address: "Carrer de los Castillejos, 158, Barcelona (Fort Pienc, Glòries)"
   hours: "Mon, Wed, Fri, Sat — 9:00–20:00"
   website: https://encantsbarcelona.com/
 translated_from: ru
@@ -18,7 +19,7 @@ I'd been wanting to visit this market for several years. I love vintage markets.
 
 Take tableware, for example: it's often much better quality than what you'll find in, say, Zara Home.
 
-The market is open four days a week, which is pretty good, since many flea markets only happen once a week. It's a very big and very old market in the Poblenou area.
+The market is open four days a week, which is pretty good, since many flea markets only happen once a week. It's a very big and very old market by Plaça de les Glòries, in Fort Pienc (Eixample), right on the edge of Poblenou.
 
 I didn't stay long, so I'll tell you what I managed to see.
 
