@@ -7,27 +7,27 @@ disableKinds = ["taxonomy", "term"]
 
 [languages]
   [languages.ru]
-    weight = 1
+    weight = 5
     label = "RU"
     locale = "ru-RU"
     title = "Таррагона · гид"
   [languages.uk]
-    weight = 2
+    weight = 4
     label = "UA"
     locale = "uk-UA"
     title = "Таррагона · гід"
   [languages.en]
-    weight = 3
+    weight = 1
     label = "EN"
     locale = "en-GB"
     title = "Tarragona · guide"
   [languages.es]
-    weight = 4
+    weight = 2
     label = "ES"
     locale = "es-ES"
     title = "Tarragona · guía"
   [languages.ca]
-    weight = 5
+    weight = 3
     label = "CA"
     locale = "ca-ES"
     title = "Tarragona · guia"
