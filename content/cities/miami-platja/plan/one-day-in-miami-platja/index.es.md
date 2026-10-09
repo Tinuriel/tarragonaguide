@@ -1,6 +1,6 @@
 ---
 title: "Un día en Miami Playa"
-description: "Media jornada de vacaciones para dos: café, una playa tranquila con olor a pino y comida en Villa Belle."
+description: "Media jornada de vacaciones para dos: café, una playa tranquila con olor a pino y comida en Casa Bel."
 date: 2026-10-09
 blog: true
 weight: 10
@@ -22,7 +22,7 @@ Después nos fuimos a la playa.
 
 Aquí no hay ningún servicio: ni duchas, ni vestuarios, ni baño. Pero huele increíblemente a pino, el agua es transparente y preciosa, y hay muy poca gente. Eso sí, para ir con niños no es la playa más cómoda: enseguida se pierde pie.
 
-Terminamos nuestro día de vacaciones comiendo en Villa Belle, un sitio que quise probar en cuanto vi su bonito interior. Su ambiente tampoco parece nada español.
+Terminamos nuestro día de vacaciones comiendo en Casa Bel, un sitio que quise probar en cuanto vi su bonito interior. Su ambiente tampoco parece nada español.
 
 Todo estaba rico: una hamburguesa, un entrecot y una pizza de queso. Y más tarde descubrí que estudio con uno de sus cocineros, así que le cogí todavía más cariño al lugar.
 

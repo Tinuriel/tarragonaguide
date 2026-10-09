@@ -1,6 +1,6 @@
 ---
 title: "Un dia a Miami Platja"
-description: "Mitja jornada de vacances per a dos: cafè, una platja tranquil·la amb olor de pi i dinar a Villa Belle."
+description: "Mitja jornada de vacances per a dos: cafè, una platja tranquil·la amb olor de pi i dinar a Casa Bel."
 date: 2026-10-09
 blog: true
 weight: 10
@@ -22,7 +22,7 @@ Després vam anar a la platja.
 
 Aquí no hi ha cap servei: ni dutxes, ni vestidors, ni lavabo. Però hi fa una olor de pi increïble, l'aigua és transparent i preciosa, i hi ha molt poca gent. Això sí, per anar-hi amb nens no és la platja més còmoda: de seguida no s'hi fa peu.
 
-Vam acabar el nostre dia de vacances dinant a Villa Belle, un lloc que vaig voler provar tan bon punt vaig veure el seu interior tan bonic. El seu ambient tampoc no sembla gens espanyol.
+Vam acabar el nostre dia de vacances dinant a Casa Bel, un lloc que vaig voler provar tan bon punt vaig veure el seu interior tan bonic. El seu ambient tampoc no sembla gens espanyol.
 
 Tot era bo: una hamburguesa, un entrecot i una pizza de formatge. I més tard vaig descobrir que estudio amb un dels seus cuiners, així que encara li vaig agafar més estima.
 

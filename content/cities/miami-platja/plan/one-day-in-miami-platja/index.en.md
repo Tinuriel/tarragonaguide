@@ -1,6 +1,6 @@
 ---
 title: "One day in Miami Platja"
-description: "A half-day getaway for two: coffee, a quiet beach that smells of pine trees, and lunch at Villa Belle."
+description: "A half-day getaway for two: coffee, a quiet beach that smells of pine trees, and lunch at Casa Bel."
 date: 2026-10-09
 blog: true
 weight: 10
@@ -22,7 +22,7 @@ Then we headed to the beach.
 
 There are no facilities at all: no showers, no changing cabins, no toilet. But there's an amazing scent of pine trees, the water is clear and beautiful, and there are very few people. That said, it's not the most convenient beach for children: the water gets deep very suddenly.
 
-We finished our holiday day with lunch at Villa Belle — a place I'd wanted to try as soon as I saw its beautiful interior. Its atmosphere doesn't feel Spanish at all either.
+We finished our holiday day with lunch at Casa Bel — a place I'd wanted to try as soon as I saw its beautiful interior. Its atmosphere doesn't feel Spanish at all either.
 
 Everything was delicious: a burger, an entrecôte and a cheese pizza. And later I found out that I'm studying together with one of the cooks there, which made me like the place even more.
 
