@@ -12,7 +12,7 @@ A finales de julio, como padres de dos niños pequeños, ya no contamos mucho co
 
 Mi relación con este pueblo es bastante ambigua. Cuando vinimos por primera vez, en la primavera de 2023, me pareció una especie de pueblo fantasma: casas y apartamentos vacíos, calles como desiertas… y, al mismo tiempo, una costa increíblemente bonita.
 
-En las siguientes visitas el pueblo, como por arte de magia, empezó a cobrar vida. Resultó que aquí hay bastantes sitios interesantes, buenas infraestructuras y se están construyendo muchas casas y pisos muy caros. Y, en general, parece un lugar que los propios españoles quieren especialmente. Aquí no hay el bullicio turístico al que estamos acostumbrados, como en Salou o La Pineda, pero tiene su propio ambiente.
+En las siguientes visitas el pueblo, como por arte de magia, empezó a cobrar vida. Resultó que aquí hay bastantes sitios interesantes, buenas infraestructuras y se están construyendo muchas casas y pisos muy caros. Y, en general, parece un lugar que los propios españoles quieren especialmente. Aquí no está el rollo de siempre (Salou o La Pineda), pero tiene su propio ambiente.
 
 En verano la población se multiplica por diez, o quizá más. Es un auténtico paraíso para los ciclistas. Y, sencillamente, aquí se está bien.
 

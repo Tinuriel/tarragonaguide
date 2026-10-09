@@ -12,7 +12,7 @@ A finals de juliol, com a pares de dos nens petits, ja no comptem gaire amb teni
 
 La meva relació amb aquest poble és força ambigua. Quan hi vam venir per primera vegada, la primavera del 2023, em va semblar una mena de poble fantasma: cases i apartaments buits, carrers com deserts… i, alhora, una costa increïblement bonica.
 
-En les visites següents el poble, com per art de màgia, va començar a revifar. Va resultar que hi ha força llocs interessants, bones infraestructures i s'hi estan construint moltes cases i pisos molt cars. I, en general, sembla un lloc que els mateixos espanyols estimen especialment. Aquí no hi ha l'enrenou turístic a què estem acostumats, com a Salou o la Pineda, però té el seu propi ambient.
+En les visites següents el poble, com per art de màgia, va començar a revifar. Va resultar que hi ha força llocs interessants, bones infraestructures i s'hi estan construint moltes cases i pisos molt cars. I, en general, sembla un lloc que els mateixos espanyols estimen especialment. Aquí no hi ha el rotllo de sempre (Salou o la Pineda), però té el seu propi ambient.
 
 A l'estiu la població es multiplica per deu, o potser més. És un autèntic paradís per als ciclistes. I, senzillament, s'hi està bé.
 
