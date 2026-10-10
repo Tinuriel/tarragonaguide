@@ -40,7 +40,7 @@ beach-6.jpg | The way down to the beach
 
 We finished our holiday day with lunch at Casa Bel — a place I'd wanted to try as soon as I saw its beautiful interior. Its atmosphere doesn't feel Spanish at all either.
 
-Everything was delicious: a burger, an entrecôte and a salmon pizza. And later I found out that I'm studying together with one of the cooks there, which made me like the place even more.
+Everything was delicious: a burger, an entrecôte and a salmon pinsa. And later I found out that I'm studying together with one of the cooks there, which made me like the place even more.
 
 {{< gallery >}}
 casa-bel-1.jpg | Casa Bel from outside
@@ -48,7 +48,7 @@ casa-bel-2.jpg | The interior
 casa-bel-3.jpg | Burger and entrecôte
 casa-bel-4.jpg | The burger
 casa-bel-5.jpg | Entrecôte with chips
-casa-bel-6.jpg | Salmon pizza
+casa-bel-6.jpg | Salmon pinsa
 {{< /gallery >}}
 
 If you want to escape everyday life for a little while, Miami Platja is a great spot for a mini holiday like this.
