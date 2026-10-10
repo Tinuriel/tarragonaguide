@@ -4,6 +4,7 @@ description: "Mitja jornada de vacances per a dos: cafè, una platja tranquil·l
 date: 2026-10-09
 blog: true
 weight: 10
+cover: beach-1.jpg
 emoji: "🌲"
 translated_from: ru
 reviewed: false
@@ -18,13 +19,37 @@ A l'estiu la població es multiplica per deu, o potser més. És un autèntic pa
 
 Un bon dia, és clar, sempre comença amb un cafè. Així que, després de deixar els nens a la llar d'infants i als casals, vam prendre un cafè i vam picar alguna cosa pel camí. D'aquest lloc ja us en parlaré un altre dia.
 
+{{< gallery >}}
+coffee-1.jpg | Una furgoneta-bar a la terrassa
+coffee-2.jpg | Cafè amb gel i croissant
+coffee-3.jpg | L'interior de la cafeteria
+{{< /gallery >}}
+
 Després vam anar a la platja.
 
 Aquí no hi ha cap servei: ni dutxes, ni vestidors, ni lavabo. Però hi fa una olor de pi increïble, l'aigua és transparent i preciosa, i hi ha molt poca gent. Això sí, per anar-hi amb nens no és la platja més còmoda: de seguida no s'hi fa peu.
 
+{{< gallery >}}
+beach-1.jpg | La platja des de dalt
+beach-2.jpg | Un camí sota els pins
+beach-3.jpg | Escales cap a la platja
+beach-4.jpg | Aigua transparent
+beach-5.jpg | El nostre racó a la platja
+beach-6.jpg | La baixada a la platja
+{{< /gallery >}}
+
 Vam acabar el nostre dia de vacances dinant a Casa Bel, un lloc que vaig voler provar tan bon punt vaig veure el seu interior tan bonic. El seu ambient tampoc no sembla gens espanyol.
 
 Tot era bo: una hamburguesa, un entrecot i una pizza de formatge. I més tard vaig descobrir que estudio amb un dels seus cuiners, així que encara li vaig agafar més estima.
+
+{{< gallery >}}
+casa-bel-1.jpg | Casa Bel per fora
+casa-bel-2.jpg | L'interior
+casa-bel-3.jpg | Hamburguesa i entrecot
+casa-bel-4.jpg | L'hamburguesa
+casa-bel-5.jpg | Entrecot amb patates
+casa-bel-6.jpg | Pizza
+{{< /gallery >}}
 
 Si et ve de gust escapar una estona de la rutina, Miami Platja és un lloc fantàstic per a unes petites vacances així.
 

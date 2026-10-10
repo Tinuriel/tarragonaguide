@@ -2,5 +2,6 @@
 title: "Маямі-Плайя"
 description: "Мої нотатки про Маямі-Плайя: пляжі, кафе й маленькі втечі від буденності."
 weight: 20
+cover: miami-platja.jpg
 emoji: "🌴"
 ---
