@@ -40,7 +40,7 @@ beach-6.jpg | La baixada a la platja
 
 Vam acabar el nostre dia de vacances dinant a Casa Bel, un lloc que vaig voler provar tan bon punt vaig veure el seu interior tan bonic. El seu ambient tampoc no sembla gens espanyol.
 
-Tot era bo: una hamburguesa, un entrecot i una pizza de formatge. I més tard vaig descobrir que estudio amb un dels seus cuiners, així que encara li vaig agafar més estima.
+Tot era bo: una hamburguesa, un entrecot i una pizza de salmó. I més tard vaig descobrir que estudio amb un dels seus cuiners, així que encara li vaig agafar més estima.
 
 {{< gallery >}}
 casa-bel-1.jpg | Casa Bel per fora
@@ -48,7 +48,7 @@ casa-bel-2.jpg | L'interior
 casa-bel-3.jpg | Hamburguesa i entrecot
 casa-bel-4.jpg | L'hamburguesa
 casa-bel-5.jpg | Entrecot amb patates
-casa-bel-6.jpg | Pizza
+casa-bel-6.jpg | Pizza de salmó
 {{< /gallery >}}
 
 Si et ve de gust escapar una estona de la rutina, Miami Platja és un lloc fantàstic per a unes petites vacances així.

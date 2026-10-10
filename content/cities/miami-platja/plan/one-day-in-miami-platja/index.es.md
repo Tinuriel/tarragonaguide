@@ -40,7 +40,7 @@ beach-6.jpg | La bajada a la playa
 
 Terminamos nuestro día de vacaciones comiendo en Casa Bel, un sitio que quise probar en cuanto vi su bonito interior. Su ambiente tampoco parece nada español.
 
-Todo estaba rico: una hamburguesa, un entrecot y una pizza de queso. Y más tarde descubrí que estudio con uno de sus cocineros, así que le cogí todavía más cariño al lugar.
+Todo estaba rico: una hamburguesa, un entrecot y una pizza de salmón. Y más tarde descubrí que estudio con uno de sus cocineros, así que le cogí todavía más cariño al lugar.
 
 {{< gallery >}}
 casa-bel-1.jpg | Casa Bel por fuera
@@ -48,7 +48,7 @@ casa-bel-2.jpg | El interior
 casa-bel-3.jpg | Hamburguesa y entrecot
 casa-bel-4.jpg | La hamburguesa
 casa-bel-5.jpg | Entrecot con patatas
-casa-bel-6.jpg | Pizza
+casa-bel-6.jpg | Pizza de salmón
 {{< /gallery >}}
 
 Si te apetece escapar un rato de la rutina, Miami Playa es un sitio estupendo para unas pequeñas vacaciones así.
